@@ -1,0 +1,5 @@
+[#status]
+image:https://img.shields.io/badge/License-FDL%20v1.3-blue.svg[link="https://www.gnu.org/licenses/fdl-1.3"]
+
+
+# slideshow-portal
