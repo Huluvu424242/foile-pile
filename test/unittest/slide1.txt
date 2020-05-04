@@ -1,0 +1,2 @@
+Dies ist der beschreibende Text zur Folie 1.
+Er wird später vom Programm vorgelesen, so dass kein Präsentator mehr zur Präsentation benötigt wird.
