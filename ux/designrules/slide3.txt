@@ -24,8 +24,7 @@ Lösung 2
 Die Schaltfläche deaktiviert darstellen.
 
 Nachteile
-
-* noch zu definieren
+noch zu definieren
 
 
 
