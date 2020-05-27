@@ -23,7 +23,7 @@ Erscheinungsbild führen.
 ## Lösung 2
 Die Schaltfläche deaktiviert darstellen.
 
-**Nachteile***
+**Nachteile**
 
 * tbd
 
