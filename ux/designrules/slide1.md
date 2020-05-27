@@ -1,3 +1,3 @@
 # Design - Entscheidungen
 
-## Author:  Thomas Schubert
+## Autor:  Thomas Schubert
