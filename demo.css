@@ -1,0 +1,22 @@
+@media all {
+    html {
+        background-color: paleturquoise;
+        color: #00f
+    }
+
+    body, div, li, ol, p, table, td, th, ul {
+        padding: 0;
+        margin: 0
+    }
+
+    body, footer, header, main {
+        display: block
+    }
+}
+
+@media all {
+    .slides > ul {
+        margin: 0 10px;
+        padding: 5px 10px
+    }
+}
