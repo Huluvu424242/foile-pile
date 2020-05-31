@@ -5,7 +5,7 @@ Es freut mich, dass Sie meinen Vortrag gefunden haben und hoffe sie gut unterhal
 Damit Sie auch wissen mit wem Sie es zu tun haben, möchte ich kurz einige wenige Eckpunkte meines Lebens vorstellen.
 
 Als ursprünglich gelernter Facharbeiter für chemische Produktion studierte ich in der Zeit von 1992 bis 1999
-Informatik an der Technischen Universität Dresden. Mein Interesseschwerpunkt lag auf Compilertechnik, Programmiersprachen
+Informatik an der Technischen Universität Dresden. Mein Interesseschwerpunkt lag auf Compeilertechnik, Programmiersprachen
 (insbesondere Java) und Softwaretest.
 
 Als Java Entwickler durfte ich nachfolgend in Firmen an Webportalen mitentwickeln. In meiner Freizeit versuche ich das
