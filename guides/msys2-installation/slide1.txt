@@ -1,0 +1,3 @@
+Herzlich willkommen, mein Name ist Thomas Schubert.
+
+In diesem Vortrag werde ich die Einrichtung von msys2 erklären.
