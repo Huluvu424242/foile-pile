@@ -1,0 +1,15 @@
+Eine erste Anforderung ist ein Raumkonzept.
+
+Eine effiziente Zusammenarbeit ist nur möglich, wenn Leute zu einem Themengebiet
+in kleiner Gruppe zusammenarbeiten können.
+Für eine solche Zusammenarbeit können Strukturen definiert werden die in einem Programm
+Räume im anderen Chats und im nächsten Kanäle oder ähnlich benannt sind.
+
+Wesentlicher Kernpunkt eines Raumes ist, dass er von anderen abgeschieden ist.
+Man hört Gespäche aus anderen Räumen nicht.
+Man sieht Screensharings aus anderen Räumen nicht.
+Man sieht im Video Stream nur die Leute aus dem Raum.
+Es gibt eine Tür. Diese wird realisiert über Systeminformationen wie:
+"Fred hat den Raum betreten" oder "Liona hat den Raum verlassen".
+"Alexandra bittet um Einlass"
+
