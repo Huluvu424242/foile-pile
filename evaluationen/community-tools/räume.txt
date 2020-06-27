@@ -6,7 +6,7 @@ Für eine solche Zusammenarbeit können Strukturen definiert werden die in einem
 Räume im anderen Chats und im nächsten Kanäle oder ähnlich benannt sind.
 
 Wesentlicher Kernpunkt eines Raumes ist, dass er von anderen abgeschieden ist.
-Man hört Gespäche aus anderen Räumen nicht.
+Man hört Gespräche aus anderen Räumen nicht.
 Man sieht ein screensharing aus anderen Räumen nicht.
 Man sieht im Video Stream nur die Leute aus dem Raum.
 Es gibt eine Tür. Diese wird realisiert über Systeminformationen wie:
