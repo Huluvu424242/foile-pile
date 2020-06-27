@@ -7,7 +7,7 @@ Räume im anderen Chats und im nächsten Kanäle oder ähnlich benannt sind.
 
 Wesentlicher Kernpunkt eines Raumes ist, dass er von anderen abgeschieden ist.
 Man hört Gespräche aus anderen Räumen nicht.
-Man sieht ein screensharing aus anderen Räumen nicht.
+Man sieht Bildschirmübertragungen aus anderen Räumen nicht.
 Man sieht im Video Stream nur die Leute aus dem Raum.
 Es gibt eine Tür. Diese wird realisiert über Systeminformationen wie:
 "Manfred hat den Raum betreten" oder "Eva hat den Raum verlassen".
