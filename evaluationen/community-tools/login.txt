@@ -1,16 +1,16 @@
 Beim Zugang zum Tool dürfen keine unnötigen Hürden aufgebaut werden.
 
-Nicht jeder Teilnehmer einer Conference vertraut dem Veranstalter.
+Nicht jeder Teilnehmer einer Konferenz vertraut dem Veranstalter.
 Auch vertraut nicht jeder Mitarbeiter seinem Vorgesetzten.
 
 Daher sollte es für bestimmte Projekte freie Zugänge geben.
 Im Internet könnten diese zum Beispiel genutzt werden um an Corona Projekten mitzuarbeiten.
-Bei diesen Zugängen ruft der Nutzer eine Adresse auf oder gibt die Daten eines Servers an.
+Bei diesen Zugängen ruft der Nutzer eine Adresse auf oder gibt die Daten eines Rechners an.
 Dann legt er einen Namen fest und kann sofort teilnehmen.
 Diese Zugangsart stellt in Firmen eher die Ausnahme dar. Kann dort aber beispielsweise genutzt
 werden für die Organisation einer CoP (Community of Practice).
 
-Da Veranstalter in der Regel Kosten durch den Verkauf von Tickets decken müssen.
+Da Veranstalter in der Regel Kosten durch den Verkauf von Tickets kompensieren müssen.
 Werden diese häufig auf reglementierte Zugänge zurückgreifen wollen.
 Auch Firmen werden in der Regel die Zugänge zum Tool kontrollieren wollen.
 Letztlich sollen ja die Mitarbeiter Zugang bekommen und nicht der Rest der Welt.
