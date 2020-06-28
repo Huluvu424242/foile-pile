@@ -1,1 +1,1 @@
-slide1, download, installation, update, home, slide6
+slide1, download, installation, update, home, winpath, slide6
