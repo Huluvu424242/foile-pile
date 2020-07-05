@@ -1,0 +1,19 @@
+Herzlich Willkommen.
+
+Es freut mich, dass Sie meinen Vortrag gefunden haben und ich hoffe sie gut unterhalten zu können.
+
+Damit Sie auch wissen mit wem Sie es zu tun haben, möchte ich kurz einige wenige Eckpunkte meines Lebens vorstellen.
+
+Als ursprünglich gelernter Facharbeiter für chemische Produktion studierte ich in der Zeit von 1992 bis 1999
+Informatik an der Technischen Universität Dresden. Mein Interesseschwerpunkt lag auf Compeilertechnik, Programmiersprachen
+(insbesondere Java) und Softwaretest.
+
+Als Java Entwickler durfte ich nachfolgend in Firmen an Webportalen mitentwickeln. In meiner Freizeit versuche ich das
+erlangte Wissen in Open Source Projekten anzuwenden. In den letzten Jahren habe ich mich vermehrt auch für moderne
+Frontend Technologien interessiert.
+
+In dieser Präsentation werde ich meine Erfahrungen mit Weboberflächen vorstellen. Da ich Entwickler und kein UXler bin
+kann es sein, dass die abgeleiteten Regeln evtl. mit UX Regeln kollidieren. Daher werde ich keine Empfehlungen aussprechen.
+Ich werde lediglich beobachtetes Verhalten zusammentragen und mögliche Auswirkungen aufgezeigter Lösungen benennen.
+
+

@@ -1,4 +1,0 @@
-# Inhalt
-
-Meine erste Folie
-
