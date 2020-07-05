@@ -5,10 +5,10 @@ Schaltflächen sollten so gestaltet sein, dass der Nutzer erkennen kann
 ob Sie ihm zur Verfügung stehen oder nicht.  
 
 ## Grund
-Klickbare Schalflächen wie Speichern, betätigt der Nutzer natürlich 
+Klickbare Schaltlächen wie Speichern, betätigt der Nutzer natürlich 
 wenn diese ihm angeboten werden. Erscheint dann eine Fehlermeldung,
 dass der Nutzer nicht die benötigten Rechte besitze oder keine zu
-speichernde Änderung vorliegt führt dies zur Verägerung des Nutzers.
+speichernde Änderung vorliegt führt dies zur Verägerung des Benutzers.
 
 ## Methode 1
 Die Schaltfläche ausblenden, wenn nicht verfügbar.
