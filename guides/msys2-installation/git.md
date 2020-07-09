@@ -22,4 +22,6 @@ Download hier: https://git-scm.com/download/win
 Die Checkbox für "assozieren der Files mit git bash" wird abgewählt
 sonst bei der Installation die Defaults nutzen.
 
+Anschließend die Windows PATH Umgebungsvariable prüfen, der Pfad für git muss vor dem Pfad für MSYS2_HOME eingebunden werden.
+
 Ab jetzt kann die git exe in der IDE mit ssh ohne Passwort abfragen genuttz werden
