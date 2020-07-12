@@ -1,0 +1,7 @@
+Das Setzen der HOME Variablen auf den Wert der Umgebungsvariablen USERPROFILE bringt den gewünschten Erfolg.
+
+Das Setzen im Bereich der System Umgebungsvariablen bringt jedoch keinen Erfolg. Entweder wird die Variable USERPROFILE
+von Windows erst später gesetzt oder aber sie wird in diesem Bereich auf den Wert des System Benutzers gesetzt.
+
+Aus diesem Grund klappt das Vorgehen nur wenn die Zuweisung im Nutzerbereich der Umgebungsvariablen erfolgt. Dieser
+entspricht in der Regel der oberen Liste.
