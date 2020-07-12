@@ -2,7 +2,7 @@
 
 ## HOME setzen
 
-Windows Umgebungsvariablen (unterer Bereich = Systemvariablen)
+Windows Umgebungsvariablen (oberer Bereich = User Variablen)
 > (Dieser PC/Eigenschaften/Umgebungsvariablen/)
 
 Dort den Eintrag `%HOME%=%USERPROFILE%` vornehmen
