@@ -1,0 +1,43 @@
+So jetzt haben wir eine schöne saubere Struktur.
+Also geschafft! Ernten wir die Früchte vom Aufwand der Umstrukturierung!
+
+Zunächst sieht es gut aus und Spoiler, es ist auch besser als vorher.
+
+Aber irgenwas passt nicht.
+
+Beim Umstrukturieren sind spezielle Dateien in den Steps entstanden.
+
+Da gibt es sowas wie Vorschlagsliste oder Kalender aber auch Antragsformular oder Quittungsbeleg.
+Eigentlich ist alles gut aber man erkennt nicht wie man daraus eine Sprache für den product owner entwickeln soll.
+Letzlich ist das aber auch nicht schlimm, war ja nie das Ziel. Wir wollen Software entwickeln und das geht ja
+jetzt wirklich gut.
+
+Soweit stimmt alles. Doch betrachten wir was passiert ist.
+
+Wir haben das Page Object Pattern eingeführt. Das bedeutet, wir modellieren eine Page auf Grundlage ihrer enthaltenen
+Elemente. Das technische Page Objekt stellt uns die Finder Methoden bereit um auf die einzelnen Elemente der Page
+zugreifen zu können.
+Das geht auch wenn es die realisierte Webseite noch gar nicht gibt.
+
+OK, wir können diesen Umstand nutzen um das Verhalten vor der Implementierung zu beschreiben. Das ist schon mal gut.
+
+Zum nächsten Punkt. Jede Step Datei instanziiert jetzt mindestens ein Page Objekt. Ein Page Objekt klingt gut.
+Weitere Pageobjekte sollten dann irgendwie allgemeines Verhalten beisteuern.
+Vielleicht Abfragen an den Browser. Was hat den Focus, schreibe Text,
+drück eine Taste, bewege den Mauszeigen um Pixel.
+
+Zwei Pageobjekte verschiedener Seiten? Das klingt komisch. Welche Schritte können auf 2 Seiten identisch sein. Selbst
+wenn beide Seiten identisch sind im Aufbau, weil die eine das Eingabeformular darstellt und die andere den
+Quittungsbelegt der gleichen Daten. Selbst dann sollten sie getrennte Page Objekte besitzen und getrennte Step Dateien.
+
+Denn ich will doch ausdrücken, dass ich jetzt zum Antragsformular navigiere und nicht zur Quittungsseite. Oder schreiben
+Sie immernoch "Navigiere zu URL"? Generisch ist nicht immer besser! Fachlichkeit drückt sich darin aus, das der
+gleiche Vorgang anders benannt wird. Technisch ist es immer ein navigiere zur URL aber fachlich ist es eine andere Seite.
+Die Seite hat einen Namen, nicht weil sie eine ID braucht, sondern weil die Fachlichkeit unter dem Namen etwas versteht.
+Damit bestimmte Dinge assoziiert.
+
+Ich sehe wie jetzt bei Ihnen die Alarmglocken schrillen. Doppelter Kode für den gleichen technischen Sachverhalt
+der Aufwand wird uns umbringen. Nein, keine Angst. Sie werden es lieben, denn nebenbei entsteht eine Produktspezifische
+Sprache die kein anderer Konkurrent auf dem Markt bieten kann. Nur Sie, denn Sie realisieren die fachliche Domäne.
+
+Auf der nächsten Folie zeige ich das Zielbild der Strukturierung.
