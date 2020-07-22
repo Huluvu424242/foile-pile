@@ -1,0 +1,3 @@
+Herzlich willkommen, mein Name ist Thomas Schubert.
+
+Der Vortrag soll Erfahrungen in der Strukturierung von BDD Tests vermitteln.

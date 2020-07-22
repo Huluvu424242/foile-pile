@@ -1,1 +1,1 @@
-slide1, download, installation, firmenproxy, update, home, winpath, msyspath, git
+slide1, slide2,
