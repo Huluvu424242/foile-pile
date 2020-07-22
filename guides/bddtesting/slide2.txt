@@ -1,0 +1,39 @@
+Wer kennt es nicht?
+
+Lasst uns BDD machen!
+
+Dann kann unser product owner die Tests bald selber schreiben.
+Dann können wir die Tests exakt nach Story strukturieren.
+Dann können wir eine eigene Sprache aufbauen, welche exakt auf unsere Domäne zugeschnitten ist.
+Dann können wir endlich automatisiert die ganze Fachlichkeit abtesten.
+
+Im Prinzip stimmt das alles schon aber bevor es soweit ist sind einige Erfahrungen zu sammeln.
+
+Auch wenn ich die obigen Ziele gut finde und auch gern realisieren würde, muss ich leider zugeben, dass ich
+persönlich noch nicht erlebt habe:
+
+Wie ein product owner cucumber features geschrieben hat und wie zuerst die Features geschrieben und dann die
+Software implementiert wurde. Aber unter bestimmten Umständen geht es, das ist zu treffend. Die Umstände sind
+nur leider sehr selten erfüllt.
+
+Was aber aus meiner Sicht auf jeden Fall hilft die Ziele zu erreichen ist das Wissen darüber was welche Nachteile besitzt.
+
+Nehmen wir die Ordner Struktur im Bild.
+So starten die meisten Projekte. Man braucht Feature Dateien und Step Dateien und die wirft man in der Regel erstmal
+in einen Ordner oder trennt gleich technisch nach Step und Feature. Damit hat man den ersten Fehler schon gemacht.
+Aber Warum? Was ist daran falsch?
+
+Solange das Projekt klein ist nix. Aber es wächst halt. Irgendwann entsteht ein zweites Step File und ein Drittes.
+Plötzlich gibt es mal einen Fehler weil ein Step doppelt definiert wurde, also in 2 Step Dateien vorkommt und der Test
+den falschen angezogen hat. Die Feature bedienen sich wild aus allen verfügbaren Step Dateien. Es ist der reinste
+Wollball wenn man die Importe betrachtet.
+
+Und was ist mit der speziellen Domän eigenen Sprachen? Sie wird und wird nicht fertig. Ständig werden neue Konstruktionen
+benötigt und alte passen nicht mehr so gut müssen aber bleiben. Die Alternative ist mit viel Aufwand ständig die komplette
+Sprache zu überarbeiten.
+
+Irgendwann refaktoriert man das Projekt. Man trennt jetzt strikt in einer Ordnerstruktur aus Feature und Step Dateien und
+man führt das Page Objekt Pattern ein und damit auch gleich noch den Ordner pages.
+
+Das sieht dann so aus wie auf der nächsten Folie.
+
