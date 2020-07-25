@@ -16,7 +16,7 @@ Identity added: /c/Users/pauljohn32/.ssh/id_rsa
 
 ### Methode 2
 
-Wir deinstallieren das msys2 git mit `pacman -R git`
+Wir deinstallieren das msys2 git mit ```pacman -R git```
 
 und installieren Git for Windows.
 Download hier: https://git-scm.com/download/win
