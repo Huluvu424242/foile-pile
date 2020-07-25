@@ -5,3 +5,4 @@ So beginnt es meistens
 und auch gern mit dieser Struktur: 
 
 !["Erste Grundstruktur"](figures/e2eFirstFolderStructure.svg)
+!["Erste Grundstruktur Simple"](figures/e2eFirstFolderStructureSimple.svg)
