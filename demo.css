@@ -14,7 +14,7 @@
     }
 
     .slides {
-
+        max-height: 700px;
     }
 
     .slides > ul, ol {
@@ -24,10 +24,10 @@
 
     .banner {
         padding: 5px;
-        font-size: 16px;
+        font-size: 20px;
     }
 
-    .slides {
+    img {
         max-height: 500px;
     }
 }
