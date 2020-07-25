@@ -5,12 +5,14 @@
 Wir nutzen das git unter msys und haben ein Problem mit den ssh credentials.
 
 Workaround
-
-`$ eval $(ssh-agent -s)
+ 
+```
+$ eval $(ssh-agent -s)
 Agent pid 6276
 
 $ ssh-add ~/.ssh/id_rsa
-Identity added: /c/Users/pauljohn32/.ssh/id_rsa`
+Identity added: /c/Users/pauljohn32/.ssh/id_rsa
+```
 
 ### Methode 2
 
