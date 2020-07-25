@@ -3,3 +3,4 @@
 Jetzt bauen wir eine saubere fachliche DSL. 
 
 !["Erste Grundstruktur DSL"](figures/e2eFirstFolderStructureDSL.svg)
+!["Erste Grundstruktur DSL"](figures/e2eFirstFolderStructureFeaturePersonae.svg)
