@@ -1,6 +1,6 @@
 ## git Konfiguration
 
-Methode 1
+### Methode 1
 
 Wir nutzen das git unter msys und haben ein Problem mit den ssh credentials.
 
@@ -12,7 +12,7 @@ Agent pid 6276
 $ ssh-add ~/.ssh/id_rsa
 Identity added: /c/Users/pauljohn32/.ssh/id_rsa`
 
-Methode 2
+### Methode 2
 
 Wir deinstallieren das msys2 git mit `pacman -R git`
 
