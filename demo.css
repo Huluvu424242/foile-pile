@@ -22,7 +22,12 @@
         padding: 5px 10px
     }
 
-    img {
+    .banner {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .slides {
         max-height: 500px;
     }
 }
