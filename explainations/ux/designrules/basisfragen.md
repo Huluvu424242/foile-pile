@@ -2,8 +2,8 @@
 
 ## Browsernutzung
 * Was soll im Bookmarkfall passieren (Einsprung per Bookmark in die Anwendung)?
-** Bookmark gültig
-** Bookmark nicht mehr gültig
+  * Bookmark gültig
+  * Bookmark nicht mehr gültig
 * Was soll im Fall von Browser Back/Forward passieren?
 * Welche Parameter sollen in der URL erscheinen?
 * Was soll passieren wenn durch URL Manipulation ungültige Werte übergeben wurden?
@@ -13,8 +13,8 @@
 ## Fehlerbehandlung
 * Wann sollen Eingaben validiert werden?
 * Wie sollen Fehler dargestellt werden?
-** Einzelfeld Fehler
-** Feldübergreifende Fehler
+  * Einzelfeld Fehler
+  * Feldübergreifende Fehler
 
 ## Lokalisierung
 * Anzeige von Kalenderinformationen: Taggenau, mit Zeit, Nur gestern, heute...
@@ -36,7 +36,7 @@
 
 ## Social Media
 * Wie soll die erzeugt Vorschau beim Teilen aussehen?
-** rechtliche Aspekte (Bilder) beachten.
+  * rechtliche Aspekte (Bilder) beachten.
 
 ## SEO 
 * Wie sollen rel_nat URLs aussehen bzw. gebildet werden.
