@@ -1,0 +1,45 @@
+Wenn Sie wie in der Abbildung gezeigt ihre Step und Page Dateien in einen dsl Ordner platzieren.
+Und diesen über fachliche Unterordner strukturieren, kommen Sie automatisch zur DSL.
+
+Übrigens machen wir dies nicht zum Selbstzweck. Es bietet durchaus Vorteile wenn ein
+Entwickler sofort weiß in welchem Unterordner er das Satzmapping suchen muss.
+Genau dies wird durch die fachliche Unterteilung verbessert.
+
+Anbei mögliche Unterordner und deren Bereitgestellte Funktionen.
+
+Ein fachlicher Unterordner könnte antragsformular sein.
+Dort werden Funktionen bereitgestellt wie:
+Navigiere zum Antragsformular
+Gib die Adresse des Kunden ein.
+Gib die Bankverbindung ein.
+Setze das Antragsdatum auf den das Datum.
+
+Ein weiterer fachlicher Unterordner könnte antragsbestätigung sein.
+Die Funktionen hier wären vielleicht:
+Prüfe die angezeigten Daten.
+Klicke den Button PDF erzeugen.
+
+Der Ordner browser könnte die  Browsersteuerung enthalten. Diese kann Funktionen bereitstellen wie:
+Bestimme das aktive Element.
+Drücke eine bestimmte Taste.
+Ermittle die Styleklasse des aktiven Elements.
+Verschiebe den Mauszeiger um x,y Einheiten.
+
+Der Ordner kalender könnte Funktionen bereitstellen, welche zum Prüfen einer Komponente Kalender benötigt werden.
+Wenn man also im fachlichen Feature an der Stelle angekommen ist an der man den Kalender zur Datumseingabe geöffnet hat,
+könnten nun Funktionen genutzt werden wie:
+Wechsle zum nächsten Monat.
+Wähle das Jahr 2000 aus.
+Wähle den heutigen Tag aus.
+Wähle den morgigen Tag aus.
+Übernimm den ausgewählten Tag.
+
+Der Ordner a11y könnte Funktionen zur Überprüfung der Barrierfreiheit bereitstellen.
+Im einfachsten Fall kann dies eine Funktion "Die Barrierfreiheit ist sichergestellt" sein.
+Diese kann im fachlichen Feature beispielsweise immer dann aufgerufen werden, wenn eine bestimmte Konstellation der
+Seite hergestellt wurde.
+
+Ein Ordner pdf könnte einfachen Funktionen zum prüfen eines PDFs bereitstellen.
+Bestimme den Titel des Dokuments
+Prüfe den URL des PDFs.
+

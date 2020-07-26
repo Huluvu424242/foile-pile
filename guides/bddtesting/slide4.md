@@ -1,4 +1,3 @@
-# BDD mit strukturierter DSL und nach Personae getrennten Features
+# BDD mit strukturierter DSL
 
 !["Erste Grundstruktur DSL"](figures/e2eFirstFolderStructureDSL.svg)
-!["Erste Grundstruktur DSL"](figures/e2eFirstFolderStructureFeaturePersonae.svg)
