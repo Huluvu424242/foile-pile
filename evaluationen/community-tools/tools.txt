@@ -1,0 +1,5 @@
+Auf dieser Folie nun ein kleiner Überblick über die bereitstehenden Tools.
+
+Die Gruppierung nach Kategorien wurde nur grob durchgeführt. Sie richtet sich am Hauptanwendungsgebiet aus.
+Allerdings unterstützen viele Tools mehrere Kategorien. Daher lohnt sich der Aufbau einer Werkzeug/Feature Matrix.
+
