@@ -1,0 +1,13 @@
+Bei den Feature Dateien scheint eine Einteilung nach Personae sinnvoll.
+
+So könnte der Workflow eines Erstnutzers geprüft werden.
+Oder ein Workflow prüft den Wiederkehrenden Poweruser.
+Oder es werden die Schritte geprüft, die ein Nutzer geht wenn er seine Daten nach DSGVO löschen lässt.
+Oder man prüft die Anwendung bezüglich der Person eines blinden Nutzers.
+
+Hier sind sehr vieler Nutzungsfälle denkbar.
+Natürlich wird man es nicht schaffen eine Persona mit einem Feature zu prüfen.
+
+In der Regel stellt eine Persona ja einen bestimmten Nutzer in einer bestimmten Lebenslage dar.
+Da kann es durchaus mehrere Erwartungen geben welche eine Persona an die Anwendung stellt.
+Diese können alle über separate Feature Dateien zur Persona ausgedrückt werden.
