@@ -1,19 +1,19 @@
-Ursprünglich bezog sich der Anwendungsbereich (Scope) von Variablen in Javascript auf die Funktion.
+Ursprünglich bezog sich der Sichtbarkeitsbereich (Scope) von Variablen in Javascript auf die Funktion.
 
 Somit hatte ein if Block keine Auswirkung auf die Sichtbarkeit.
 Variablen welche im if Block deklariert wurden, waren auch in der umschließenden Funktion sichtbar.
 Im Beispiel wäre das die Variable func2.
 
-Mit ES6 wurden die Schlüsselworte let und const eingeführt. Diese führen einen Variblen Anwendungsbereich auf Blöcken ein.
+Mit ES6 wurden die Schlüsselworte let und const eingeführt. Diese führen einen Variblen Sichtbarkeitsbereich auf Blöcken ein.
 Im Beispiel die Variablen block1 und block2.
 
-Variablen welche nicht deklariert sondern einfach nur zugewiesen werden, gelten als im globalen Anwendungsbereich deklariert.
+Variablen welche nicht deklariert sondern einfach nur zugewiesen werden, gelten als im globalen Sichtbarkeitsbereich deklariert.
 
 Wir merken uns:
-Der Anwendungsbereich einer Variablen hängt von ihrer Deklaration ab:
-Ohne Deklaration und nur per Zuweisung definiert liegt die Variable im globalen Anwendungsbereich.
-Mit var deklariert gilt die Variable im Anwendungsbereich der Funktion.
+Der Sichtbarkeitsbereich einer Variablen hängt von ihrer Deklaration ab:
+Ohne Deklaration und nur per Zuweisung definiert liegt die Variable im globalen Sichtbarkeitsbereich.
+Mit var deklariert gilt die Variable im Sichtbarkeitsbereich der Funktion.
 Mit let oder const deklariert, gilt die Variable umschließenden Block.
 
-Weiterhin wichtig ist zu wissen, dass wir den Anwendungsbereich mit bind verändern können.
-bind legt den Anwendungsbereich der Variablen fest unabhängig von ihrer Deklaration.
+Weiterhin wichtig ist zu wissen, dass wir den Sichtbarkeitsbereich mit bind verändern können.
+bind legt den Sichtbarkeitsbereich der Variablen fest unabhängig von ihrer Deklaration.
