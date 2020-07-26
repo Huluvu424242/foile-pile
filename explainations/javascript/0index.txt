@@ -1,1 +1,1 @@
-slide1, hoisting, protractor, slide3
+slide1, hoisting, scope, protractor, slide3
