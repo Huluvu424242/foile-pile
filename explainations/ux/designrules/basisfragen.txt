@@ -1,0 +1,1 @@
+Zur Einstimmung einige Fragen welche sich bei der Neuentwicklung einer Webanwendung häufig stellen.
