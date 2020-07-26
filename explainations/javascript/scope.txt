@@ -1,19 +1,19 @@
-Ursprünglich bezog sich der Scope von Variablen in Javascript auf die Funktion.
+Ursprünglich bezog sich der Anwendungsbereich (Scope) von Variablen in Javascript auf die Funktion.
 
 Somit hatte ein if Block keine Auswirkung auf die Sichtbarkeit.
 Variablen welche im if Block deklariert wurden, waren auch in der umschließenden Funktion sichtbar.
-Im Beispeile wäre das die Variable func2.
+Im Beispiel wäre das die Variable func2.
 
-Mit ES6 wurden die Schlüsselworte let und const eingeführt. Diese führen einen Variblen Scope auf Blöcken ein.
+Mit ES6 wurden die Schlüsselworte let und const eingeführt. Diese führen einen Variblen Anwendungsbereich auf Blöcken ein.
 Im Beispiel die Variablen block1 und block2.
 
-Variablen welche nicht deklariert sondern einfach nur zugewiesen werden, gelten als im globalen Scope deklariert.
+Variablen welche nicht deklariert sondern einfach nur zugewiesen werden, gelten als im globalen Anwendungsbereich deklariert.
 
 Wir merken uns:
-Der Scope einer Variablen hängt von ihrer Deklaration ab:
-Ohne Deklaration und nur per Zuweisung definiert liegt die Variable im globalen Scope.
-Mit var deklariert gilt die Variable im Scope der Funktion.
+Der Anwendungsbereich einer Variablen hängt von ihrer Deklaration ab:
+Ohne Deklaration und nur per Zuweisung definiert liegt die Variable im globalen Anwendungsbereich.
+Mit var deklariert gilt die Variable im Anwendungsbereich der Funktion.
 Mit let oder const deklariert, gilt die Variable umschließenden Block.
 
-Weiterhin wichtig ist zu wissen, dass wir den Scope mit bind verändern können.
-bind legt den Scope der Variablen fest unabhängig von ihrer Deklaration.
+Weiterhin wichtig ist zu wissen, dass wir den Anwendungsbereich mit bind verändern können.
+bind legt den Anwendungsbereich der Variablen fest unabhängig von ihrer Deklaration.
