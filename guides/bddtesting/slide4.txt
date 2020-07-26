@@ -12,7 +12,7 @@ Dort werden Funktionen bereitgestellt wie:
 Navigiere zum Antragsformular
 Gib die Adresse des Kunden ein.
 Gib die Bankverbindung ein.
-Setze das Antragsdatum auf den das Datum.
+Setze das Antragsdatum auf den morgigen Tag.
 
 Ein weiterer fachlicher Unterordner könnte antragsbestätigung sein.
 Die Funktionen hier wären vielleicht:
@@ -23,7 +23,7 @@ Der Ordner browser könnte die  Browsersteuerung enthalten. Diese kann Funktione
 Bestimme das aktive Element.
 Drücke eine bestimmte Taste.
 Ermittle die Styleklasse des aktiven Elements.
-Verschiebe den Mauszeiger um x,y Einheiten.
+Verschiebe den Mauszeiger um 10 Einheiten in X und 10 in Y Richtung.
 
 Der Ordner kalender könnte Funktionen bereitstellen, welche zum Prüfen einer Komponente Kalender benötigt werden.
 Wenn man also im fachlichen Feature an der Stelle angekommen ist an der man den Kalender zur Datumseingabe geöffnet hat,
@@ -39,7 +39,9 @@ Im einfachsten Fall kann dies eine Funktion "Die Barrierfreiheit ist sichergeste
 Diese kann im fachlichen Feature beispielsweise immer dann aufgerufen werden, wenn eine bestimmte Konstellation der
 Seite hergestellt wurde.
 
-Ein Ordner pdf könnte einfachen Funktionen zum prüfen eines PDFs bereitstellen.
+Ein Ordner pdf könnte einfachen Funktionen zum prüfen eines PDF bereitstellen.
 Bestimme den Titel des Dokuments
-Prüfe den URL des PDFs.
+Prüfe den URL des PDF.
 
+Aber auch die fachlichen Features lassen sich weiter strukturieren.
+Wie das geht, zeige ich auf der nächsten Folie.
