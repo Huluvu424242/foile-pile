@@ -5,12 +5,12 @@ Warum das Verhalten so ist, liegt wohl irgendwie in der Speicherverwaltung begr�
 
 Mit einfachen Worten lässt es sich so erklären:
 
-Bei Javascript werden die Deklarationen vom Compiler an den Anfang des Codes gezogen.
+Bei Javascript werden die Deklarationen vom Übersetzer an den Anfang des Codes gezogen.
 Somit lässt sich auf Elemente wie Variablen zugreifen obgleich diese im Kode noch gar nicht deklariert wurden.
-Sie gelten ab da natürlich als undefined.
+Sie gelten ab da natürlich als undefiniert.
 Erst mit der ersten Zuweisung erhalten diese einen wirklichen Wert.
 
-So das war ja leicht. Klaro. Aber immer schön dran denken, in Wirklichkeit arbeitet der Compiler nicht so.
+So das war ja leicht. Klaro. Aber immer schön dran denken, in Wirklichkeit arbeitet der Übersetzer nicht so.
 Es lässt sich so nur sehr einfach vorstellen und merken.
 
 Das Verhalten gilt übrigens nicht nur für Variablen sondern auch für Funktionen.
