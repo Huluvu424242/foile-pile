@@ -1,3 +1,5 @@
+JavaScript und die Begriffsverwirrung.
+
 Zunächst wurden von Tim Berners-Lee am CERN die Grundlagen des WWW geschaffen und der Browser MOSAIC entwickelt.
 Kurz darauf wurde dieser von einem Startup zum Nescape Navigator verbessert.
 
