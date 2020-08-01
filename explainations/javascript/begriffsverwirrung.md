@@ -41,6 +41,7 @@ Das führt zu dem unschönen Ergebnis, dass **ES6 = ECMAScript 2015** ist und ni
 * https://de.wikipedia.org/wiki/Internet_Explorer
 * https://de.wikipedia.org/wiki/Browserkrieg
 * https://www.ecma-international.org/publications/standards/Ecma-262.htm
+* https://en.wikipedia.org/wiki/ECMAScript
 
 
  
