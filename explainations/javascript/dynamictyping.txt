@@ -1,4 +1,22 @@
 Auf dieser Folie möchte ich das Konzept Dynamic Typing erklären.
 
+Zunächst deklarieren wir in JavaScript mit var test Semikolon eine Variable.
+
+Dieser weisen wir dann einen Wert 1 zu.
+Nun prüfen wir mit der Funktion typeof(test) welchen Typ die Daten in der Variablen test haben.
+Es handelt sich um den Typ Number.
+
+Jetzt weisen wir der gleichen Variablen eine Raute eingeschlossen von Hochkommata zu.
+Wir prüfen mit typeof(test) wieder den Typ der Daten der Variablen und stellen fest, jetzt ist es eine Zeichenkette.
+
+Wir können also ein und derselben Variablen Daten verschiedenster Datentypen zuweisen.
+Damit kann die Variable ihren Datentyp mit jeder Zuweisung ändern.
+Das versteht man unter dynamischer Typisierung.
+Und genau das ist auch der Grund warum man in JavaScript für eine Variable keinen Datentyp festlegen kann.
+
+Es würde schlichtweg nix bringen, da er sich ja eh wieder ändern kann.
+
+Bei den Zuweisungungen welche den Typ Objekt oder Funktion zurückgeben bzw. bei der Zuweisung eines Arrays
+handelt es sich um nicht primitive Datentypen. Diese komplexen Datentypen lernen wir erst auf den nächsten Folien kennen.
 
 
