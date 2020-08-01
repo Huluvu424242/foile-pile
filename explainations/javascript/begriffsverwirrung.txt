@@ -6,7 +6,7 @@ Diese wurde versucht über die ECMA zu normieren.
 Als Microsoft den neuen Markt des WWW erkannte, schuf es einen eigenen Browser den Internet Explorer mit eigener
 Skriptsprache JScript.
 
-Während der Browserkriege versuchten die beiden Konkurrenten durch den Einbau neuer Features und APIs ihrer
+Während der Browserkriege versuchten die beiden Konkurrenten durch den Einbau neuer Features und API ihrer
 Skriptsprachen die Marktanteile ihrer Browser zu vergrößern.
 
 Da Microsoft über wesentlich mehr Geld als das Startup verfügte und den Vorteil besass, dass es seinen Browser
