@@ -1,1 +1,1 @@
-slide1, typen, dynamictyping, hoisting, scope, protractor, slide3
+slide1, begriffsverwirrung, typen, dynamictyping, hoisting, scope, protractor, slide3
