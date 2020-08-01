@@ -1,3 +1,14 @@
 Herzlich willkommen, mein Name ist Thomas Schubert.
 
-In dem Vortrag möchte ich eine kleine Zusammenfassung von Begriffen und Tipps und Tricks geben, welche mir geholfen haben.
+Vor einigen Jahren habe ich begonnen in Frontendprojekten mitzuarbeiten welche mit Angular gebaut werden.
+
+Damals wünschte ich mir, dass mir mal jemand richtig von Anfang an die Sprache Javascript erklärt.
+Ich kannte die Sprache aus den 90er Jahren als Ergänzung zum HTML um dort etwas dynamisch anpassen zu können.
+Aber sie schien mehr zu bieten doch darüber fand ich so gut wie nix.
+
+Die Zeiten haben sich geändert. Inzwischen sind mir Dinge über diese Sprache bekannt von denen ich nie gedacht hätte,
+dass es diese gibt, z.B. Versprechen im Kode auf eine Erfüllung in der Zukunft - genannt Promise.
+
+Mit diesen Folien schaffe ich mir die Einführung in die Sprache, welche ich damals dringend gebraucht hätte.
+
+Ich wünsche Ihnen viel Spaß und viel neues Wissen beim Durcharbeiten.
