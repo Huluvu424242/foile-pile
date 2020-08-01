@@ -1,2 +1,2 @@
 
-Bei JSON handelt es sich um die Javascript Objekt Notation.
+Bei JSON handelt es sich um die JavaScript Objekt Notation.

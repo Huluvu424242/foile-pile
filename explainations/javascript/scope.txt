@@ -1,4 +1,4 @@
-Ursprünglich bezog sich der Sichtbarkeitsbereich (Scope) von Variablen in Javascript auf die Funktion.
+Ursprünglich bezog sich der Sichtbarkeitsbereich (Scope) von Variablen in JavaScript auf die Funktion.
 
 Somit hatte ein if Block keine Auswirkung auf die Sichtbarkeit.
 Variablen welche im if Block deklariert wurden, waren auch in der umschließenden Funktion sichtbar.

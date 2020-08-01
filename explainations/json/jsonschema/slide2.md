@@ -1,7 +1,7 @@
 # JSON 
 
 ## Begriff
-~ steht für Javascript Object Notation
+~ steht für JavaScript Object Notation
 
 ## JSON Syntax als Schienendiagramm
 [![Syntaxdiagram](img/jsonsyntax.svg)](img/jsonsyntax.svg)

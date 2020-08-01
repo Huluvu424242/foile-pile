@@ -1,11 +1,11 @@
-Hoisting ist so ziemlich das erste Phänomen mit dem ein Entwickler bei Javascript zu tun bekommt.
-Es ist kein Fachausdruck aus der Spezifikation und doch ist er allgemein bekannt unter Javascript Entwicklern.
+Hoisting ist so ziemlich das erste Phänomen mit dem ein Entwickler bei JavaScript zu tun bekommt.
+Es ist kein Fachausdruck aus der Spezifikation und doch ist er allgemein bekannt unter JavaScript Entwicklern.
 
 Warum das Verhalten so ist, liegt wohl irgendwie in der Speicherverwaltung begründet.
 
 Mit einfachen Worten lässt es sich so erklären:
 
-Bei Javascript werden die Deklarationen vom Übersetzer an den Anfang des Codes gezogen.
+Bei JavaScript werden die Deklarationen vom Übersetzer an den Anfang des Codes gezogen.
 Somit lässt sich auf Elemente wie Variablen zugreifen obgleich diese im Kode noch gar nicht deklariert wurden.
 Sie gelten ab da natürlich als undefiniert.
 Erst mit der ersten Zuweisung erhalten diese einen wirklichen Wert.

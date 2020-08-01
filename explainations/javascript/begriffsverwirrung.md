@@ -1,4 +1,4 @@
-# Javascript und die Begriffsverwirrung
+# JavaScript und die Begriffsverwirrung
 
 JavaScript, JScript, Ecmascript, ES6 - Was ist was?
 

@@ -1,6 +1,6 @@
 # JSON 
 
-Steht für Javascript Object Notation
+Steht für JavaScript Object Notation
 
 JSON Schema
 • Validierung von Instanzen
@@ -11,7 +11,7 @@ Was kann per JSON Schema überprüft werden:
 • Nur die Payload der Requests oder der Response kann geprüft werden
 • Folgenden Eigenschaften der Payload sind prüfbar:
    • Struktur (Attributnamen)
-   • Datentypen (Javascript typen + Länge, format und andere Zusätze)
+   • Datentypen (JavaScript typen + Länge, format und andere Zusätze)
 Was fehlt dabei für CDC (Unterschied zu PACT):
 • Die API selbst (Endpointname (Methodenname), Operation (PUT, GET, ...) 
 • Zustand der API 

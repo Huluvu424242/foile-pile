@@ -1,6 +1,6 @@
 Natürlich beginne ich mit den Datentypen.
 
-Auch wenn Sie vergebens versuchen werden den Typ einer Variablen in Javascript festzulegen, so gibt es doch Datentypen.
+Auch wenn Sie vergebens versuchen werden den Typ einer Variablen in JavaScript festzulegen, so gibt es doch Datentypen.
 
 Wie überall gibt es Zeichenketten. Diese können wahlweise von doppelten oder einfachen Hochkommata eingeschlossen werden.
 Werden doppelte Hochkommata zur Begrenzung verwendet so gelten die Einfachen als Teil des Strings.
@@ -13,12 +13,12 @@ Somit können sich in Berechnungen die üblichen Fehler der Gleitkommaarithmethi
 Dann gibt es noch einen Typen für Wahrheitswerte, genannt BOOLEAN. Dieser sollte mit seinen Ausprägungen
 TRUE und FALSE aus anderen Sprachen bekannt sein. TRUE bedeutet die Aussage ist wahr, FALSE sie ist nicht wahr.
 
-Jetzt gibt es noch zwei Werte für Nichtexistenz. Den einen Wert, UNDEFINED, nutzt und setzt die Javascript Engine.
+Jetzt gibt es noch zwei Werte für Nichtexistenz. Den einen Wert, UNDEFINED, nutzt und setzt die JavaScript Engine.
 Diesen sollten wir nie selbst einer Variablen zuweisen. Das wäre schlechter Stil.
 Somit wissen wir auch gleich, wenn ein Wert auf UNDEFINED steht haben wir den selbst nie gesetzt. Da war also nie ein Wert drin.
 
 Wollen wir selbst einer Variable einen Wert zuweisen um Nichtexistenz auszudrücken, dann nehmen wir NULL.
-Das ist der zweite Wert welcher Nichtexistenz ausdrückt und diesen wiederum nutzt die Javascript Engine nicht.
+Das ist der zweite Wert welcher Nichtexistenz ausdrückt und diesen wiederum nutzt die JavaScript Engine nicht.
 Dieser ist allein für uns gedacht. Diesen können wir selbst zuweisen.
 
 Den Datentyp symbol habe ich nocht nicht erforscht. Er wird in ECMA SCRIPT Edition 6 für Debuggingzwecke eingeführt.
