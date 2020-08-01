@@ -1,0 +1,24 @@
+Zunächst wurden von Tim Berners-Lee am CERN die Grundlagen des WWW erschaffen und den Browser Mosaic entwickelt.
+Kurz darauf wurde diese von einem Startup zum Nescape Navigator verbessert.
+
+Der Netscape Navigator ergänzte das von Berners-Lee erschaffene HTML um eine eigene Skriptsprache: JAVASCRIPT.
+Diese wurde versucht über die ECMA zu normieren.
+Als Microsoft den neuen Markt des WWW erkannte, schuf es einen eigenen Browser den Internet Explorer mit eigener
+Skriptsprache JSCRIPT.
+
+Während der Browserkriege versuchten die beiden Konkurrenten durch den Einbau neuer Features und APIs ihrer
+Skriptsprachen die Marktanteile ihrer Browser zu vergrößern.
+
+Da Microsoft über wesentlich mehr Geld als das Startup verfügte und den Vorteil besass, dass es seinen Browser
+mit dem Betriebssystem gebündelt ausliefern konnte, gewann Microsoft. Denn jeder Windows Nutzer hatte nun out of the box
+einen Browser auf seinem PC verfügbar. Zwar einen Browser, der sein eigenes Süppchen kochte aber das konnte der
+Nutzer eh nicht einschätzen und letztlich war es ihm auch egal. Hauptsache er konnte sich Webseiten anschauen.
+
+Nach kurzer Zeit musste Netscape aufgeben und was blieb war der Versuch einer standardisierten Skriptsprache für HTML.
+
+Seitdem wird ECMAScript weiter entwickelt und standardisiert. Regelmäßig werden neue Editionen publiziert.
+Je nach Zählweise wird dann von der 6. Edition oder der Version ECMAScript 2015 gesprochen. Also entweder die
+Nummer der Edition oder das Jahr der Veröffentlichung genutzt. Leider ergab es sich, dass die letzte Ziffer exakt
+um eins abweicht. Damit ist E S 6 gleich ECMAScropt 2015.
+
+Damit müssen wir nun leider leben.
