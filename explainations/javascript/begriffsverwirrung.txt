@@ -1,7 +1,7 @@
 Zunächst wurden von Tim Berners-Lee am CERN die Grundlagen des WWW erschaffen und den Browser Mosaic entwickelt.
 Kurz darauf wurde diese von einem Startup zum Nescape Navigator verbessert.
 
-Der Netscape Navigator ergänzte das von Berners-Lee erschaffene HTML um eine eigene Skriptsprache: JAVASCRIPT.
+Der Netscape Navigator ergänzte das von Berners-Lee erschaffene HTML um eine eigene Skriptsprache: JavaScript.
 Diese wurde versucht über die ECMA zu normieren.
 Als Microsoft den neuen Markt des WWW erkannte, schuf es einen eigenen Browser den Internet Explorer mit eigener
 Skriptsprache JScript.
