@@ -1,4 +1,4 @@
-Zunächst wurden von Tim Berners-Lee am CERN die Grundlagen des WWW erschaffen und den Browser MOSAIC entwickelt.
+Zunächst wurden von Tim Berners-Lee am CERN die Grundlagen des WWW erschaffen und der Browser MOSAIC entwickelt.
 Kurz darauf wurde diese von einem Startup zum Nescape Navigator verbessert.
 
 Der Netscape Navigator ergänzte das von Berners-Lee erschaffene HTML um eine eigene Skriptsprache: JavaScript.
