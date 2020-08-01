@@ -1,1 +1,1 @@
-tipps, tricks, javascript, nodejs, protractor
+javascript, begriffe, konzepte, grundlagen
