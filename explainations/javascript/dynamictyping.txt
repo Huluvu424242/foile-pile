@@ -1,0 +1,4 @@
+Auf dieser Folie möchte ich das Konzept Dynamic Typing erklären.
+
+
+
