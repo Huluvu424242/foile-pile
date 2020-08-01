@@ -1,0 +1,2 @@
+Zusätzlich zu den primitiven Datentypen gibt es in JavaScript auch komplexe Datentypen.
+
