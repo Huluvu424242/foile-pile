@@ -19,6 +19,6 @@ Nach kurzer Zeit musste Netscape aufgeben und was blieb war der Versuch einer st
 Seitdem wird ECMAScript weiter entwickelt und standardisiert. Regelmäßig werden neue Editionen publiziert.
 Je nach Zählweise wird dann von der 6. Edition oder der Version ECMAScript 2015 gesprochen. Also entweder die
 Nummer der Edition oder das Jahr der Veröffentlichung genutzt. Leider ergab es sich, dass die letzte Ziffer exakt
-um eins abweicht. Damit ist E S 6 gleich ECMA_Script 2015.
+um eins abweicht. Damit ist E S 6 gleich ECMA Script 2015.
 
 Damit müssen wir nun leider leben.
