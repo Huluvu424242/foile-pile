@@ -1,6 +1,6 @@
 Herzlich willkommen, mein Name ist Thomas Schubert.
 
-Vor einigen Jahren habe ich begonnen in Frontendprojekten mitzuarbeiten welche mit Angular gebaut werden.
+Vor einigen Jahren habe ich begonnen in Frontendprojekten mitzuarbeiten welche mit ANGULAR gebaut werden.
 
 Damals wünschte ich mir, dass mir mal jemand richtig von Anfang an die Sprache JAVASCRIPT erklärt.
 Ich kannte die Sprache aus den 90er Jahren als Ergänzung zum HTML um dort etwas dynamisch anpassen zu können.
