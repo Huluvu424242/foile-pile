@@ -19,7 +19,7 @@ Nach kurzer Zeit musste Netscape aufgeben und was blieb war der Versuch einer st
 Seitdem wird ECMA Script weiter entwickelt und standardisiert. Regelmäßig werden neue Editionen publiziert.
 Je nach Zählweise wird dann von der 6. Edition oder der Version ECMA Script 2015 gesprochen.
 Also entweder die Nummer der Edition oder das Jahr der Veröffentlichung genutzt.
-Leider ergab es sich, dass die letzte Ziffer abweicht. Damit ist E S 6 gleich ECMA Script 2015.
+Leider ergab es sich, dass die letzte Ziffer abweicht. Damit ist ES6 gleich ECMA Script 2015.
 
 Das ist ein Umstand an den man denken muss.
 Das soll uns aber nicht hindern gleich auf der nächsten Folie in die Sprache JavaScript einzusteigen.
