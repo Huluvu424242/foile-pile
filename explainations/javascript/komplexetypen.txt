@@ -1,2 +1,29 @@
 Zusätzlich zu den primitiven Datentypen gibt es in JavaScript auch komplexe Datentypen.
 
+Diese stellen praktisch alle Objekte dar. Wobei Funktionen und Arrays halt spezielle Objekte sind.
+
+Ein Objekt in Javascript ist eine Map aus Schlüssel-Wertepaare.
+Jedem Schlüssel kann dabei exakt ein Wert zugeordnet werden.
+Der Wert selbst kann wieder von einem beliebigen JavaScript Datentyp sein.
+Somit kann ein Wert auch wieder ein Objekt sein. Damit lassen sich tiefe Verschachtelungen aufbauen.
+
+Allen Objekten gemeinsam ist, dass sie syntaktisch von geschweiften Klammern begrenzt werden.
+Prinzipiell lassen sich Objekte auch noch auf einer anderen Art per new erzeugen aber dazu kommen wir später.
+
+Arrays sind spezielle Objekte welche indizierbar sind. Das erste Element wird über den Index Null
+angesprochen. Außerdem besitzen Arrays eine Länge.
+Die Elemente im Array können wild gemischt von verschiedensten Datentypen sein.
+Durch ihre Indizierbarkeit kann über Arrays iteriert werden.
+
+Eine weitere spezielle Art von Objekten sind Funktionen. Ihre Besonderheit besteht darin,
+dass sie ausführbar sind. Das heißt sie besitzen einen Bereich in dem ausführbarer JavaScript Kode
+abgelegt ist.
+Es gibt annonyme Funktionen, diese besitzen keinen Namen und entstehen meist über Funktionsausdrücke.
+Außer über Funktionsausdrücke lassen sich Funktionen aber auch deklarieren. Bei einer Deklaration ist
+zwingend die Angabe eines Namen notwendig.
+
+Da Arrays und Funktionen in JavaScript spezielle Objekte darstellen, kann man ihnen auch weitere
+Properties hinzufügen, diese mit Werten belegen und auch wieder auslesen sowie löschen.
+
+Objekte spannen in JavaScript einen Sichtbarkeitsbereich für Variablen auf. Dazu dann mehr auf
+späteren Folien.
