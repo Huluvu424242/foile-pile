@@ -25,5 +25,5 @@ Den Datentyp symbol habe ich nocht nicht erforscht. Er wird in ECMA SCRIPT Editi
 
 Wie oben bereits erwähnt, können Sie in JavaScript einer Variablen keinen Typ zuordnen.
 Das wird sich vermutlich auch nicht ändern, da JavaScript das Konzept des Dynamic Typing nutzt.
-Dieses wird auf der nächsten Folie vorgestellt.
+Dieses wird auf einer der nächsten Folien vorgestellt.
 

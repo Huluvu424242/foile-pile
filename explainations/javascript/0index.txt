@@ -1,1 +1,1 @@
-slide1, begriffsverwirrung, primitivetypen, dynamictyping, hoisting, scope, protractor, slide3
+slide1, begriffsverwirrung, primitivetypen, komplexetypen, dynamictyping, hoisting, scope, protractor, slide3
