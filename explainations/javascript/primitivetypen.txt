@@ -24,7 +24,7 @@ Wollen wir selbst einer Variable einen Wert zuweisen um Nichtexistenz auszudrüc
 Das ist der zweite Wert welcher Nichtexistenz ausdrückt und diesen wiederum nutzt die JavaScript Engine nicht.
 Dieser ist allein für uns gedacht. Diesen können wir selbst zuweisen.
 
-Den Datentyp symbol habe ich nocht nicht erforscht. Er wird in ECMA SCRIPT Edition 6 für Debuggingzwecke eingeführt.
+Den Datentyp symbol habe ich nocht nicht erforscht. Er wird in ECMA SCRIPT Edition 6 eingeführt.
 
 Wie oben bereits erwähnt, können Sie in JavaScript einer Variablen keinen Typ zuordnen.
 Das wird sich vermutlich auch nicht ändern, da JavaScript das Konzept des Dynamic Typing nutzt.
