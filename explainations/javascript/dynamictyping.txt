@@ -16,7 +16,6 @@ Und genau das ist auch der Grund warum man in JavaScript für eine Variable kein
 
 Es würde schlichtweg nix bringen, da er sich ja eh wieder ändern kann.
 
-Bei den Zuweisungungen welche den Typ Objekt oder Funktion zurückgeben bzw. bei der Zuweisung eines Arrays
-handelt es sich um nicht primitive Datentypen. Diese komplexen Datentypen lernen wir erst auf den nächsten Folien kennen.
-
+Beim Umgang mit Datentypen ist in JavaScript ein Effekt zu beachten.
+Dieser wird Coercion (Zwang) genannt und soll auf der nächsten Folie erläutert werden.
 
