@@ -10,4 +10,4 @@
 
 * undefined -> repräsentiert Nichtexistenz, wird von der Engine gesetzt
 * null -> repräsentiert auch Nichtexistenz, wird von der Engine nicht gesetzt (für Entwickler gedacht)
-* symbol -> für Debuginformationen ab ECMAScript Edition 6
+* symbol -> ab ECMAScript Edition 6
