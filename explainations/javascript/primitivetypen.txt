@@ -9,6 +9,8 @@ Werden hingegen einfache Hochkommata verwendet so gelten die Doppelten als Teil 
 Es gibt auch Zahlen, hier NUMBER genannt. Dabei muss man sich merken, dass eine Zahl immer als Gleitkommazahl gespeichert wird.
 Also immer mit Nachkommastellen, unabhängig davon ob diese welche besitzt oder nicht.
 Somit können sich in Berechnungen die üblichen Fehler der Gleitkommaarithmethik ergeben.
+Um auszudrücken, dass ein erwarteter Zahlenwert kein Zahlenwert ist, existiert in JavaScript in spezieller Wert,
+genannt Not a Number (NaN). Dies ist ein spezieller Wert und er stellt keinen Zahlerwert dar.
 
 Dann gibt es noch einen Typen für Wahrheitswerte, genannt BOOLEAN. Dieser sollte mit seinen Ausprägungen
 TRUE und FALSE aus anderen Sprachen bekannt sein. TRUE bedeutet die Aussage ist wahr, FALSE sie ist nicht wahr.
