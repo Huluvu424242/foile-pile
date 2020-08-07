@@ -1,0 +1,22 @@
+Die Coercion ist ein Konzept in JavaScript welches manchmal zu unerwarteten Ergebnissen führt.
+
+Im ersten Beispiel werden die Zahlenwerte Drei und Vier mit Plus addiert und
+in der Browser Console ausgegeben.
+Als Ergebnis wird 7 angezeigt. Also eine normale Addition.
+
+Plus kann aber auch Zeichenketten verbinden. Schauen wir mal was passiert wenn mit Plus Zahlen und Zeichenketten verbunden werden.
+Die Zahl Drei erbunden mit der Zeichenkette Vier wird als VierundDreizig ausgegeben.
+Da wurde wohl die Zahl Drei einfach in eine Zeichenkette konvertiert und dann mit dem Zeichen Vier verbunden.
+Da es also um Zeichenketten ging wurde nicht addiert sondern konkatiniert.
+Die Zahl Drei wurde also in eine Zeichenkette konvertiert.
+Anschließend wurden die Zeichenketten Drei und Vier verbunden und es entstand Vierundreißig als Ausgabe.
+
+Ok, aber was passiert wenn wir die Zahlen Sieben und Drei mit der Zeichenkette Vier verbinden.
+Wird alles zuerst in eine Zeichenkette gewandelt oder erst addiert und dann in eine Zeichenkette gewandelt.
+Es wird erst addiert und dann in eine Zeichenkette gewandelt.
+Woran liegt das? Das liegt an dem Regelset für den Operator Plus welcher von links nach rechts abgearbeitet wird.
+Von links nach rechts heißt in dem Fall zunächst Sieben und Drei zu verbinden.
+Beides sind Zahlen, also wird addiert zur Zehn.
+Dann wird die Zahl Zehn mit der Zeichenkette Vier verbunden.
+Da greift die Coercion. Zwingt die Zahl Zehn in den Zeichenketten Typ und konkatiniert anschließend mit Vier.
+Als Ergebnis erhalten wir EinhundertVier also die Zehn und die Vier als Zeichenketten konkatiniert.
