@@ -7,14 +7,24 @@ Als ich den Trick mit var a = !! b;  zum ersten Mal im Kode gelesen habe, dachte
 Einfach mal Rechenzeit verschwendet oder was soll das?
 Nein das hat einen Grund: Typeumwandlung!!!
 
-```
+Tipp 1
+```javascript
+// convert2boolean
 var a = !! 'true';
 typeof(a);
--> "boolean"
+//-> "boolean"
 ```
-oder 
+Tipp 2
+```javascript
+// konvert2string
+var a =  b +'';
+typeof(a);
+//-> "string"
 ```
-var a =  b || 'Namenlos';
+Tipp 3
+```javascript
+// default parameter value
+var a =  b || 'Default Wert';
 ```
 
 

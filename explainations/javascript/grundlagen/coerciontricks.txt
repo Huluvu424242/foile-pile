@@ -1,13 +1,16 @@
 Also die Coercion ist schon etwas sophisticated aber die Tricks damit sind ja noch dreckiger.
 
-Irgendwann fand ich in unserem Kode eine Variablen Zuweisung einer anderen Variable mit zwei vorangestellten Ausrufungszeichen.
+Irgendwann fand ich in einem Projekt Kode indem eine Variablen Zuweisung mit zwei vorangestellten Ausrufungszeichen erfolgte.
 Also die Quellvariable einmal negiert ok. Dann nochmal negiert. Äh warum?
 Jetzt hab ich doch das selbe wie vorher oder nicht?
 Nein, jetzt ist es ein anderer Datentyp, nämlich ein Wahrheitswert.
 Wenn es vorher eine Zeichenkette mit dem Wert true war, dann ist es jetzt ein Wahrheitswert true.
 
 Oder das zweite Beispiel. Was passiert da?
+Naja, hier wird einfach der Wert der Variablen b per Coercion in einen String konvertiert.
+
+Im Tipp Drei stellen wir einfach einen Default Wert für eine Variable bereit. Und das funktioniert wie folgt.
 Wenn b einen Wert hat, dann wird b der Variablen a zugewiesen.
-Führt aber die Coercion von b zu false weil b beispielsweise UNDEFINED ist, dann wird a die Zeichenkette Namenlos zugewiesen.
+Führt aber die Coercion von b zu false weil b beispielsweise UNDEFINED ist, dann wird a die Zeichenkette Default Wert zugewiesen.
 Diese Konstruktion lässt sich gut zur Realisierung von Default Parameterwerten in Funktionen nutzen.
 
