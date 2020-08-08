@@ -1,4 +1,4 @@
-Also die Coercion ist schon etwas sophisticated aber die Tricks damit sind ja noch dreckiger.
+Also die Coercion ist schon etwas ungewöhlich aber die Tricks damit sind ja noch dreckiger.
 
 Irgendwann fand ich in einem Projekt Kode indem eine Variablen Zuweisung mit zwei vorangestellten Ausrufungszeichen erfolgte.
 Also die Quellvariable einmal negiert ok. Dann nochmal negiert. Äh warum?
