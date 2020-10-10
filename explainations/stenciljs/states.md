@@ -18,8 +18,6 @@ Ausnahme
 ## Tipp
 ### Aktualisierung eines Array
 
-:bulb: umgebungen ist ein Array
-
 <p>
   <span  class="hint"><strong>umgebungen</strong> ist ein Array.</span>
 </p>
