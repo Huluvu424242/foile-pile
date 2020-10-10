@@ -34,4 +34,8 @@
     pre {
         background-color: lightgray;
     }
+    
+    .hint {
+        background-color: yellow;   
+    }
 }
