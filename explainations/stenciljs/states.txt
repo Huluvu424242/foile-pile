@@ -4,6 +4,7 @@ Diese lassen sich in Attributen speichern welche über das Schlüsselwort State 
 
 Werden die Daten eines Attributes verändert welches einen Zustand speichert, so wird die Webkomponente neu gerendert.
 
-Die einfache Veränderung eines Arrays gilt aber nicht als Änderung. In dem Fall wird nur neu gerendert, wenn sich
-die Objektreferenz ändert.
+Die einfache Veränderung eines Arrays gilt aber nicht als Änderung. In dem Fall wird nur neu gerendert, wenn sich die Objektreferenz ändert.
 Um dies zu bewirken, muss das neue Array dem Zustandsattribut zugewiesen werden.
+Dabei hat sich ein kleiner Trick eingebürgert. Dieser ist im Abschnitt unter Tipp zu sehen.
+Hier wird das Array umgebungen vollständig neu belegt. 
