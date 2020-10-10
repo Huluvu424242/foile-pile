@@ -14,3 +14,16 @@ Webkomponente neu gerendert.
 Ausnahme
 : Wird ein Array geändert z.B. durch push so wird die View nicht neu gerendert.
 : Mann muss ein neues Array erzeugen und dieses dem Attribut zuweisen.
+
+## Tipp
+### Aktualisierung von Array's
+
+<p style="background-color:green">
+  <strong>umgebungen</strong> ist ein Array.
+</div>
+
+```javascript
+ async updateModel(){
+        this.umgebungen = [...(await DashboardService.listUmgebungen())];       
+}
+```
