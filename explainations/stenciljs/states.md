@@ -18,7 +18,7 @@ Ausnahme
 ## Tipp
 ### Aktualisierung von Array's
 
-<p style="background-color:mint">
+<p style="background-color:yellow">
   <strong>umgebungen</strong> ist ein Array.
 </div>
 
