@@ -18,9 +18,9 @@ Ausnahme
 ## Tipp
 ### Aktualisierung eines Array
 
-<p style="background-color:yellow">
+<p  style="background-color:yellow">
   <strong>umgebungen</strong> ist ein Array.
-</div>
+</p>
 
 ```javascript
  async updateModel(){
