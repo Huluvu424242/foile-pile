@@ -19,7 +19,7 @@ Ausnahme
 ### Aktualisierung eines Array
 
 <p>
-  <span  style="background-color:yellow"><strong>umgebungen</strong> ist ein Array.</span>
+  <span  class="hint"><strong>umgebungen</strong> ist ein Array.</span>
 </p>
 
 ```javascript
