@@ -1,5 +1,7 @@
 # Bidirektionales Binding
 
+Muss selbst implementiert werden!
+
 ```javascript
 @State() newUmgebung: string;
 
