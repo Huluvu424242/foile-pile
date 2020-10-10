@@ -26,6 +26,13 @@ Tipp 3
 // default parameter value
 var a =  b || 'Default Wert';
 ```
+Tipp 4
+```javascript
+// konvert2string
+var a =  +'7';
+typeof(a);
+//-> "number"
+```
 
 
  
