@@ -30,4 +30,8 @@
     img {
         max-height: 500px;
     }
+    
+    pre {
+        background-color: lightgray;
+    }
 }
