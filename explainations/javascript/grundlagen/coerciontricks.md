@@ -32,6 +32,11 @@ Tipp 4
 var a =  +'7';
 typeof(a);
 //-> "number"
+a = + 'j';
+typeof(a);
+//-> "number"
+a
+// -> NaN
 ```
 
 
