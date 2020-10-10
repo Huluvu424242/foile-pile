@@ -16,7 +16,7 @@ Ausnahme
 : Mann muss ein neues Array erzeugen und dieses dem Attribut zuweisen.
 
 ## Tipp
-### Aktualisierung von Array's
+### Aktualisierung eines Array
 
 <p style="background-color:yellow">
   <strong>umgebungen</strong> ist ein Array.
