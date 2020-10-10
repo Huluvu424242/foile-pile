@@ -15,6 +15,7 @@
 
     .slides {
         max-height: 700px;
+        padding-left: 10px;
     }
 
     .slides > ul, ol {
