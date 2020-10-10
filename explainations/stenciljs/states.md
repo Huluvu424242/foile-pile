@@ -18,12 +18,12 @@ Ausnahme
 ## Tipp
 ### Aktualisierung eines Array
 
-<p  style="background-color:yellow">
-  <strong>umgebungen</strong> ist ein Array.
+<p>
+  <span  style="background-color:yellow"><strong>umgebungen</strong> ist ein Array.</span>
 </p>
 
 ```javascript
- async updateModel(){
-        this.umgebungen = [...(await DashboardService.listUmgebungen())];       
+async updateModel(){
+  this.umgebungen = [...(await DashboardService.listUmgebungen())];       
 }
 ```
