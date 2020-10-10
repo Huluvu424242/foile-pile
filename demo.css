@@ -32,8 +32,11 @@
         max-height: 500px;
     }
     
-    code {
+    pre {
         background-color: lightgray;
+        overflow: auto;
+        padding: 16px;
+           
     }
     
     .hint {
