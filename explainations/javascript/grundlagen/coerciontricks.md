@@ -28,7 +28,7 @@ var a =  b || 'Default Wert';
 ```
 Tipp 4
 ```javascript
-// konvert2string
+// konvert2number
 var a =  +'7';
 typeof(a);
 //-> "number"
