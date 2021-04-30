@@ -1,1 +1,5 @@
-Herzlich willkommen, mein Name ist Thomas Schubert.
+Herzlich willkommen zum Vortrag
+
+Webkomponenten bauen mit Stenzil.
+
+Schön, dass Sie sich die Zeit genommen haben.
