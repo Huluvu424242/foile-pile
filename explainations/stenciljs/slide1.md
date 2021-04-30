@@ -1,4 +1,4 @@
-# Stencil - Webcomponents bauen
+# Webkomponenten mit Stencil bauen
 
 ## Autor:  Thomas Schubert
 
