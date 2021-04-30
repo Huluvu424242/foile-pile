@@ -1,9 +1,9 @@
-Diese Folie zeigt kurz wie ein Stencilprojekt aufgesetzt werden kann.
+Diese Folie zeigt kurz wie ein Stenzilprojekt aufgesetzt werden kann.
 
 Bei dem genutzen Dialog kann zwischen drei Projektarten gewählt werden.
 
 Zum einen eine Ionic App.
 
-Zum anderen eine Stencil App. In dieser können Webkomponenten wie auch Ionic Komponenten genutzt werden.
+Zum anderen eine Stenzil App. In dieser können Webkomponenten wie auch Ionic Komponenten genutzt werden.
 
-Die dritte Projektart sind einzelne Webkomponenten, welche mit Stencil gebaut werden, die aber kein Stencil enthalten.
+Die dritte Projektart sind einzelne Webkomponenten, welche mit Stenzil gebaut werden, die aber kein Stenzil enthalten.
