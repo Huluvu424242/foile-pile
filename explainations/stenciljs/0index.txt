@@ -1,1 +1,1 @@
-slide1,  stencil, setup, states, ref, bi-binding, quellen, slide3
+slide1,  webcomponents, stencil, setup, states, ref, bi-binding, quellen, slide3
