@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<speak xmlns="http://www.w3.org/2001/10/synthesis"   version="1.0">
+
+  <p>
+    <s xml:lang="en-US">
+        For English, press <emphasis>one</emphasis>.
+    </s>
+    <s xml:lang="de-DE">
+       Das ist nur ein Beispiel für SSML
+    </s>
+  </p>
+
+</speak>

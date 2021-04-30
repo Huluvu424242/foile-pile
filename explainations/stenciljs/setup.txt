@@ -1,13 +1,9 @@
-<?xml version="1.0"?>
-<speak xmlns="http://www.w3.org/2001/10/synthesis"   version="1.0">
+Diese Folie zeigt kurz wie ein Stenzielprojekt aufgesetzt werden kann.
 
-  <p>
-    <s xml:lang="en-US">
-        For English, press <emphasis>one</emphasis>.
-    </s>
-    <s xml:lang="de-DE">
-       Das ist nur ein Beispiel für SSML
-    </s>
-  </p>
+Bei dem genutzen Dialog kann zwischen drei Projektarten gewählt werden.
 
-</speak>
+Zum einen eine Ionic App.
+
+Zum anderen eine Stenziel App. In dieser können Webkomponenten wie auch Ionic Komponenten genutzt werden.
+
+Die dritte Projektart sind einzelne Webkomponenten, welche mit Stenziel gebaut werden, die aber kein Stenziel enthalten.
