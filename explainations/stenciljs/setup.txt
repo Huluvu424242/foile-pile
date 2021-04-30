@@ -1,9 +1,22 @@
-Diese Folie zeigt kurz wie ein Stenzielprojekt aufgesetzt werden kann.
+<?xml version="1.0"?>
+<speak xmlns="http://www.w3.org/2001/10/synthesis"
+       xmlns:dc="http://purl.org/dc/elements/1.1/"
+       version="1.0">
+  <metadata>
+    <dc:title xml:lang="en">Telephone Menu: Level 1</dc:title>
+  </metadata>
 
-Bei dem genutzen Dialog kann zwischen drei Projektarten gewählt werden.
+  <p>
+    <s xml:lang="en-US">
+      <voice name="David" gender="male" age="25">
+        For English, press <emphasis>one</emphasis>.
+      </voice>
+    </s>
+    <s xml:lang="es-MX">
+      <voice name="Miguel" gender="male" age="25">
+        Para español, oprima el <emphasis>dos</emphasis>.
+      </voice>
+    </s>
+  </p>
 
-Zum einen eine Ionic App.
-
-Zum anderen eine Stenziel App. In dieser können Webkomponenten wie auch Ionic Komponenten genutzt werden.
-
-Die dritte Projektart sind einzelne Webkomponenten, welche mit Stenziel gebaut werden, die aber kein Stenziel enthalten.
+</speak>
