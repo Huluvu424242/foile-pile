@@ -1,8 +1,10 @@
 Hallo, mein Name ist Thomas Schubert.
 
 In den 90er Jahren habe ich Informatik an der technischen Universität Dresden studiert.
-Mein Interesse weckten vor allem Compilerbau, Programmierparadigmen, funktionale Programmierung und die Sprache Java.
-Zum Ende meines Studiums interessierte ich mich besonders für das Testen von Software und dabei speziell von Webseiten.
+Mein Interesse weckten vor allem Compilerbau, Programmierparadigmen,
+funktionale Programmierung und die Sprache Java.
+Zum Ende meines Studiums interessierte ich mich besonders für das Testen von
+Software und dabei speziell von Webseiten.
 Webanwendungen gab es zu dieser Zeit noch nicht, in der heute bekannten Form.
 
 Während meines Studiums entdeckte ich auch meine Leidenschaft für Open Source.
