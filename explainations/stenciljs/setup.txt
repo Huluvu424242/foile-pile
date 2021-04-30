@@ -1,4 +1,4 @@
-Diese Folie zeigt kurz wie ein Stenzilprojekt aufgesetzt werden kann.
+Diese Folie zeigt kurz wie ein Stenzil Projekt aufgesetzt werden kann.
 
 Bei dem genutzen Dialog kann zwischen drei Projektarten gewählt werden.
 
