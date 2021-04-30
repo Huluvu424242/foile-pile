@@ -14,3 +14,8 @@ Wenn b einen Wert hat, dann wird b der Variablen a zugewiesen.
 Führt aber die Coercion von b zu false weil b beispielsweise UNDEFINED ist, dann wird a die Zeichenkette Default Wert zugewiesen.
 Diese Konstruktion lässt sich gut zur Realisierung von Default Parameterwerten in Funktionen nutzen.
 
+Im Tipp Vier geht es noch einmal um die Konvertierung aber dieses Mal in eine number.
+Durch das Voranstellen eines Pluszeichens gefolgt von einer Zeichenkette wird versucht den Wert der Zeichenkette in eine Zahl zu wandeln. 
+Enthält die Zeichenkette keine gültige Zahl, so wird dennoch als Datentyp der Variablen number zugewiesen.
+Beim Versuch die Zahl auszugeben erscheint dann jedoch not a number als Wert. 
+
