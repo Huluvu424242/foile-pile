@@ -1,1 +1,1 @@
-![Stencil grober Aufbau](img/Stencil.svg)
+![Stencil grober Aufbau](img/Slide8-StencilEinCompiler.svg)
