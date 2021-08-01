@@ -3,7 +3,7 @@ Was sind nun Webkomponenten?
 Aktuell wird von Webkomponenten gesprochen, wenn diese die auf der Folie aufgezählten Spezifikationen nutzen.
 
 Dies sind: HTML Templates, Custom Elements, Shadow DOM und Importe.
-Wobei bei den Importen zunächst in Version 1 HTML Importe verwendet wurden.
+Wobei bei den Importen zunächst in Version eins HTML Importe verwendet wurden.
 Dieses Konzept wurde dann aber verworfen und durch ESM Importe aus dem Ecmascript Standard ersetzt.
 ESM steht hierbei für Ecmascript Module.
 
