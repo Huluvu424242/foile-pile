@@ -1,1 +1,1 @@
-![Stencil grober Aufbau](img/WebComponents.svg)
+![Stencil grober Aufbau](img/Slide2-Spezifikationen.svg)
