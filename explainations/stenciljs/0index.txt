@@ -1,2 +1,2 @@
-slide1, author, erwartungen, spezifikationen, domintegration,
+titel, author, erwartungen, spezifikationen, domintegration,
 stencil, setup, states, ref, bi-binding, quellen, slide3
