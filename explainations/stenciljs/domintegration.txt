@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
-   Ich freue mich auf die spannenden Dinge <lang xml:lang="en-US">Light DOM</lang>.
-   Die da kommen werden.
+   <lang xml:lang="en-US">DOM Integration</lang>
+
+   Auf dieser Folie sehen Sie wie eine Webkomponente als <lang xml:lang="en-US">TAG</lang> im DOM eingebaut wurde.
+   Hierbei wird zwischen dem <lang xml:lang="string">Light DOM</lang>im Browser und dem <lang xml:lang="en-US">Shadow DOM</lang> in der Webkomponente unterschieden.
+
 </speak>
