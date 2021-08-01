@@ -1,4 +1,4 @@
-<speak>
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
   Here are <say-as interpret-as="characters">SSML</say-as> samples.
   I can pause <break time="3s"/>.
   I can play a sound
