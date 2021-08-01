@@ -1,0 +1,14 @@
+Webkomponenten
+
+Was erwartet ein Nutzer von einer Webkomponente?
+
+Eine Webkomponente soll ein eigenständiges Stück Software sein.
+Sie soll eine bestimmte fachliche Aufgabe lösen.
+Sie soll wiederverwendbar sein.
+Ich möchte sie einfach als Tag ein einer Webseite einbauen können, ohne weitere Abhängigkeiten laden zu müssen.
+Die Komponente muss unabhängig vom Kontext funktionieren.
+Also egal in welcher Webseite ich die Komponente einbaue, sie soll immer gleichartig funktionieren.
+Sie soll mit anderen Webkomponenten kombinierbar sein.
+Durch die Kombination von Webkomponenten und einer hierarchischen Anordnung soll eine ganze Anwendung erstellt werden können.
+
+
