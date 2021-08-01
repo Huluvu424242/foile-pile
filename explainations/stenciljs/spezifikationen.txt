@@ -14,11 +14,11 @@ Beim Shadow DOM handelt es sich um ein kleinen DOM welcher den internen Aufbau d
 Er kann nur von der Webkomponente selbst verändert werden. Ein styling der Knoten ist von außen nicht möglich.
 In diesen Shadow DOM wird per Javascript das HTML Template eingefügt um dessen Inhalt darzustellen.
 
-Custom Elements sind nutzerdefinierte HTML Tags welche von der allgemeinen Klasse HTMLElement oder den
-spezifischen Klassen der nativen HTML Tags abgeleitet werden.
+Custom Elements sind nutzerdefinierte HTML Tags welche von der allgemeinen Klasse HTMLElement oder
+den spezifischen Klassen der nativen HTML Tags abgeleitet werden.
 Zu Unterscheidung von nativen HTML Tags, müssen Nutzerdefinierte im Namen mindestens ein Minus besitzen.
 
-Über den bekannten Link Tag im HTML, mit dem Javascript Dateien eingebunden werden können, lassen sich nun auch
-die fertig erstellten Bündel von Webkomponenten einbinden. Relevant ist hierbei die Angabe modul als Wert für das
-Typ Attribut.
+Über den bekannten Link Tag im HTML, mit dem Javascript Dateien eingebunden werden können,
+lassen sich nun auch die fertig erstellten Bündel von Webkomponenten einbinden.
+Relevant ist hierbei die Angabe modul als Wert für das Typ Attribut.
 
