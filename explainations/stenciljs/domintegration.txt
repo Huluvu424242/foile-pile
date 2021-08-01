@@ -1,9 +1,7 @@
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
         I am looking forward to the exciting things.
-        <lang xml:lang="es-MX">
-            Estoy deseando que lleguen las cosas emocionantes.
+        <lang xml:lang="en-US">
+            Light
         </lang>
-        <lang xml:lang="de-DE">
             Ich freue mich auf die spannenden Dinge.
-        </lang>
 </speak>
