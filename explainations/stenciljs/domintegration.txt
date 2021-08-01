@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
-   <p>Ich freue mich auf die spannenden Dinge <lang xml:lang="en-US">Light</lang>DOM.</p>
+   <p>Ich freue mich auf die spannenden Dinge <lang xml:lang="en-US">Light DOM</lang>.</p>
    <p><s>Ich freue mich auf die spannenden Dinge <lang xml:lang="en-US">Light</lang>DOM.</s></p>
 </speak>
