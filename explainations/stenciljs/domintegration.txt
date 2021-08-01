@@ -1,6 +1,6 @@
-<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de">
         I am looking forward to the exciting things.
-        <lang xml:lang="en-US">
+        <lang xml:lang="en">
             Light
         </lang>
             Ich freue mich auf die spannenden Dinge.
