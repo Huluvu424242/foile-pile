@@ -4,7 +4,7 @@
 
 Der Vortrag führt ein in den Bau von Webcomponenten mit Hilfe von Stencil.
 
-### :rocket: (Audio nur im Firefox vollständig verfügbar)
+### ✨ Audio nur im Firefox vollständig verfügbar ✨
 
 
 
