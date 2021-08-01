@@ -2,15 +2,15 @@
 
 ## Autor:  Thomas Schubert
 
-Der Vortrag gibt Antwort auf folgende Fragen:
+Der Vortrag soll Antwort auf folgende Fragen geben:
 
-* Was sind Webkomponenten
-* Warum brauchen wir Webkomponenten
-* Welche Probleme bleiben ungelöst
-* Was ist Stencil
-* Was kann Stencil
-* Wie baue ich mit Stencil Webkomponenten 
-* Welche Lösungen gibt es für bekannte Probleme
+* Was sind Webkomponenten?
+* Wofür benötigen wir Webkomponenten?
+* Welche Probleme bleiben ungelöst?
+* Was ist Stencil?
+* Was kann Stencil?
+* Wie baue ich mit Stencil Webkomponenten ?
+* Welche Lösungen gibt es für bekannte Probleme?
 
 ### ✨ Audio nur im Firefox vollständig verfügbar ✨
 

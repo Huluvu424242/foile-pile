@@ -1,5 +1,15 @@
 Herzlich willkommen zum Vortrag
 
-Webkomponenten bauen mit Stenzil.
+Webkomponenten mit Stenzil bauen.
 
 Schön, dass Sie sich die Zeit genommen haben.
+
+Nach dem Vortrag sollten Sie folgende Fragen beantworten können:
+Was sind Webkomponenten?
+Wofür benötigen wir Webkomponenten?
+Welche Probleme bleiben ungelöst?
+Was ist Stencil?
+Was kann Stencil?
+Wie baue ich mit Stencil Webkomponenten?
+Welche Lösungen gibt es für bekannte Probleme?
+
