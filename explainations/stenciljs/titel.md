@@ -12,7 +12,7 @@ Der Vortrag soll Antwort auf folgende Fragen geben:
 * Wie baue ich mit Stencil Webkomponenten ?
 * Welche Lösungen gibt es für bekannte Probleme?
 
-### ✨ Audio nur im Firefox vollständig verfügbar ✨
+### ✨ Audio nur im Chrome v92 und Nachfolger vollständig verfügbar ✨
 
 
 
