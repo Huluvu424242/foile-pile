@@ -1,4 +1,13 @@
-<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">
+    <voice name="en-US-JennyMultilingualNeural">
+        I am looking forward to the exciting things.
+        <lang xml:lang="es-MX">
+            Estoy deseando que lleguen las cosas emocionantes.
+        </lang>
+        <lang xml:lang="de-DE">
+            Ich freue mich auf die spannenden Dinge.
+        </lang>
+    </voice>
 Auf dieser Folie sehen Sie wie eine Webkomponente als TAG im DOM eingebaut wurde.
 Hierbei wird zwischen den <lang xml:lang="en-US">Light</lang> DOM im Browser und dem Shadow DOM in der Webkomponente unterschieden.
 </speak>
