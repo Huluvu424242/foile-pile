@@ -1,5 +1,6 @@
 titel, author, erwartungen, spezifikationen, domintegration, slots,
 frontendintegration, entkopplung, vanillaexample, stencil, lifecycle,
 stencilfeatures, virtualdom, hydratedapp, funktionalekomponenten,
-einheitlichesdesign, dpleinbinden,
+einheitlichesdesign, dpleinbinden, ccsvars, supportcssvars, supportcssrules,
+webworker, dedicatedsharedworker, serviceworker, featureswebworker,
 setup, states, ref, bi-binding, quellen, slide3
