@@ -1,4 +1,4 @@
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
 Auf dieser Folie sehen Sie wie eine Webkomponente als TAG im DOM eingebaut wurde.
-Hierbei wird zwischen den <lang xml:lang="en-EN">Light</lang> DOM im Browser und dem Shadow DOM in der Webkomponente unterschieden.
+Hierbei wird zwischen den <lang xml:lang="en-US">Light</lang> DOM im Browser und dem Shadow DOM in der Webkomponente unterschieden.
 </speak>
