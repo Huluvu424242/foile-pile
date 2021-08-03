@@ -7,8 +7,8 @@ Aktuell wird von Webkomponenten gesprochen, wenn diese die auf der Folie aufgez�
 
 Dies sind: <lang xml:lang="en-US">HTML Templates</lang>, Custom Elements, Shadow DOM und Importe.
 Wobei bei den Importen zunächst in Version eins HTML Importe verwendet wurden.
-Dieses Konzept wurde dann aber verworfen und durch ESM Importe aus dem Ecmascript Standard ersetzt.
-ESM steht hierbei für Ecmascript Module.
+Dieses Konzept wurde dann aber verworfen und durch <say-as interpret-as="characters">ESM</say-as> Importe aus dem Ecmascript Standard ersetzt.
+<say-as interpret-as="characters">ESM</say-as>steht hierbei für Ecmascript Module.
 
 HTML Templates stellen Platzhalter in HTML dar, welche vom Browser nicht angezeigt werden.
 Erst nachdem ein solcher Platzhalter per Javascript in den Browser DOM eingebunden wurde, wird er auch dargestellt.
