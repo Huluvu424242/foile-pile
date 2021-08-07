@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
 
-Herzlich willkommen zum Vortrag "Webkomponenten mit Stenzil bauen".
+Herzlich willkommen zum Vortrag "Webkomponenten mit <lang xml:lang="en-US">Stencil</lang> bauen".
 Schön, dass Sie sich die Zeit genommen haben.
 
 Nach dem Vortrag sollten Sie folgende Fragen beantworten können:

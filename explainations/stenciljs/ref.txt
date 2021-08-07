@@ -1,8 +1,12 @@
-Stencil stellt mit dem Dekorator AT-Element eine Möglichkeit bereit, die Referenz auf die HOST-Komponente zu injizieren. 
-Die HOST-komponente ist das TAG welches von der Stencil Komponente bereitgestellt wird.
+<?xml version="1.0"?>
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
 
-Weiterhin stellt Stencil für jedes TAG ein REF Attribute zur Verfügung. Diesem Attribut kann eine Funktion zugewiesen werden welche als Parameter ein HTML-Element erwartet.
+<lang xml:lang="en-US">Stencil</lang>stellt mit dem Dekorator AT-Element eine Möglichkeit bereit, die Referenz auf die HOST-Komponente zu injizieren.
+Die HOST-komponente ist das TAG welches von der <lang xml:lang="en-US">Stencil</lang> Komponente bereitgestellt wird.
+
+Weiterhin stellt <lang xml:lang="en-US">Stencil</lang> für jedes TAG ein REF Attribute zur Verfügung. Diesem Attribut kann eine Funktion zugewiesen werden welche als Parameter ein HTML-Element erwartet.
 Dieses HTML-Element stellt die Referenz auf das aktuell TAG bereit.
-Diese Referenz kann in einer Variablen abgelegt werden. 
+Diese Referenz kann in einer Variablen abgelegt werden.
 Dadurch wird es möglich über die Variable direkt auf die Werte des TAG zu zugreifen.
-Gegebenenfalls muss die Referenz vom Typ HTML-Element noch in den konkreten Datentyp des Tags konvertiert werden. 
+Gegebenenfalls muss die Referenz vom Typ HTML-Element noch in den konkreten Datentyp des Tags konvertiert werden.
+</speak>
