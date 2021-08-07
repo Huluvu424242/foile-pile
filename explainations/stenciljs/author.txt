@@ -15,8 +15,8 @@ Doch auch heute entwickle ich noch gern freie Software.
 Daher denke ich, dass meine größte Stärke in der selbstorganisierten Entwicklung freier Software besteht.
 
 Meine größte Schwäche hingegen ist eindeutig das Halten von Vorträgen.
-Dennoch besitze ich den Drang mein Wissen zu teilen. Da mir dies aber über das Halten von Präsentationen nicht
-möglich ist, suchte ich bereits früh nach Alternativen.
+Dennoch besitze ich den Drang mein Wissen zu teilen. Da mir dies aber über das Halten von Präsentationen nicht möglich ist,
+suchte ich bereits früh nach Alternativen.
 
 Dieses Projekt ist die bislang Beste von mir gefundene Alternative.
 Sie ist mit Sicherheit nicht perfekt und es gibt diverse Unlänglichkeiten, welche ich gern noch ausmerzen würde.
