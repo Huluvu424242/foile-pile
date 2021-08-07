@@ -1,18 +1,19 @@
-Herzlich willkommen zum Vortrag
+<?xml version="1.0"?>
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
 
-Webkomponenten mit Stenzil bauen.
-
+Herzlich willkommen zum Vortrag "Webkomponenten mit Stenzil bauen".
 Schön, dass Sie sich die Zeit genommen haben.
 
 Nach dem Vortrag sollten Sie folgende Fragen beantworten können:
 Was sind Webkomponenten?
 Wofür benötigen wir Webkomponenten?
 Welche Probleme bleiben ungelöst?
-Was ist Stencil?
-Was kann Stencil?
-Wie baue ich mit Stencil Webkomponenten?
+Was ist <lang xml:lang="en-US">Stencil</lang>?
+Was kann <lang xml:lang="en-US">Stencil</lang>?
+Wie baue ich mit <lang xml:lang="en-US">Stencil</lang> Webkomponenten?
 Welche Lösungen gibt es für bekannte Probleme?
 
-Die im Vortrag benutzten Bilder, stammen von meinem Flickr Account und sind Public Domain.
+Die im Vortrag benutzten Bilder, stammen von meinem Flickr Account und sind <lang xml:lang="en-US">Public Domain</lang>.
 Ich wollte damit sicherstellen, dass jeder diese Bilder nutzen, bearbeiten, und verteilen kann ohne auf Rechte achten zu müssen.
 Auch wollte ich unbedingt eine Namensnennung vermeiden, da dies oft technische Probleme verursacht.
+</speak>
