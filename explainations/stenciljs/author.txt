@@ -1,7 +1,10 @@
+<?xml version="1.0"?>
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
+
 Hallo, mein Name ist Thomas Schubert.
 
 In den 90er Jahren habe ich Informatik an der technischen Universität Dresden studiert.
-Mein Interesse weckten vor allem Compilerbau, Programmierparadigmen,
+Mein Interesse weckten vor allem <lang xml:lang="en-US">Compiler</lang>bau, Programmierparadigmen,
 funktionale Programmierung und die Sprache Java.
 Zum Ende meines Studiums interessierte ich mich besonders für das Testen von
 Software und dabei speziell von Webseiten.
@@ -19,5 +22,5 @@ Dieses Projekt ist die bislang Beste von mir gefundene Alternative.
 Sie ist mit Sicherheit nicht perfekt und es gibt diverse Unlänglichkeiten, welche ich gern noch ausmerzen würde.
 Dennoch ist es bislang die einzige Möglichkeit für mich, mein Wissen auf lockere Art zu teilen.
 
-
+</speak>
 
