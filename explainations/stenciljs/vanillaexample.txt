@@ -14,6 +14,6 @@ Im Wesentlichen ist eine Klasse von einem nativen <say-as interpret-as="characte
 ein <say-as interpret-as="characters">HTML</say-as> <lang xml:lang="en-US">Template</lang> zu definieren,
 ein Shadow Root zu erzeugen und das Template einzufügen und die Webkomponente beim Browser zu registrieren.
 
-Anschließend kann diese im HTML referenziert und benutzt werden.
+Anschließend kann diese im <say-as interpret-as="characters">HTML</say-as> referenziert und benutzt werden.
 
 </speak>
