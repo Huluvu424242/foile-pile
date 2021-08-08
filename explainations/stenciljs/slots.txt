@@ -1,4 +1,18 @@
 <?xml version="1.0"?>
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
+DOM Integration mit Slots
+
+Wenn im Light DOM zwischen dem Start- und Ende TAG der Webkomponente weitere HTML Strukturen als Kindelemente abgelegt wurden,
+so ist folgendes zu beachten:
+
+Bei Verwendung des Shadow DOM werden diese Strukturen vollständig durch den Inhalt der Webkomponente ersetzt.
+Sollen die Strukturen dennoch weiter dargestellt werden, so sind slots zu verwenden.
+Über Slots können die Kindelemente aus dem Light DOM im Shadow DOM platziert werden.
+Wichtig hierbei ist:
+Die Kindelemente bleiben Teil des Light DOM und können so auch weiterhin von außen stylistisch verändert werden.
+Im Shadow DOM wird nur eine Referenz (ein Slot) auf die Kindelemente im Light DOM abgelegt.
+
+Wird geanau ein unbenannter Slot verwendet so werden alle Kindelemente aus dem Light DOM mit dessen Ort verknüpft.
+Werden benannte Slots verwendet, so müssen die Kindelemente im Light DOM über Slot Namen zugeordnet werden.
 
 </speak>
