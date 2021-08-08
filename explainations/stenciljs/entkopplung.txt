@@ -21,7 +21,7 @@ Manchmal wird sich bei einer losen Kopplung dafür entschieden einen generischen
 Unter einem generischen <say-as interpret-as="characters">URL</say-as> soll ein <say-as interpret-as="characters">URL</say-as> verstanden werden welcher keine Versionsangabe der einzubindenden Komponente enthält.
 Dies kann zu Problemen führen, wenn ohne Absprache Komponenten aktualisiert werden.
 Die Fehlersuche gestaltet sich in dem Fall aufwändiger, da man nicht sofort damit rechnet, dass sich die Version einer Abhängigkeit über Nacht verändert hat.
-Auch benötigt es in diesem Fall eines intensiven <lang xml:lang="en-US">Monitorings</lang> um das Problem überhaupt zu bemerken.
+Auch benötigt es in diesem Fall eines intensiven <lang xml:lang="en-US">Monitoring</lang>s um das Problem überhaupt zu bemerken.
 
 
 </speak>
