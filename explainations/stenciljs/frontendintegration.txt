@@ -12,7 +12,7 @@ wie <lang xml:lang="en-US">Angular</lang>, <lang xml:lang="en-US">Vue</lang>, <l
 kann wegabstrahiert werden, da sich bei Webkomponenten auf die Benutzung von einheitlichen Browser Spezifikationen gestützt wird.
 Einzige Bedingung ist also, dass die benutzten <lang xml:lang="en-US">Frameworks</lang> die Nutzung dieser Browser API unterstützen.
 
-Über eine entsprechende Entkopplung der Deployments können auch die Releasezyklen wegabstrahiert werden.
+Über eine entsprechende Entkopplung der <lang xml:lang="en-US">Deployments</lang> können auch die Releasezyklen wegabstrahiert werden.
 Die einzelne Komponente wird vom jeweiligen Entwicklerteam zu beliebiger Zeit released und über vereinbarte Wege bereitgestellt.
 Die Einbindung in die Komponente eines anderen Teams erfolgt dann, wenn dieses Team es für richtig hält.
 
