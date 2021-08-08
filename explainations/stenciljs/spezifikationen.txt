@@ -3,25 +3,35 @@
 
 Was sind nun Webkomponenten?
 
-Aktuell wird von Webkomponenten gesprochen, wenn diese die auf der Folie aufgezählten Spezifikationen nutzen.
+Aktuell wird von Webkomponenten gesprochen,
+wenn diese die auf der Folie aufgezählten Spezifikationen nutzen.
 
-Dies sind: <lang xml:lang="en-US">HTML Templates</lang>, Custom Elements, Shadow DOM und Importe.
+Dies sind: <lang xml:lang="en-US">HTML Templates</lang>, <lang xml:lang="en-US">Custom Elements</lang>, <lang xml:lang="en-US">Shadow DOM</lang> und Importe.
+
 Wobei bei den Importen zunächst in Version eins HTML Importe verwendet wurden.
-Dieses Konzept wurde dann aber verworfen und durch <say-as interpret-as="characters">ESM</say-as> Importe aus dem Ecmascript Standard ersetzt.
+Dieses Konzept wurde dann aber verworfen und durch <say-as interpret-as="characters">ESM</say-as>Importe aus dem Ecmascript Standard ersetzt.
 <say-as interpret-as="characters">ESM</say-as>steht hierbei für Ecmascript Module.
 
-HTML Templates stellen Platzhalter in HTML dar, welche vom Browser nicht angezeigt werden.
+HTML Templates hingegen stellen Platzhalter in HTML dar.
+Diese werden vom Browser zunächst nicht angezeigt.
 Erst nachdem ein solcher Platzhalter per Javascript in den Browser DOM eingebunden wurde, wird er auch dargestellt.
 
-Beim Shadow DOM handelt es sich um ein kleinen DOM welcher den internen Aufbau der Webkomponente realisiert.
-Er kann nur von der Webkomponente selbst verändert werden. Ein styling der Knoten ist von außen nicht möglich.
-In diesen Shadow DOM wird per Javascript das HTML Template eingefügt um dessen Inhalt darzustellen.
+Beim <lang xml:lang="en-US">Shadow DOM</lang>handelt es sich um ein kleinen DOM welcher den internen Aufbau der Webkomponente realisiert.
+In diesen <lang xml:lang="en-US">Shadow DOM</lang>wird per Javascript das HTML Template eingefügt, um dessen Inhalt darzustellen.
+Die Nodes des <lang xml:lang="en-US">Shadow DOM</lang>können nur von der Webkomponente selbst gestyled werden.
+Ein styling der Knoten von außen ist nicht möglich.
+Der <lang xml:lang="en-US">Shadow DOM</lang>einer Webkomponente kann offen oder geschlossen sein.
+Ein offener <lang xml:lang="en-US">Shadow DOM</lang>kann per Javascript von außen gelesen und verändert werden.
+Bei einem geschlossenen <lang xml:lang="en-US">Shadow DOM</lang>besteht prinzipiell kein Zugriff von außen.
+Das Konzept <lang xml:lang="en-US">Shadow DOM</lang>ist schon sehr alt.
+Es wurde bereits früher von den Browserherstellern genutzt um die nativen HTML Elemente zu realisieren.
+Neu ist nur, die Herausgabe des Konzeptes als nutzbares Browser API.
 
-Custom Elements sind nutzerdefinierte HTML Tags welche von der allgemeinen Klasse HTMLElement
-oder den spezifischen Klassen der nativen HTML Tags abgeleitet werden.
+<lang xml:lang="en-US">Custom Elements</lang> sind nutzerdefinierte HTML Tags,
+welche von der allgemeinen Klasse HTMLElement oder den spezifischen Klassen der nativen HTML Tags abgeleitet werden.
 Zu Unterscheidung von nativen HTML Tags, müssen Nutzerdefinierte im Namen mindestens ein Minus besitzen.
 
-Über den bekannten Link Tag im HTML, mit dem Javascript Dateien eingebunden werden können,
+Über den bekannten Link TAG der Sprache HTML, mit dem Javascript Dateien eingebunden werden können,
 lassen sich nun auch die fertig erstellten Bündel von Webkomponenten einbinden.
 Relevant ist hierbei die Angabe modul als Wert für das Typ Attribut.
 </speak>
