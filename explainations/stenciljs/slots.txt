@@ -15,4 +15,12 @@ Im <lang xml:lang="en-US">Shadow</lang>DOM wird nur eine Referenz (ein Slot) auf
 Wird geanau ein unbenannter Slot verwendet so werden alle Kindelemente aus dem Light DOM mit dessen Ort verknüpft.
 Werden benannte Slots verwendet, so müssen die Kindelemente im <lang xml:lang="en-US">Light</lang>DOM über Slot Namen zugeordnet werden.
 
+Wird kein <lang xml:lang="en-US">Shadow</lang>DOM verwendet,
+so werden die Kindelemente mit den internen Elementen der Webkomponente verschmolzen.
+Alle Elemente sind dann weiterhin Teil des <lang xml:lang="en-US">Light</lang>DOM.
+Auch die Elemente der Webkomponente sind ohne einen <lang xml:lang="en-US">Shadow</lang>DOM  immer Teil des <lang xml:lang="en-US">Light</lang>DOM.
+Der <lang xml:lang="en-US">Light</lang>DOM lässt sich immer von außen stylen.
+
+Der Platz an dem die Kindelemente eingefügt werden, richtet sich in diesem Fall nach der Implementierung der Webkomponente.
+
 </speak>
