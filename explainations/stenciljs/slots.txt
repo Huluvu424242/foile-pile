@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
-DOM Integration mit Slots
+DOM Integration mit <lang xml:lang="en-US">Slots</lang>
 
 Wenn im <lang xml:lang="en-US">Light</lang>DOM zwischen dem Start- und Ende TAG der Webkomponente weitere HTML Strukturen als Kindelemente abgelegt wurden,
 so ist folgendes zu beachten:
