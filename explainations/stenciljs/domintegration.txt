@@ -5,7 +5,7 @@ DOM Integration
 Auf dieser Folie sehen Sie wie eine Webkomponente als <lang xml:lang="en-US">TAG</lang> im DOM eingebaut wurde.
 Hierbei wird zwischen dem <lang xml:lang="string">Light</lang>DOM im Browser und dem <lang xml:lang="en-US">Shadow</lang>DOM in der Webkomponente unterschieden.
 
-Der <lang xml:lang="string">Light</lang>DOM des Browsers kann von der Webseite per CSS gestyled werden.
+Der <lang xml:lang="string">Light</lang>DOM des Browsers kann von der Webseite per CSS ge<lang xml:lang="en-US">styled</lang>werden.
 Auch das Host <lang xml:lang="en-US">TAG</lang> der Webkomponente lässt sich noch von per CSS von der Webseite stylen.
 
 Der Shadow DOM der Webkomponente kann nur per Stylesheet von der Webkomponente selbst gestyled werden.
