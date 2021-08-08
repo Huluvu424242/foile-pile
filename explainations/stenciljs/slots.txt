@@ -13,7 +13,7 @@ Die Kindelemente bleiben Teil des <lang xml:lang="en-US">Light</lang>DOM und kö
 Im <lang xml:lang="en-US">Shadow</lang>DOM wird nur eine Referenz (ein <lang xml:lang="en-US">Slot</lang>) auf die Kindelemente im <lang xml:lang="en-US">Light</lang>DOM abgelegt.
 
 Wird genau ein unbenannter <lang xml:lang="en-US">Slot</lang> verwendet so werden alle Kindelemente aus dem Light DOM mit dessen Ort verknüpft.
-Werden benannte <lang xml:lang="en-US">Slots</lang> verwendet, so müssen die Kindelemente im <lang xml:lang="en-US">Light</lang>DOM über <lang xml:lang="en-US">Slot</lang> Namen zugeordnet werden.
+Werden jedoch benannte <lang xml:lang="en-US">Slots</lang> verwendet, so müssen die Kindelemente im <lang xml:lang="en-US">Light</lang>DOM über <lang xml:lang="en-US">Slot</lang> Namen zugeordnet werden.
 
 Wird kein <lang xml:lang="en-US">Shadow</lang>DOM verwendet,
 so werden die Kindelemente mit den internen Elementen der Webkomponente verschmolzen.
