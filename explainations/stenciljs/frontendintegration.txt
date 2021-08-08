@@ -7,7 +7,8 @@ Was bedeutet in diesem Fall "heterogenes Umfeld"?
 Gemeint ist, dass viele Teams Teile zu einem Gesamtprodukt z.B. einem Portal bereitstellen,
 dabei aber unterschiedliche Programmiersprachen, <lang xml:lang="en-US">Frameworks</lang>, Releasezyklen und Entwicklungsmethoden benutzen.
 
-Die Verwendung verschiedener Programmiersprachen und <lang xml:lang="en-US">Frameworks</lang> wie Angular, Vuejs, React, Stencil oder Java EE,
+Die Verwendung verschiedener Programmiersprachen und <lang xml:lang="en-US">Frameworks</lang>
+wie <lang xml:lang="en-US">Angular</lang>, <lang xml:lang="en-US">Vue</lang>, <lang xml:lang="en-US">React</lang>, <lang xml:lang="en-US">Stencil</lang> oder <lang xml:lang="en-US">Java EE</lang>,
 kann wegabstrahiert werden, da sich bei Webkomponenten auf die Benutzung von einheitlichen Browser Spezifikationen gestützt wird.
 Einzige Bedingung ist also, dass die benutzten <lang xml:lang="en-US">Frameworks</lang> die Nutzung dieser Browser API unterstützen.
 
