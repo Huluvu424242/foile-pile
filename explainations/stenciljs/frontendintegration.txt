@@ -5,11 +5,11 @@ Frontend Integration
 Webkomponenten unterstützen die Integration unterschiedlicher Fachlichkeit in einem heterogenen Umfeld.
 Was bedeutet in diesem Fall "heterogenes Umfeld"?
 Gemeint ist, dass viele Teams Teile zu einem Gesamtprodukt z.B. einem Portal bereitstellen,
-dabei aber unterschiedliche Programmiersprachen, Frameworks, Releasezyklen und Entwicklungsmethoden benutzen.
+dabei aber unterschiedliche Programmiersprachen, <lang xml:lang="en-US">Frameworks</lang>, Releasezyklen und Entwicklungsmethoden benutzen.
 
-Die Verwendung verschiedener Programmiersprachen und Frameworks wie Angular, Vuejs, React, Stencil oder Java EE,
+Die Verwendung verschiedener Programmiersprachen und <lang xml:lang="en-US">Frameworks</lang> wie Angular, Vuejs, React, Stencil oder Java EE,
 kann wegabstrahiert werden, da sich bei Webkomponenten auf die Benutzung von einheitlichen Browser Spezifikationen gestützt wird.
-Einzige Bedingung ist also, dass die benutzten Frameworks die Nutzung dieser Browser API unterstützen.
+Einzige Bedingung ist also, dass die benutzten <lang xml:lang="en-US">Frameworks</lang> die Nutzung dieser Browser API unterstützen.
 
 Über eine entsprechende Entkopplung der Deployments können auch die Releasezyklen wegabstrahiert werden.
 Die einzelne Komponente wird vom jeweiligen Entwicklerteam zu beliebiger Zeit released und über vereinbarte Wege bereitgestellt.
