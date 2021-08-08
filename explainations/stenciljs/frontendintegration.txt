@@ -12,8 +12,8 @@ kann wegabstrahiert werden, da sich bei Webkomponenten auf die Benutzung von ein
 Einzige Bedingung ist also, dass die benutzten Frameworks die Nutzung dieser Browser API unterstützen.
 
 Über eine entsprechende Entkopplung der Deployments können auch die Releasezyklen wegabstrahiert werden.
-Die einzelne Komponente wird vom jeweiligen Entwicklerteam zu beliebiger Zeit released und über einen neuen URL bereitgestellt.
-Die Einbindung in die Komponente eines anderen Teams erfolgt dann wenn dieses Team das möchte durch Anziehen des neuen URLs.
+Die einzelne Komponente wird vom jeweiligen Entwicklerteam zu beliebiger Zeit released und über vereinbarte Wege bereitgestellt.
+Die Einbindung in die Komponente eines anderen Teams erfolgt dann, wenn dieses Team es für richtig hält.
 
 
 </speak>
