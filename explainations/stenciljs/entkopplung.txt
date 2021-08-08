@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
+Entkopplung von Webkomponenten
+
+Abhängigkeiten zu anderen Webkomponenten können lose oder fest gekoppelt werden.
+Bei einer festen Kopplung werden die Abhängigkeiten im Javascript über Importe direkt mit in die zu erstellende Komponente kopiert.
+Bei einer losen  Kopplung hingegen werden die Abhängigkeiten autark über einen Server bereitgestellt und per URL in die zu erstellende Komponente integriert.
+Welche Kopplung genutzt wird, muss im Einzelfall der Architekt entscheiden.
+
+Auf der Folie ist eine lose Kopplung über URL dargestellt.
+Bei dieser Kopplungsart muss zusätzlich der Fall betrachtet werden, dass eine Komponente nicht geladen werden konnte.
+Dies kann passieren wenn deren Server down oder die Internetverbindung zu diesem Server gestört ist.
+Für diesen Fall sollte eine Fallbacklösung dargestellt werden.
+Im einfachsten Fall wäre dies ein Fehlerhinweis.
+Alle anderen Webkomponenten können jedoch weiter bereitgestellt werden und ihre Arbeit verrichten.
+
+Das wäre bei einer festen Kopplung anders.
+Dabei würde der Ausfall einer Komponente auch den Ausfall der importierten Komponenten bedeuten und ggf. zu einem Komplettausfall führen.
+
+Manchmal wird sich bei einer losen Kopplung dafür entschieden einen generischen URL zu verwenden.
+Unter einem generischen URL soll ein URL verstanden werden welcher keine Versionsangabe der einzubindenden Komponente enthält.
+Dies kann zu Problemen führen, wenn ohne Absprache Komponenten aktualisiert werden.
+Die Fehlersuche gestaltet sich in dem Fall aufwändiger, da man nicht sofort damit rechnet, dass sich die Version einer Abhängigkeit über Nacht verändert hat.
+Auch benötigt es in diesem Fall eines intensiven Monitorings um das Problem überhaupt zu bemerken.
+
+
+</speak>
