@@ -18,7 +18,7 @@ Erst nachdem ein solcher Platzhalter per Javascript in den Browser DOM eingebund
 
 Beim <lang xml:lang="en-US">Shadow</lang>DOM handelt es sich um ein kleinen DOM welcher den internen Aufbau der Webkomponente realisiert.
 In diesen <lang xml:lang="en-US">Shadow</lang>DOM wird per Javascript das HTML Template eingefügt, um dessen Inhalt darzustellen.
-Die Knoten des <lang xml:lang="en-US">Shadow DOM</lang>können nur von der Webkomponente selbst stylistisch gestaltet werden.
+Die Knoten des <lang xml:lang="en-US">Shadow</lang>DOM können nur von der Webkomponente selbst stylistisch gestaltet werden.
 Ein styling der Knoten von außen ist nicht möglich.
 Der <lang xml:lang="en-US">Shadow DOM</lang>einer Webkomponente kann offen oder geschlossen sein.
 Ein offener <lang xml:lang="en-US">Shadow</lang>DOM kann per Javascript von außen gelesen und verändert werden.
