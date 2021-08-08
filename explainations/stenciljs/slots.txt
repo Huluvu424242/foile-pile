@@ -6,14 +6,14 @@ Wenn im <lang xml:lang="en-US">Light</lang>DOM zwischen dem Start- und Ende TAG 
 so ist folgendes zu beachten:
 
 Bei Verwendung eines <lang xml:lang="en-US">Shadow</lang>DOM werden diese Strukturen vollständig durch den Inhalt der Webkomponente ersetzt.
-Sollen die Strukturen dennoch weiter dargestellt werden, so sind slots zu verwenden.
-Über Slots können die Kindelemente aus dem <lang xml:lang="en-US">Light</lang>DOM im Shadow DOM platziert werden.
+Sollen die Strukturen dennoch weiter dargestellt werden, so sind <lang xml:lang="en-US">Slots</lang> zu verwenden.
+Über <lang xml:lang="en-US">Slots</lang> können die Kindelemente aus dem <lang xml:lang="en-US">Light</lang>DOM im Shadow DOM platziert werden.
 Wichtig hierbei ist:
 Die Kindelemente bleiben Teil des <lang xml:lang="en-US">Light</lang>DOM und können so auch weiterhin von außen stylistisch verändert werden.
-Im <lang xml:lang="en-US">Shadow</lang>DOM wird nur eine Referenz (ein Slot) auf die Kindelemente im <lang xml:lang="en-US">Light</lang>DOM abgelegt.
+Im <lang xml:lang="en-US">Shadow</lang>DOM wird nur eine Referenz (ein <lang xml:lang="en-US">Slot</lang>) auf die Kindelemente im <lang xml:lang="en-US">Light</lang>DOM abgelegt.
 
-Wird geanau ein unbenannter Slot verwendet so werden alle Kindelemente aus dem Light DOM mit dessen Ort verknüpft.
-Werden benannte Slots verwendet, so müssen die Kindelemente im <lang xml:lang="en-US">Light</lang>DOM über Slot Namen zugeordnet werden.
+Wird genau ein unbenannter <lang xml:lang="en-US">Slot</lang> verwendet so werden alle Kindelemente aus dem Light DOM mit dessen Ort verknüpft.
+Werden benannte <lang xml:lang="en-US">Slots</lang> verwendet, so müssen die Kindelemente im <lang xml:lang="en-US">Light</lang>DOM über <lang xml:lang="en-US">Slot</lang> Namen zugeordnet werden.
 
 Wird kein <lang xml:lang="en-US">Shadow</lang>DOM verwendet,
 so werden die Kindelemente mit den internen Elementen der Webkomponente verschmolzen.
