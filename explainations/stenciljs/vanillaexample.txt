@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="de-DE">
+Pure Javascript Implementierung
+
+Möchte man eine Webkomponente ohne Nutzung von Frameworks erstellen, so ist dies möglich unterliegt aber Einschränkungen.
+Der komplette Kode und damit meine ich Javascript, CSS und HTML muss leider in einer Datei untergebracht werden.
+Möchte man diese drei Teile in unterschiedliche Dateien aufteilen, benötigt man sofort einen bundler wie webpack.
+Dies sind leider die Folgen der Entscheidung die Spezifikation HTML Importe zu verwerfen.
+
+Die Folie zeigt die wichtigsten Schritte und ein Kodebeispiel zur Erstellung einer puren Webkomponente in ES6.
+
+Im Wesentlichen ist eine Klasse von einem nativen HTML Element abzuleiten, ein HTML Template zu definieren,
+ein Shadow Root zu erzeugen und das Template einzufügen und die Webkomponente beim Browser zu registrieren.
+
+Anschließend kann diese im HTML referenziert und benutzt werden.
+
+</speak>
