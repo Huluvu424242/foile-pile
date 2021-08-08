@@ -10,7 +10,7 @@ Welche Kopplung genutzt wird, muss im Einzelfall der Architekt entscheiden.
 Auf der Folie ist eine lose Kopplung über <say-as interpret-as="characters">URL</say-as> dargestellt.
 Bei dieser Kopplungsart muss zusätzlich der Fall betrachtet werden, dass eine Komponente nicht geladen werden konnte.
 Dies kann passieren wenn deren Server down oder die Internetverbindung zu diesem Server gestört ist.
-Für diesen Fall sollte eine Fallbacklösung dargestellt werden.
+Für diesen Fall sollte eine <lang xml:lang="en-US">Fallback</lang>lösung dargestellt werden.
 Im einfachsten Fall wäre dies ein Fehlerhinweis.
 Alle anderen Webkomponenten können jedoch weiter bereitgestellt werden und ihre Arbeit verrichten.
 
