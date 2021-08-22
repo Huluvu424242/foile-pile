@@ -6,6 +6,6 @@ webworker, dedicatedsharedworker, serviceworker, featureswebworker,
 dev-example, dev-project, dev-sources, dev-komponente, dev-state, dev-render,
 dev-connected, dev-disconnected, dev-watcher, dev-willload, dev-fetcher,
 dev-periodicfetcher, dev-setter, dev-einbetten, dev-dom, dev-quellen,
-danke
+danke,
 
-# setup, states, ref, bi-binding, quellen
+setup, states, ref, bi-binding, quellen
