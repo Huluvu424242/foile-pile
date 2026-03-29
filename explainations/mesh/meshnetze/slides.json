@@ -1,0 +1,106 @@
+{
+  "title": "Mesh Netze - Grundlagen und Vergleich",
+  "slides": [
+    {
+      "id": "1",
+      "title": "Willkommen",
+      "content": "slide1.md",
+      "format": "md",
+      "audio": {
+        "type": "txt",
+        "src": "slide1.txt",
+        "lang": "de-DE",
+        "rate": 1.0,
+        "pitch": 1.0
+      }
+    },
+    {
+      "id": "2",
+      "title": "Quellen",
+      "content": "quellen.md",
+      "format": "md",
+      "audio": {
+        "type": "txt",
+        "src": "quellen.txt",
+        "lang": "de-DE"
+      }
+    },
+    {
+      "id": "3",
+      "title": "Installation",
+      "content": "installation.md",
+      "format": "md",
+      "audio": {
+        "type": "txt",
+        "src": "installation.txt",
+        "lang": "de-DE"
+      }
+    },
+    {
+      "id": "4",
+      "title": "Firmen Proxy",
+      "content": "firmenproxy.md",
+      "format": "md",
+      "audio": {
+        "type": "txt",
+        "src": "firmenproxy.txt",
+        "lang": "de-DE"
+      }
+    },
+    {
+      "id": "5",
+      "title": "Update",
+      "content": "update.md",
+      "format": "md",
+      "audio": {
+        "type": "txt",
+        "src": "update.txt",
+        "lang": "de-DE"
+      }
+    },
+    {
+      "id": "6",
+      "title": "Home",
+      "content": "home.md",
+      "format": "md",
+      "audio": {
+        "type": "txt",
+        "src": "home.txt",
+        "lang": "de-DE"
+      }
+    },
+    {
+      "id": "7",
+      "title": "Winpath",
+      "content": "winpath.md",
+      "format": "md",
+      "audio": {
+        "type": "txt",
+        "src": "winpath.txt",
+        "lang": "de-DE"
+      }
+    },
+    {
+      "id": "8",
+      "title": "MSYS Path",
+      "content": "msyspath.md",
+      "format": "md",
+      "audio": {
+        "type": "txt",
+        "src": "msyspath.txt",
+        "lang": "de-DE"
+      }
+    },
+    {
+      "id": "9",
+      "title": "Git",
+      "content": "git.md",
+      "format": "md",
+      "audio": {
+        "type": "txt",
+        "src": "git.txt",
+        "lang": "de-DE"
+      }
+    }
+  ]
+}
