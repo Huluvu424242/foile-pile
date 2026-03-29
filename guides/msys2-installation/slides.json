@@ -38,6 +38,17 @@
     },
     {
       "id": "4",
+      "title": "Firmen Proxy",
+      "content": "firmenproxy.md",
+      "format": "md",
+      "audio": {
+        "type": "txt",
+        "src": "firmenproxy.txt",
+        "lang": "de-DE"
+      }
+    },
+    {
+      "id": "5",
       "title": "Update",
       "content": "update.md",
       "format": "md",
@@ -48,7 +59,7 @@
       }
     },
     {
-      "id": "5",
+      "id": "6",
       "title": "Home",
       "content": "home.md",
       "format": "md",
@@ -59,7 +70,7 @@
       }
     },
     {
-      "id": "6",
+      "id": "7",
       "title": "Winpath",
       "content": "winpath.md",
       "format": "md",
@@ -69,8 +80,8 @@
         "lang": "de-DE"
       }
     },
-     {
-      "id": "7",
+    {
+      "id": "8",
       "title": "MSYS Path",
       "content": "msyspath.md",
       "format": "md",
@@ -81,8 +92,8 @@
       }
     },
     {
-      "id": "8",
-      "title": "Gith",
+      "id": "9",
+      "title": "Git",
       "content": "git.md",
       "format": "md",
       "audio": {
