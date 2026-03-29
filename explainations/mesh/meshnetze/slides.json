@@ -4,11 +4,11 @@
     {
       "id": "1",
       "title": "Willkommen",
-      "content": "slide1.md",
+      "content": "01-willkommen.md",
       "format": "md",
       "audio": {
         "type": "txt",
-        "src": "slide1.txt",
+        "src": "01-willkommen.txt",
         "lang": "de-DE",
         "rate": 1.0,
         "pitch": 1.0
@@ -17,90 +17,67 @@
     {
       "id": "2",
       "title": "Quellen",
-      "content": "quellen.md",
+      "content": "02-quellen.md",
       "format": "md",
       "audio": {
         "type": "txt",
-        "src": "quellen.txt",
+        "src": "02-quellen.txt",
         "lang": "de-DE"
       }
     },
     {
       "id": "3",
-      "title": "Installation",
-      "content": "installation.md",
-      "format": "md",
-      "audio": {
-        "type": "txt",
-        "src": "installation.txt",
-        "lang": "de-DE"
-      }
-    },
-    {
-      "id": "4",
-      "title": "Firmen Proxy",
-      "content": "firmenproxy.md",
-      "format": "md",
-      "audio": {
-        "type": "txt",
-        "src": "firmenproxy.txt",
-        "lang": "de-DE"
-      }
+      "title": "Konzept",
+      "content": "03-konzept.md",
+      "format": "md"
     },
     {
       "id": "5",
-      "title": "Update",
-      "content": "update.md",
-      "format": "md",
-      "audio": {
-        "type": "txt",
-        "src": "update.txt",
-        "lang": "de-DE"
-      }
+      "title": "Wifi Mesh",
+      "content": "05-wifi_mesh.md",
+      "format": "md"
     },
     {
       "id": "6",
-      "title": "Home",
-      "content": "home.md",
-      "format": "md",
-      "audio": {
-        "type": "txt",
-        "src": "home.txt",
-        "lang": "de-DE"
-      }
+      "title": "Thread Mesh",
+      "content": "06-thread_mesh.md",
+      "format": "md"
     },
     {
       "id": "7",
-      "title": "Winpath",
-      "content": "winpath.md",
-      "format": "md",
-      "audio": {
-        "type": "txt",
-        "src": "winpath.txt",
-        "lang": "de-DE"
-      }
+      "title": "Zigbee Mesh",
+      "content": "07-zigbee_mesh.md",
+      "format": "md"
     },
     {
       "id": "8",
-      "title": "MSYS Path",
-      "content": "msyspath.md",
-      "format": "md",
-      "audio": {
-        "type": "txt",
-        "src": "msyspath.txt",
-        "lang": "de-DE"
-      }
+      "title": "Bluetooth Mesh",
+      "content": "08-bluetooth_mesh.md",
+      "format": "md"
     },
     {
       "id": "9",
-      "title": "Git",
-      "content": "git.md",
-      "format": "md",
-      "audio": {
-        "type": "txt",
-        "src": "git.txt",
-        "lang": "de-DE"
-      }
+      "title": "LoRa Mesh",
+      "content": "09-lora_mesh.md",
+      "format": "md"
+    },
+    {
+      "id": "10",
+      "title": "HAM Mesh",
+      "content": "10-ham_mesh.md",
+      "format": "md"
+    },
+    {
+      "id": "11",
+      "title": "Pager Netze",
+      "content": "11-pager_networks.md",
+      "format": "md"
+    },
+    {
+      "id": "12",
+      "title": "Spezial Mesh Netze",
+      "content": "12-special_mesh.md",
+      "format": "md"
     }
   ]
 }
