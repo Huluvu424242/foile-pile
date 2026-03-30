@@ -29,55 +29,64 @@
       "id": "3",
       "title": "Konzept",
       "content": "03-konzept.md",
-      "format": "md"
+      "format": "md",
+      "showtime": 10
     },
     {
       "id": "5",
       "title": "Wifi Mesh",
       "content": "05-wifi_mesh.md",
-      "format": "md"
+      "format": "md",
+      "showtime": 10
     },
     {
       "id": "6",
       "title": "Thread Mesh",
       "content": "06-thread_mesh.md",
-      "format": "md"
+      "format": "md",
+      "showtime": 10
     },
     {
       "id": "7",
       "title": "Zigbee Mesh",
       "content": "07-zigbee_mesh.md",
-      "format": "md"
+      "format": "md",
+      "showtime": 10
     },
     {
       "id": "8",
       "title": "Bluetooth Mesh",
       "content": "08-bluetooth_mesh.md",
-      "format": "md"
+      "format": "md",
+      "showtime": 10
     },
     {
       "id": "9",
       "title": "LoRa Mesh",
       "content": "09-lora_mesh.md",
-      "format": "md"
+      "format": "md",
+      "showtime": 10
     },
     {
       "id": "10",
       "title": "HAM Mesh",
       "content": "10-ham_mesh.md",
-      "format": "md"
+      "format": "md",
+      "showtime": 10
     },
     {
       "id": "11",
       "title": "Pager Netze",
       "content": "11-pager_networks.md",
-      "format": "md"
+      "format": "md",
+      "showtime": 10
     },
     {
       "id": "12",
       "title": "Spezial Mesh Netze",
       "content": "12-special_mesh.md",
-      "format": "md"
+      "format": "md",
+      "showtime": 10
     }
   ]
 }
