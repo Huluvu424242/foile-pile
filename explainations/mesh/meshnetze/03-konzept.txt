@@ -1,0 +1,19 @@
+
+Meshnetze basieren auf einer dynamisch wechselnden Zahl an Knoten und Verbindungen.
+
+Sie sind charakterisiert durch folgende Eigenschaften:
+
+1. Jeder Knoten kann Daten weiterleiten.
+2. Es gibt im Netz keinen zentralen Router
+3. Das Routing der Daten erfolgt dynamisch und die Routen können schnell wechseln.
+
+Bekannte Vertreter der Mesh Technologie:
+
+WIFI Mesh
+Thread Mesh
+Zigbee Mesh
+Bluethooth / Smartphone Mesh
+LoRa Mesh / Low-Power Mesh
+Amateurfunk Mesh (HAM Mesh)
+Pager Netze (Broeadcast, kein echtes Mesh)
+Spezialformen (Forschung & Militär)
