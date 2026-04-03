@@ -3,9 +3,9 @@ Mesh-Netze basieren auf einer dynamisch wechselnden Zahl an Knoten und Verbindun
 
 Sie sind charakterisiert durch folgende Eigenschaften:
 
-1. Jeder Knoten kann Daten weiterleiten.
-2. Es gibt im Netz keinen zentralen Router
-3. Das Routing der Daten erfolgt dynamisch und die Routen können schnell wechseln.
+Erstens: Jeder Knoten kann Daten weiterleiten.
+Zweitens: Es gibt im Netz keinen zentralen Router
+Drittens: Das Routing der Daten erfolgt dynamisch und die Routen können schnell wechseln.
 
 Bekannte Vertreter der Mesh Technologie:
 
