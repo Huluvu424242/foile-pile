@@ -1,5 +1,5 @@
 
-Meshnetze basieren auf einer dynamisch wechselnden Zahl an Knoten und Verbindungen.
+Mesh-Netze basieren auf einer dynamisch wechselnden Zahl an Knoten und Verbindungen.
 
 Sie sind charakterisiert durch folgende Eigenschaften:
 
