@@ -1,5 +1,5 @@
 
-Mesh-Netze basieren auf einer dynamisch wechselnden Zahl an Knoten und Verbindungen.
+Die Mesch-Netze basieren auf einer dynamisch wechselnden Zahl an Knoten und Verbindungen.
 
 Sie sind charakterisiert durch folgende Eigenschaften:
 
