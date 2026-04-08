@@ -1,0 +1,91 @@
+<speak>
+    <p>
+        <s>
+            Auf dieser Folie geht es um das Thema
+            <emphasis level="moderate">WiFi Mesh</emphasis>,
+            also moderne, flächendeckende Funknetzwerke.
+        </s>
+    </p>
+
+    <p>
+        <s>
+            Das Hauptziel eines WiFi-Mesh-Systems ist es,
+            eine stabile und durchgängige WLAN-Abdeckung zu schaffen,
+            ohne Funklöcher und ohne Verbindungsabbrüche
+            beim Wechsel zwischen Access Points.
+        </s>
+        <break time="400ms"/>
+        <s>
+            Man spricht hier von
+            <emphasis level="moderate">nahtlosem Roaming</emphasis>.
+        </s>
+    </p>
+
+    <p>
+        <s>
+            Technisch besteht ein solches System aus mehreren sogenannten
+            Mesh Nodes,
+            also Access Points,
+            die im Gebäude verteilt sind.
+        </s>
+        <s>
+            Optional kann ein Controller eingesetzt werden,
+            der die Geräte zentral verwaltet.
+        </s>
+        <s>
+            Zusätzlich gibt es immer einen Router oder ein Gateway
+            als Übergang ins Internet.
+        </s>
+    </p>
+
+    <p>
+        <s>
+            Die Besonderheit liegt in der Funktionsweise:
+            Die einzelnen Knoten sind nicht nur mit Endgeräten verbunden,
+            sondern auch untereinander.
+        </s>
+        <s>
+            Sie bauen ein Netz auf,
+            in dem Daten von Knoten zu Knoten weitergeleitet werden können.
+        </s>
+        <s>
+            Dadurch wird die Reichweite deutlich erhöht,
+            ohne dass überall Kabel verlegt werden müssen.
+        </s>
+    </p>
+
+    <p>
+        <s>
+            Bei den technischen Eigenschaften
+            liegt die typische Reichweite im Innenbereich
+            bei etwa
+            <say-as interpret-as="cardinal">20</say-as>
+            bis
+            <say-as interpret-as="cardinal">50</say-as>
+            Metern.
+        </s>
+        <s>
+            Moderne Systeme erreichen Datenraten
+            von über einem Gigabit pro Sekunde.
+        </s>
+        <s>
+            Allerdings gibt es auch Grenzen,
+            insbesondere durch Funkinterferenzen
+            oder durch Verluste im sogenannten Backhaul,
+            also der Verbindung zwischen den Mesh-Knoten.
+        </s>
+    </p>
+
+    <p>
+        <s>
+            Eingesetzt wird WiFi Mesh heute vor allem
+            in privaten Haushalten,
+            in Büros
+            und auf größeren Geländen wie Campus-Netzen.
+        </s>
+        <s>
+            Also überall dort,
+            wo eine stabile und lückenlose WLAN-Abdeckung benötigt wird.
+        </s>
+    </p>
+</speak>
