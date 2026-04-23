@@ -13,14 +13,28 @@
     </header>
 
     <main class="content" aria-live="polite">
-      <section class="toolbar" aria-label="Sortierung">
-        <label for="sort-select">Sortierung</label>
-        <select id="sort-select" name="sort">
-          <option value="relevance">Relevanz</option>
-          <option value="alphabet">Alphabetisch (A–Z)</option>
-        </select>
+      <section class="toolbar" aria-label="Suche und Sortierung">
+        <label class="toolbar-field" for="search-input">
+          <span>Suche</span>
+          <input
+            id="search-input"
+            name="search"
+            type="search"
+            placeholder="Titel, Tags oder Beschreibung durchsuchen …"
+            autocomplete="off"
+          />
+        </label>
+
+        <label class="toolbar-field toolbar-field--sort" for="sort-select">
+          <span>Sortierung</span>
+          <select id="sort-select" name="sort">
+            <option value="relevance">Relevanz</option>
+            <option value="alphabet">Alphabetisch (A–Z)</option>
+          </select>
+        </label>
       </section>
 
+      <p id="result-summary" class="result-summary" hidden></p>
       <p id="status-message" class="status-message" hidden></p>
 
       <ul id="presentation-list" class="presentation-list" hidden></ul>
