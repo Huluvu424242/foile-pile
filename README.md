@@ -25,8 +25,19 @@ Als Nutzer möchte ich in einem Webportal Präsentationen finden, ansehen und al
 
 ## Repository-Konventionen
 - Standardisierte Präsentationsstruktur: `docs/presentation-structure.md`
+- Entwickler-Workflow ohne Node.js: `docs/developer-workflow.md`
 - Validierungsskript: `python scripts/validate_repository_structure.py`
 
 - Zentralen Suchindex erzeugen: `python scripts/generate_search_index.py`
 - Suchindex auf Aktualität prüfen: `python scripts/check_search_index.py`
 
+## Quickstart (ohne Node.js)
+
+```bash
+python3 scripts/validate_repository_structure.py
+python3 scripts/generate_search_index.py
+python3 scripts/check_search_index.py
+python3 -m http.server 8080
+```
+
+Danach ist das Portal lokal unter <http://localhost:8080/> erreichbar.
