@@ -6,10 +6,20 @@ const searchInput = document.getElementById("search-input");
 const listElement = document.getElementById("presentation-list");
 const statusElement = document.getElementById("status-message");
 const resultSummaryElement = document.getElementById("result-summary");
+const tagFiltersElement = document.getElementById("tag-filters");
+const languageFiltersElement = document.getElementById("language-filters");
+const categoryFiltersElement = document.getElementById("category-filters");
+const activeFiltersContainerElement = document.getElementById("active-filters");
+const activeFilterChipsElement = document.getElementById("active-filter-chips");
 
 let loadedPresentations = [];
 let debounceTimerId = null;
 const searchCache = new Map();
+const selectedFilters = {
+  tags: new Set(),
+  languages: new Set(),
+  categories: new Set(),
+};
 
 function showStatus(message) {
   statusElement.textContent = message;
@@ -29,6 +39,20 @@ function extractCategory(path) {
 
   const [category] = path.split("/");
   return category || "Unbekannter Bereich";
+}
+
+function getCategoryLabel(presentation) {
+  return extractCategory(presentation.path);
+}
+
+function getLanguageLabel(languageCode) {
+  if (languageCode === "de") {
+    return "Deutsch";
+  }
+  if (languageCode === "en") {
+    return "Englisch";
+  }
+  return languageCode || "Unbekannt";
 }
 
 function escapeHtml(text) {
@@ -122,36 +146,206 @@ function sortPresentations(presentations, mode) {
 }
 
 function updateSummary(resultCount, query) {
-  if (!query) {
+  const hasQuery = Boolean(query);
+  const hasFacets =
+    selectedFilters.tags.size > 0 || selectedFilters.languages.size > 0 || selectedFilters.categories.size > 0;
+
+  if (!hasQuery && !hasFacets) {
     resultSummaryElement.textContent = `${resultCount} Präsentationen verfügbar.`;
     resultSummaryElement.hidden = false;
     return;
   }
 
-  resultSummaryElement.textContent = `${resultCount} Treffer für „${query}“.`;
+  if (hasQuery) {
+    resultSummaryElement.textContent = `${resultCount} Treffer für „${query}“.`;
+    resultSummaryElement.hidden = false;
+    return;
+  }
+
+  resultSummaryElement.textContent = `${resultCount} Treffer mit aktiven Filtern.`;
   resultSummaryElement.hidden = false;
 }
 
 function filterPresentations(queryTokens) {
-  if (!queryTokens.length) {
-    return loadedPresentations;
-  }
-
-  const cacheKey = queryTokens.join("|");
+  const cacheKey = [
+    queryTokens.join("|"),
+    [...selectedFilters.tags].sort().join("|"),
+    [...selectedFilters.languages].sort().join("|"),
+    [...selectedFilters.categories].sort().join("|"),
+  ].join("::");
   if (searchCache.has(cacheKey)) {
     return searchCache.get(cacheKey);
   }
 
   const filtered = loadedPresentations.filter((presentation) => {
-    const haystack = normalizeText(
-      presentation.searchText ||
-        `${presentation.title || ""} ${presentation.description || ""} ${(presentation.tags || []).join(" ")}`
-    );
-    return queryTokens.every((token) => haystack.includes(token));
+    const matchesSearch = !queryTokens.length
+      ? true
+      : queryTokens.every((token) =>
+          normalizeText(
+            presentation.searchText ||
+              `${presentation.title || ""} ${presentation.description || ""} ${(presentation.tags || []).join(" ")}`
+          ).includes(token)
+        );
+    const matchesTags =
+      selectedFilters.tags.size === 0 ||
+      [...selectedFilters.tags].every((tag) => (presentation.tags || []).includes(tag));
+    const matchesLanguage =
+      selectedFilters.languages.size === 0 || selectedFilters.languages.has(presentation.language || "unbekannt");
+    const matchesCategory =
+      selectedFilters.categories.size === 0 || selectedFilters.categories.has(getCategoryLabel(presentation));
+
+    return matchesSearch && matchesTags && matchesLanguage && matchesCategory;
   });
 
   searchCache.set(cacheKey, filtered);
   return filtered;
+}
+
+function createFilterCheckbox(name, value, label, count) {
+  return `
+    <label class="filter-option">
+      <input type="checkbox" name="${name}" value="${escapeHtml(value)}" />
+      <span>${escapeHtml(label)} <small>(${count})</small></span>
+    </label>
+  `;
+}
+
+function renderFilterOptions() {
+  const tagCounter = new Map();
+  const languageCounter = new Map();
+  const categoryCounter = new Map();
+
+  loadedPresentations.forEach((presentation) => {
+    (presentation.tags || []).forEach((tag) => {
+      tagCounter.set(tag, (tagCounter.get(tag) || 0) + 1);
+    });
+
+    const language = presentation.language || "unbekannt";
+    languageCounter.set(language, (languageCounter.get(language) || 0) + 1);
+
+    const category = getCategoryLabel(presentation);
+    categoryCounter.set(category, (categoryCounter.get(category) || 0) + 1);
+  });
+
+  const tagOptions = [...tagCounter.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0], "de"))
+    .map(([tag, count]) => createFilterCheckbox("tag", tag, tag, count))
+    .join("");
+  tagFiltersElement.innerHTML = tagOptions || '<p class="filter-empty">Keine Tags verfügbar.</p>';
+
+  const languageOptions = [...languageCounter.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0], "de"))
+    .map(([language, count]) => createFilterCheckbox("language", language, getLanguageLabel(language), count))
+    .join("");
+  languageFiltersElement.innerHTML = languageOptions || '<p class="filter-empty">Keine Sprachen verfügbar.</p>';
+
+  const categoryOptions = [...categoryCounter.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0], "de"))
+    .map(([category, count]) => createFilterCheckbox("category", category, category, count))
+    .join("");
+  categoryFiltersElement.innerHTML = categoryOptions || '<p class="filter-empty">Keine Bereiche verfügbar.</p>';
+
+  syncFilterSelections();
+}
+
+function syncFilterSelections() {
+  tagFiltersElement.querySelectorAll('input[type="checkbox"]').forEach((input) => {
+    input.checked = selectedFilters.tags.has(input.value);
+  });
+  languageFiltersElement.querySelectorAll('input[type="checkbox"]').forEach((input) => {
+    input.checked = selectedFilters.languages.has(input.value);
+  });
+  categoryFiltersElement.querySelectorAll('input[type="checkbox"]').forEach((input) => {
+    input.checked = selectedFilters.categories.has(input.value);
+  });
+}
+
+function renderActiveFilters() {
+  const chips = [];
+
+  selectedFilters.tags.forEach((tag) => {
+    chips.push({ type: "tag", value: tag, label: `Tag: ${tag}` });
+  });
+  selectedFilters.languages.forEach((language) => {
+    chips.push({ type: "language", value: language, label: `Sprache: ${getLanguageLabel(language)}` });
+  });
+  selectedFilters.categories.forEach((category) => {
+    chips.push({ type: "category", value: category, label: `Bereich: ${category}` });
+  });
+
+  if (!chips.length) {
+    activeFiltersContainerElement.hidden = true;
+    activeFilterChipsElement.innerHTML = "";
+    return;
+  }
+
+  activeFilterChipsElement.innerHTML = chips
+    .map(
+      (chip) => `
+      <button class="active-filter-chip" type="button" data-filter-type="${chip.type}" data-filter-value="${escapeHtml(chip.value)}">
+        <span>${escapeHtml(chip.label)}</span>
+        <span aria-hidden="true">×</span>
+      </button>
+    `
+    )
+    .join("");
+
+  activeFiltersContainerElement.hidden = false;
+}
+
+function setFilterValue(filterType, value, isEnabled) {
+  const mapping = {
+    tag: selectedFilters.tags,
+    language: selectedFilters.languages,
+    category: selectedFilters.categories,
+  };
+  const targetSet = mapping[filterType];
+  if (!targetSet) {
+    return;
+  }
+
+  if (isEnabled) {
+    targetSet.add(value);
+  } else {
+    targetSet.delete(value);
+  }
+}
+
+function onFilterChange(event) {
+  const target = event.target;
+  if (!(target instanceof HTMLInputElement) || target.type !== "checkbox") {
+    return;
+  }
+
+  setFilterValue(target.name, target.value, target.checked);
+  searchCache.clear();
+  syncFilterSelections();
+  renderActiveFilters();
+  updateList();
+}
+
+function onActiveFilterClick(event) {
+  const button = event.target.closest(".active-filter-chip");
+  if (!button) {
+    return;
+  }
+
+  const filterType = button.getAttribute("data-filter-type");
+  const filterValue = button.getAttribute("data-filter-value");
+  if (!filterType || !filterValue) {
+    return;
+  }
+
+  setFilterValue(filterType, filterValue, false);
+  searchCache.clear();
+  syncFilterSelections();
+  renderActiveFilters();
+  updateList();
+}
+
+function onSearchInput() {
+  window.clearTimeout(debounceTimerId);
+  debounceTimerId = window.setTimeout(updateList, SEARCH_DEBOUNCE_MS);
 }
 
 function updateList() {
@@ -162,11 +356,6 @@ function updateList() {
   const sorted = sortPresentations(filtered, selectedSort);
   updateSummary(sorted.length, rawQuery);
   renderList(sorted, queryTokens);
-}
-
-function onSearchInput() {
-  window.clearTimeout(debounceTimerId);
-  debounceTimerId = window.setTimeout(updateList, SEARCH_DEBOUNCE_MS);
 }
 
 async function loadPresentations() {
@@ -181,6 +370,8 @@ async function loadPresentations() {
     const data = await response.json();
     loadedPresentations = Array.isArray(data.presentations) ? data.presentations : [];
     searchCache.clear();
+    renderFilterOptions();
+    renderActiveFilters();
     updateList();
   } catch (error) {
     console.error(error);
@@ -190,4 +381,8 @@ async function loadPresentations() {
 
 sortSelect.addEventListener("change", updateList);
 searchInput.addEventListener("input", onSearchInput);
+tagFiltersElement.addEventListener("change", onFilterChange);
+languageFiltersElement.addEventListener("change", onFilterChange);
+categoryFiltersElement.addEventListener("change", onFilterChange);
+activeFilterChipsElement.addEventListener("click", onActiveFilterClick);
 loadPresentations();
