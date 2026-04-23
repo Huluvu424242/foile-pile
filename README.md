@@ -22,3 +22,8 @@ Als Nutzer möchte ich in einem Webportal Präsentationen finden, ansehen und al
 - Sehr große Präsentationen können clientseitiges ZIP-Bauen verlangsamen → progress indicator + Web Worker einplanen.
 - CORS/Path-Probleme bei nicht standardisiertem Hosting vermeiden (nur relative Pfade, keine absoluten host-spezifischen URLs).
 - Frühzeitiger Vertragstest mit `sld-slideshow-viewer` reduziert Integrationsrisiko.
+
+## Repository-Konventionen
+- Standardisierte Präsentationsstruktur: `docs/presentation-structure.md`
+- Validierungsskript: `python scripts/validate_repository_structure.py`
+
