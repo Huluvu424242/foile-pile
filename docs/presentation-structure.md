@@ -55,3 +55,31 @@ python scripts/validate_repository_structure.py
 ```
 
 Bei Verstößen gibt das Skript verständliche Fehler inkl. Dateipfad aus und beendet sich mit Exit-Code `1`.
+
+
+## Zentraler Suchindex (`index.json`)
+
+Im Repository-Root wird ein zentraler Suchindex mit versioniertem Schema gepflegt:
+
+- Datei: `index.json`
+- Feld `schemaVersion`: aktuelle Schema-Version des Indexformats
+- Feld `presentations`: Liste aller Präsentationen inkl. Suchfelder und Dateireferenzen
+
+Pro Eintrag werden u. a. diese Informationen bereitgestellt:
+
+- `title`, `description`, `language`, `tags`, `path`
+- `searchText` (voraggregierter Suchtext für clientseitige Suche)
+- `slideCount`
+- `files` mit Referenzen auf `manifest.json`, `slides.json`, `index.html`, `0tags.txt`, `0index.txt`
+
+Erzeugung (reproduzierbar, ohne Node.js):
+
+```bash
+python scripts/generate_search_index.py
+```
+
+Aktualitätsprüfung (lokal/CI):
+
+```bash
+python scripts/check_search_index.py
+```

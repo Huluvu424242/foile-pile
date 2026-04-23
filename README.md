@@ -27,3 +27,6 @@ Als Nutzer möchte ich in einem Webportal Präsentationen finden, ansehen und al
 - Standardisierte Präsentationsstruktur: `docs/presentation-structure.md`
 - Validierungsskript: `python scripts/validate_repository_structure.py`
 
+- Zentralen Suchindex erzeugen: `python scripts/generate_search_index.py`
+- Suchindex auf Aktualität prüfen: `python scripts/check_search_index.py`
+

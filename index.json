@@ -1,0 +1,254 @@
+{
+  "presentations": [
+    {
+      "description": "Präsentation im Bereich \"evaluationen\" zum Thema \"Community Tools\".",
+      "files": {
+        "fulltext": "evaluationen/community-tools/0index.txt",
+        "manifest": "evaluationen/community-tools/manifest.json",
+        "slides": "evaluationen/community-tools/slides.json",
+        "tags": "evaluationen/community-tools/0tags.txt",
+        "viewer": "evaluationen/community-tools/index.html"
+      },
+      "language": "de",
+      "path": "evaluationen/community-tools",
+      "searchText": "Community Tools Präsentation im Bereich \"evaluationen\" zum Thema \"Community Tools\". groupware community evaluation tools de",
+      "slideCount": 7,
+      "tags": [
+        "groupware",
+        "community",
+        "evaluation",
+        "tools"
+      ],
+      "title": "Community Tools"
+    },
+    {
+      "description": "Präsentation im Bereich \"explainations\" zum Thema \"Grundlagen\".",
+      "files": {
+        "fulltext": "explainations/javascript/grundlagen/0index.txt",
+        "manifest": "explainations/javascript/grundlagen/manifest.json",
+        "slides": "explainations/javascript/grundlagen/slides.json",
+        "tags": "explainations/javascript/grundlagen/0tags.txt",
+        "viewer": "explainations/javascript/grundlagen/index.html"
+      },
+      "language": "de",
+      "path": "explainations/javascript/grundlagen",
+      "searchText": "Grundlagen Präsentation im Bereich \"explainations\" zum Thema \"Grundlagen\". javascript begriffe konzepte grundlagen de",
+      "slideCount": 12,
+      "tags": [
+        "javascript",
+        "begriffe",
+        "konzepte",
+        "grundlagen"
+      ],
+      "title": "Grundlagen"
+    },
+    {
+      "description": "Präsentation im Bereich \"explainations\" zum Thema \"Jsonschema\".",
+      "files": {
+        "fulltext": "explainations/json/jsonschema/0index.txt",
+        "manifest": "explainations/json/jsonschema/manifest.json",
+        "slides": "explainations/json/jsonschema/slides.json",
+        "tags": "explainations/json/jsonschema/0tags.txt",
+        "viewer": "explainations/json/jsonschema/index.html"
+      },
+      "language": "de",
+      "path": "explainations/json/jsonschema",
+      "searchText": "Jsonschema Präsentation im Bereich \"explainations\" zum Thema \"Jsonschema\". json schema cdc de",
+      "slideCount": 3,
+      "tags": [
+        "json",
+        "schema",
+        "cdc"
+      ],
+      "title": "Jsonschema"
+    },
+    {
+      "description": "Präsentation im Bereich \"explainations\" zum Thema \"Meshnetze\".",
+      "files": {
+        "fulltext": "explainations/mesh/meshnetze/0index.txt",
+        "manifest": "explainations/mesh/meshnetze/manifest.json",
+        "slides": "explainations/mesh/meshnetze/slides.json",
+        "tags": "explainations/mesh/meshnetze/0tags.txt",
+        "viewer": "explainations/mesh/meshnetze/index.html"
+      },
+      "language": "de",
+      "path": "explainations/mesh/meshnetze",
+      "searchText": "Meshnetze Präsentation im Bereich \"explainations\" zum Thema \"Meshnetze\". slideshow mesh netze mesh grundlagen de",
+      "slideCount": 11,
+      "tags": [
+        "slideshow",
+        "mesh netze",
+        "mesh",
+        "grundlagen"
+      ],
+      "title": "Meshnetze"
+    },
+    {
+      "description": "Präsentation im Bereich \"explainations\" zum Thema \"Stenciljs\".",
+      "files": {
+        "fulltext": "explainations/stenciljs/0index.txt",
+        "manifest": "explainations/stenciljs/manifest.json",
+        "slides": "explainations/stenciljs/slides.json",
+        "tags": "explainations/stenciljs/0tags.txt",
+        "viewer": "explainations/stenciljs/index.html"
+      },
+      "language": "de",
+      "path": "explainations/stenciljs",
+      "searchText": "Stenciljs Präsentation im Bereich \"explainations\" zum Thema \"Stenciljs\". stenciljs begriffe konzepte grundlagen de",
+      "slideCount": 46,
+      "tags": [
+        "stenciljs",
+        "begriffe",
+        "konzepte",
+        "grundlagen"
+      ],
+      "title": "Stenciljs"
+    },
+    {
+      "description": "Präsentation im Bereich \"explainations\" zum Thema \"Unittest\".",
+      "files": {
+        "fulltext": "explainations/test/unittest/0index.txt",
+        "manifest": "explainations/test/unittest/manifest.json",
+        "slides": "explainations/test/unittest/slides.json",
+        "tags": "explainations/test/unittest/0tags.txt",
+        "viewer": "explainations/test/unittest/index.html"
+      },
+      "language": "de",
+      "path": "explainations/test/unittest",
+      "searchText": "Unittest Präsentation im Bereich \"explainations\" zum Thema \"Unittest\". test unitest de",
+      "slideCount": 3,
+      "tags": [
+        "test",
+        "unitest"
+      ],
+      "title": "Unittest"
+    },
+    {
+      "description": "Präsentation im Bereich \"explainations\" zum Thema \"Designrules\".",
+      "files": {
+        "fulltext": "explainations/ux/designrules/0index.txt",
+        "manifest": "explainations/ux/designrules/manifest.json",
+        "slides": "explainations/ux/designrules/slides.json",
+        "tags": "explainations/ux/designrules/0tags.txt",
+        "viewer": "explainations/ux/designrules/index.html"
+      },
+      "language": "de",
+      "path": "explainations/ux/designrules",
+      "searchText": "Designrules Präsentation im Bereich \"explainations\" zum Thema \"Designrules\". ux design entscheidungen gui regeln de",
+      "slideCount": 4,
+      "tags": [
+        "ux",
+        "design",
+        "entscheidungen",
+        "gui",
+        "regeln"
+      ],
+      "title": "Designrules"
+    },
+    {
+      "description": "Präsentation im Bereich \"guides\" zum Thema \"Bddtesting\".",
+      "files": {
+        "fulltext": "guides/bddtesting/0index.txt",
+        "manifest": "guides/bddtesting/manifest.json",
+        "slides": "guides/bddtesting/slides.json",
+        "tags": "guides/bddtesting/0tags.txt",
+        "viewer": "guides/bddtesting/index.html"
+      },
+      "language": "de",
+      "path": "guides/bddtesting",
+      "searchText": "Bddtesting Präsentation im Bereich \"guides\" zum Thema \"Bddtesting\". bdd cucumber e2e testing de",
+      "slideCount": 5,
+      "tags": [
+        "bdd",
+        "cucumber",
+        "e2e",
+        "testing"
+      ],
+      "title": "Bddtesting"
+    },
+    {
+      "description": "Präsentation im Bereich \"guides\" zum Thema \"Msys2 Installation\".",
+      "files": {
+        "fulltext": "guides/msys2-installation/0index.txt",
+        "manifest": "guides/msys2-installation/manifest.json",
+        "slides": "guides/msys2-installation/slides.json",
+        "tags": "guides/msys2-installation/0tags.txt",
+        "viewer": "guides/msys2-installation/index.html"
+      },
+      "language": "de",
+      "path": "guides/msys2-installation",
+      "searchText": "Msys2 Installation Präsentation im Bereich \"guides\" zum Thema \"Msys2 Installation\". msys2 howto installation configuration de",
+      "slideCount": 9,
+      "tags": [
+        "msys2",
+        "howto",
+        "installation",
+        "configuration"
+      ],
+      "title": "Msys2 Installation"
+    },
+    {
+      "description": "Präsentation im Bereich \"projects\" zum Thema \"Foile Pile\".",
+      "files": {
+        "fulltext": "projects/foile-pile/0index.txt",
+        "manifest": "projects/foile-pile/manifest.json",
+        "slides": "projects/foile-pile/slides.json",
+        "tags": "projects/foile-pile/0tags.txt",
+        "viewer": "projects/foile-pile/index.html"
+      },
+      "language": "de",
+      "path": "projects/foile-pile",
+      "searchText": "Foile Pile Präsentation im Bereich \"projects\" zum Thema \"Foile Pile\". foile slides de",
+      "slideCount": 3,
+      "tags": [
+        "foile",
+        "slides"
+      ],
+      "title": "Foile Pile"
+    },
+    {
+      "description": "Präsentation im Bereich \"projects\" zum Thema \"Honey Slideshow\".",
+      "files": {
+        "fulltext": "projects/honey-slideshow/0index.txt",
+        "manifest": "projects/honey-slideshow/manifest.json",
+        "slides": "projects/honey-slideshow/slides.json",
+        "tags": "projects/honey-slideshow/0tags.txt",
+        "viewer": "projects/honey-slideshow/index.html"
+      },
+      "language": "de",
+      "path": "projects/honey-slideshow",
+      "searchText": "Honey Slideshow Präsentation im Bereich \"projects\" zum Thema \"Honey Slideshow\". slideshow slidecast slides audio de",
+      "slideCount": 3,
+      "tags": [
+        "slideshow",
+        "slidecast",
+        "slides",
+        "audio"
+      ],
+      "title": "Honey Slideshow"
+    },
+    {
+      "description": "Präsentation im Bereich \"projects\" zum Thema \"Jenkins Monitor\".",
+      "files": {
+        "fulltext": "projects/jenkins-monitor/0index.txt",
+        "manifest": "projects/jenkins-monitor/manifest.json",
+        "slides": "projects/jenkins-monitor/slides.json",
+        "tags": "projects/jenkins-monitor/0tags.txt",
+        "viewer": "projects/jenkins-monitor/index.html"
+      },
+      "language": "de",
+      "path": "projects/jenkins-monitor",
+      "searchText": "Jenkins Monitor Präsentation im Bereich \"projects\" zum Thema \"Jenkins Monitor\". jenkins monitor java jenkinsmonitor devops de",
+      "slideCount": 3,
+      "tags": [
+        "jenkins",
+        "monitor",
+        "java",
+        "jenkinsmonitor",
+        "devops"
+      ],
+      "title": "Jenkins Monitor"
+    }
+  ],
+  "schemaVersion": "1.0.0"
+}
