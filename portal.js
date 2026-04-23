@@ -247,6 +247,48 @@ async function fetchJson(url, purpose) {
   return response.json();
 }
 
+function formatValidationIssues(title, issues) {
+  if (!issues.length) {
+    return title;
+  }
+  return `${title}\n${issues.map((issue) => `- ${issue}`).join("\n")}`;
+}
+
+function resolveChecksumEntries(manifest, basePath) {
+  const source = manifest?.checksums || manifest?.integrity;
+  if (!source || typeof source !== "object" || Array.isArray(source)) {
+    return new Map();
+  }
+
+  const checksums = new Map();
+  Object.entries(source).forEach(([rawPath, rawChecksum]) => {
+    if (typeof rawChecksum !== "string" || !rawChecksum.trim()) {
+      return;
+    }
+
+    const normalizedPath = normalizeRelativePath(rawPath, basePath);
+    if (!normalizedPath) {
+      return;
+    }
+
+    const parsed = rawChecksum.trim().match(/^(?:(sha256):)?([a-f0-9]{64})$/i);
+    if (!parsed) {
+      return;
+    }
+
+    checksums.set(normalizedPath, parsed[2].toLowerCase());
+  });
+
+  return checksums;
+}
+
+async function sha256Hex(data) {
+  const digest = await crypto.subtle.digest("SHA-256", data);
+  return Array.from(new Uint8Array(digest))
+    .map((part) => part.toString(16).padStart(2, "0"))
+    .join("");
+}
+
 async function createPresentationZip(downloadContract, presentation) {
   const manifest = await fetchJson(downloadContract.manifestUrl, "Manifest laden fehlgeschlagen");
   const slides = await fetchJson(downloadContract.slidesUrl, "Slides laden fehlgeschlagen");
@@ -267,12 +309,58 @@ async function createPresentationZip(downloadContract, presentation) {
   collectSlideReferences(slides, basePath).forEach((path) => fileSet.add(path));
 
   const files = [];
+  const missingFiles = [];
   for (const path of fileSet) {
-    const response = await fetch(path);
-    if (!response.ok) {
-      throw new Error(`Datei konnte nicht geladen werden: ${path} (HTTP ${response.status})`);
+    let response;
+    try {
+      response = await fetch(path);
+    } catch (_error) {
+      missingFiles.push(`${path} (Netzwerkfehler)`);
+      continue;
     }
+
+    if (!response.ok) {
+      missingFiles.push(`${path} (HTTP ${response.status})`);
+      continue;
+    }
+
     files.push({ path, data: new Uint8Array(await response.arrayBuffer()) });
+  }
+
+  if (missingFiles.length) {
+    throw new Error(
+      formatValidationIssues(
+        "Integritätsprüfung fehlgeschlagen. Die Präsentation ist unvollständig:",
+        missingFiles,
+      ),
+    );
+  }
+
+  const checksums = resolveChecksumEntries(manifest, basePath);
+  if (checksums.size > 0) {
+    const fileMap = new Map(files.map((file) => [file.path, file.data]));
+    const checksumIssues = [];
+    for (const [path, expected] of checksums.entries()) {
+      const fileData = fileMap.get(path);
+      if (!fileData) {
+        checksumIssues.push(`${path} (Prüfsumme vorhanden, Datei fehlt)`);
+        continue;
+      }
+
+      const actual = await sha256Hex(fileData);
+      if (actual !== expected) {
+        checksumIssues.push(`${path} (Prüfsumme ungültig)`);
+      }
+    }
+
+    if (checksumIssues.length) {
+      throw new Error(
+        formatValidationIssues(
+          "Integritätsprüfung fehlgeschlagen. Prüfsummen stimmen nicht:",
+          checksumIssues,
+        ),
+      );
+    }
   }
 
   return createStoredZip(files);

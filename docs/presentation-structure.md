@@ -46,6 +46,23 @@ Beispiel:
 }
 ```
 
+Optional kann `manifest.json` zusätzlich Integritätsdaten enthalten:
+
+- `checksums` (Objekt): Schlüssel = relativer Dateipfad, Wert = SHA-256-Hash (Hex oder `sha256:<hex>`)
+
+Beispiel:
+
+```json
+{
+  "checksums": {
+    "slides.json": "sha256:0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+    "index.html": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+  }
+}
+```
+
+Beim `.sld`-Download im Portal werden diese Prüfsummen (falls vorhanden) validiert. Bei Abweichungen wird der Download mit einer verständlichen Fehlermeldung abgebrochen.
+
 ## Validierung
 
 Die Struktur und Pflichtmetadaten können mit folgendem Skript geprüft werden:
