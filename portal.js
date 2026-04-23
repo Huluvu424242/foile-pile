@@ -1,6 +1,7 @@
 const INDEX_URL = "index.json";
 const SEARCH_DEBOUNCE_MS = 120;
 const SLIDES_FILE_NAME = "slides.json";
+const MANIFEST_FILE_NAME = "manifest.json";
 const VIEWER_BASE_URL = "https://huluvu424242.github.io/sld-slideshow-viewer/";
 
 const sortSelect = document.getElementById("sort-select");
@@ -22,6 +23,7 @@ const selectedFilters = {
   languages: new Set(),
   categories: new Set(),
 };
+const crc32Table = createCrc32Table();
 
 function showStatus(message) {
   statusElement.textContent = message;
@@ -142,6 +144,259 @@ function buildViewerContract(presentation) {
   }
 }
 
+function buildDownloadContract(presentation) {
+  const files = presentation?.files;
+  const basePath = typeof presentation?.path === "string" ? presentation.path.trim() : "";
+  const slug = basePath.split("/").filter(Boolean).pop();
+  if (!basePath || !slug) {
+    return { isValid: false, reason: "Fehlender Präsentationspfad im Suchindex." };
+  }
+
+  const manifestPath = typeof files?.manifest === "string" ? files.manifest.trim() : "";
+  const slidesPath = typeof files?.slides === "string" ? files.slides.trim() : "";
+  if (!manifestPath.endsWith(MANIFEST_FILE_NAME) || !slidesPath.endsWith(SLIDES_FILE_NAME)) {
+    return { isValid: false, reason: "Download nicht verfügbar (fehlende Kern-Dateien im Suchindex)." };
+  }
+
+  try {
+    return {
+      isValid: true,
+      slug,
+      basePath,
+      manifestUrl: new URL(manifestPath, window.location.href).href,
+      slidesUrl: new URL(slidesPath, window.location.href).href,
+    };
+  } catch (_error) {
+    return { isValid: false, reason: "Download nicht verfügbar (ungültige Dateipfade)." };
+  }
+}
+
+function createCrc32Table() {
+  const table = new Uint32Array(256);
+  for (let i = 0; i < 256; i += 1) {
+    let crc = i;
+    for (let bit = 0; bit < 8; bit += 1) {
+      crc = (crc & 1) ? (0xedb88320 ^ (crc >>> 1)) : (crc >>> 1);
+    }
+    table[i] = crc >>> 0;
+  }
+  return table;
+}
+
+function crc32(data) {
+  let crc = 0xffffffff;
+  for (let i = 0; i < data.length; i += 1) {
+    crc = crc32Table[(crc ^ data[i]) & 0xff] ^ (crc >>> 8);
+  }
+  return (crc ^ 0xffffffff) >>> 0;
+}
+
+function normalizeRelativePath(path, basePath) {
+  if (typeof path !== "string" || !path.trim()) {
+    return null;
+  }
+  if (path.includes("://")) {
+    return null;
+  }
+
+  const cleaned = path.replace(/\\/g, "/").trim();
+  const absolute = cleaned.startsWith("/") ? cleaned.slice(1) : `${basePath}/${cleaned}`;
+  const normalizedSegments = [];
+  absolute.split("/").forEach((segment) => {
+    if (!segment || segment === ".") {
+      return;
+    }
+    if (segment === "..") {
+      normalizedSegments.pop();
+      return;
+    }
+    normalizedSegments.push(segment);
+  });
+
+  const normalized = normalizedSegments.join("/");
+  return normalized.startsWith(basePath) ? normalized : null;
+}
+
+function collectSlideReferences(slidesData, basePath) {
+  const refs = new Set();
+  const slides = Array.isArray(slidesData?.slides) ? slidesData.slides : [];
+
+  slides.forEach((slide) => {
+    if (!slide || typeof slide !== "object") {
+      return;
+    }
+    Object.values(slide).forEach((value) => {
+      if (typeof value !== "string") {
+        return;
+      }
+      const normalized = normalizeRelativePath(value, basePath);
+      if (normalized) {
+        refs.add(normalized);
+      }
+    });
+  });
+
+  return refs;
+}
+
+async function fetchJson(url, purpose) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`${purpose}: HTTP ${response.status}`);
+  }
+  return response.json();
+}
+
+async function createPresentationZip(downloadContract, presentation) {
+  const manifest = await fetchJson(downloadContract.manifestUrl, "Manifest laden fehlgeschlagen");
+  const slides = await fetchJson(downloadContract.slidesUrl, "Slides laden fehlgeschlagen");
+  const basePath = downloadContract.basePath;
+
+  const fileSet = new Set([
+    `${basePath}/${MANIFEST_FILE_NAME}`,
+    `${basePath}/${SLIDES_FILE_NAME}`,
+  ]);
+
+  [presentation.files?.fulltext, presentation.files?.tags, presentation.files?.viewer].forEach((path) => {
+    const normalized = normalizeRelativePath(path, basePath);
+    if (normalized) {
+      fileSet.add(normalized);
+    }
+  });
+
+  collectSlideReferences(slides, basePath).forEach((path) => fileSet.add(path));
+
+  const files = [];
+  for (const path of fileSet) {
+    const response = await fetch(path);
+    if (!response.ok) {
+      throw new Error(`Datei konnte nicht geladen werden: ${path} (HTTP ${response.status})`);
+    }
+    files.push({ path, data: new Uint8Array(await response.arrayBuffer()) });
+  }
+
+  return createStoredZip(files);
+}
+
+function createStoredZip(files) {
+  const fileRecords = files.map((file) => {
+    const nameBytes = new TextEncoder().encode(file.path);
+    return { ...file, nameBytes, crc: crc32(file.data) };
+  });
+
+  const localParts = [];
+  const centralParts = [];
+  let offset = 0;
+
+  fileRecords.forEach((file) => {
+    const localHeader = new ArrayBuffer(30);
+    const localView = new DataView(localHeader);
+    localView.setUint32(0, 0x04034b50, true);
+    localView.setUint16(4, 20, true);
+    localView.setUint16(6, 0x0800, true);
+    localView.setUint16(8, 0, true);
+    localView.setUint16(10, 0, true);
+    localView.setUint16(12, 0, true);
+    localView.setUint32(14, file.crc, true);
+    localView.setUint32(18, file.data.length, true);
+    localView.setUint32(22, file.data.length, true);
+    localView.setUint16(26, file.nameBytes.length, true);
+    localView.setUint16(28, 0, true);
+
+    const localBlob = new Uint8Array(30 + file.nameBytes.length + file.data.length);
+    localBlob.set(new Uint8Array(localHeader), 0);
+    localBlob.set(file.nameBytes, 30);
+    localBlob.set(file.data, 30 + file.nameBytes.length);
+    localParts.push(localBlob);
+
+    const centralHeader = new ArrayBuffer(46);
+    const centralView = new DataView(centralHeader);
+    centralView.setUint32(0, 0x02014b50, true);
+    centralView.setUint16(4, 20, true);
+    centralView.setUint16(6, 20, true);
+    centralView.setUint16(8, 0x0800, true);
+    centralView.setUint16(10, 0, true);
+    centralView.setUint16(12, 0, true);
+    centralView.setUint16(14, 0, true);
+    centralView.setUint32(16, file.crc, true);
+    centralView.setUint32(20, file.data.length, true);
+    centralView.setUint32(24, file.data.length, true);
+    centralView.setUint16(28, file.nameBytes.length, true);
+    centralView.setUint16(30, 0, true);
+    centralView.setUint16(32, 0, true);
+    centralView.setUint16(34, 0, true);
+    centralView.setUint16(36, 0, true);
+    centralView.setUint32(38, 0, true);
+    centralView.setUint32(42, offset, true);
+
+    const centralBlob = new Uint8Array(46 + file.nameBytes.length);
+    centralBlob.set(new Uint8Array(centralHeader), 0);
+    centralBlob.set(file.nameBytes, 46);
+    centralParts.push(centralBlob);
+
+    offset += localBlob.length;
+  });
+
+  const centralSize = centralParts.reduce((sum, part) => sum + part.length, 0);
+  const endHeader = new ArrayBuffer(22);
+  const endView = new DataView(endHeader);
+  endView.setUint32(0, 0x06054b50, true);
+  endView.setUint16(4, 0, true);
+  endView.setUint16(6, 0, true);
+  endView.setUint16(8, fileRecords.length, true);
+  endView.setUint16(10, fileRecords.length, true);
+  endView.setUint32(12, centralSize, true);
+  endView.setUint32(16, offset, true);
+  endView.setUint16(20, 0, true);
+
+  return new Blob([...localParts, ...centralParts, new Uint8Array(endHeader)], { type: "application/zip" });
+}
+
+function triggerBlobDownload(blob, fileName) {
+  const downloadUrl = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  anchor.href = downloadUrl;
+  anchor.download = fileName;
+  anchor.style.display = "none";
+  document.body.append(anchor);
+  anchor.click();
+  anchor.remove();
+  window.setTimeout(() => URL.revokeObjectURL(downloadUrl), 1000);
+}
+
+async function handleDownloadClick(event) {
+  const button = event.target.closest(".download-action");
+  if (!button || button.disabled) {
+    return;
+  }
+
+  const { slug, basePath, manifestUrl, slidesUrl, title } = button.dataset;
+  if (!slug || !basePath || !manifestUrl || !slidesUrl) {
+    console.error("Download-Konfiguration unvollständig.");
+    return;
+  }
+
+  const presentation = loadedPresentations.find((item) => item.path === basePath);
+  if (!presentation) {
+    return;
+  }
+
+  button.disabled = true;
+  button.textContent = "Erzeuge .sld …";
+  try {
+    const zipBlob = await createPresentationZip({ slug, basePath, manifestUrl, slidesUrl }, presentation);
+    triggerBlobDownload(zipBlob, `${slug}.sld`);
+    button.textContent = ".sld herunterladen";
+  } catch (error) {
+    console.error(error);
+    const displayTitle = title || slug;
+    window.alert(`Download für "${displayTitle}" fehlgeschlagen: ${error.message}`);
+    button.textContent = "Erneut versuchen";
+  } finally {
+    button.disabled = false;
+  }
+}
+
 function renderList(presentations, queryTokens) {
   if (!Array.isArray(presentations) || presentations.length === 0) {
     showStatus("Keine Treffer. Bitte passen Sie Ihre Suche an.");
@@ -178,6 +433,27 @@ function renderList(presentations, queryTokens) {
       const viewError = viewerContract.isValid
         ? ""
         : `<p class="viewer-error" role="status">${escapeHtml(viewerContract.reason)}</p>`;
+      const downloadContract = buildDownloadContract(presentation);
+      const downloadAction = downloadContract.isValid
+        ? `
+          <button
+            class="download-action"
+            type="button"
+            data-slug="${escapeHtml(downloadContract.slug)}"
+            data-base-path="${escapeHtml(downloadContract.basePath)}"
+            data-manifest-url="${escapeHtml(downloadContract.manifestUrl)}"
+            data-slides-url="${escapeHtml(downloadContract.slidesUrl)}"
+            data-title="${escapeHtml(title)}"
+            aria-label="${escapeHtml(title)} als .sld herunterladen"
+          >
+            .sld herunterladen
+          </button>
+        `
+        : `
+          <button class="download-action download-action--disabled" type="button" disabled aria-disabled="true">
+            Download nicht verfügbar
+          </button>
+        `;
 
       return `
         <li class="presentation-card">
@@ -187,6 +463,7 @@ function renderList(presentations, queryTokens) {
           <div class="tags">${renderTags(presentation.tags, queryTokens)}</div>
           <div class="presentation-actions">
             ${viewAction}
+            ${downloadAction}
           </div>
           ${viewError}
         </li>
@@ -448,4 +725,7 @@ tagFiltersElement.addEventListener("change", onFilterChange);
 languageFiltersElement.addEventListener("change", onFilterChange);
 categoryFiltersElement.addEventListener("change", onFilterChange);
 activeFilterChipsElement.addEventListener("click", onActiveFilterClick);
+listElement.addEventListener("click", (event) => {
+  handleDownloadClick(event);
+});
 loadPresentations();

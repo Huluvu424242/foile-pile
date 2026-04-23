@@ -188,6 +188,9 @@ body {
 
 .presentation-actions {
   margin-top: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
 }
 
 .tag {
@@ -220,6 +223,31 @@ body {
 }
 
 .view-action--disabled {
+  border-color: #94a3b8;
+  background: #cbd5e1;
+  color: #334155;
+  cursor: not-allowed;
+}
+
+.download-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.45rem;
+  border: 1px solid #0f172a;
+  background: #ffffff;
+  color: #0f172a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.download-action:hover:not(:disabled) {
+  background: #e2e8f0;
+}
+
+.download-action:disabled,
+.download-action--disabled {
   border-color: #94a3b8;
   background: #cbd5e1;
   color: #334155;
