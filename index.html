@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foile Pile – Präsentationsportal</title>
+    <link rel="stylesheet" href="portal.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>Foile Pile</h1>
+      <p class="subtitle">Übersicht aller verfügbaren Präsentationen</p>
+    </header>
+
+    <main class="content" aria-live="polite">
+      <section class="toolbar" aria-label="Sortierung">
+        <label for="sort-select">Sortierung</label>
+        <select id="sort-select" name="sort">
+          <option value="relevance">Relevanz</option>
+          <option value="alphabet">Alphabetisch (A–Z)</option>
+        </select>
+      </section>
+
+      <p id="status-message" class="status-message" hidden></p>
+
+      <ul id="presentation-list" class="presentation-list" hidden></ul>
+    </main>
+
+    <script src="portal.js" defer></script>
+  </body>
+</html>
