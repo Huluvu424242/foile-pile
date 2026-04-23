@@ -186,6 +186,10 @@ body {
   margin-top: 0.75rem;
 }
 
+.presentation-actions {
+  margin-top: 0.85rem;
+}
+
 .tag {
   display: inline-block;
   padding: 0.2rem 0.5rem;
@@ -196,6 +200,32 @@ body {
   background: #f1f5f9;
 }
 
+.view-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.45rem;
+  border: 1px solid #0f766e;
+  background: #0f766e;
+  color: #ecfeff;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.view-action:hover {
+  background: #0d5f59;
+  border-color: #0d5f59;
+}
+
+.view-action--disabled {
+  border-color: #94a3b8;
+  background: #cbd5e1;
+  color: #334155;
+  cursor: not-allowed;
+}
+
 .viewer-link {
   color: var(--accent);
   font-weight: 600;
@@ -204,6 +234,13 @@ body {
 
 .viewer-link:hover {
   text-decoration: underline;
+}
+
+.viewer-error {
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+  color: #b91c1c;
+  font-size: 0.92rem;
 }
 
 .search-highlight {

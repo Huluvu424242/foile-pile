@@ -1,5 +1,7 @@
 const INDEX_URL = "index.json";
 const SEARCH_DEBOUNCE_MS = 120;
+const SLIDES_FILE_NAME = "slides.json";
+const VIEWER_BASE_URL = "https://huluvu424242.github.io/sld-slideshow-viewer/";
 
 const sortSelect = document.getElementById("sort-select");
 const searchInput = document.getElementById("search-input");
@@ -105,6 +107,41 @@ function renderTags(tags, queryTokens) {
   return tags.map((tag) => `<span class="tag">${highlightMatches(tag, queryTokens)}</span>`).join("");
 }
 
+function buildViewerContract(presentation) {
+  const files = presentation?.files;
+  if (!files || typeof files !== "object") {
+    return { isValid: false, reason: "Fehlende Dateiliste im Suchindex." };
+  }
+
+  const slidesPath = typeof files.slides === "string" ? files.slides.trim() : "";
+  if (!slidesPath) {
+    return { isValid: false, reason: "Fehlende Foliendatei (slides.json)." };
+  }
+  if (!slidesPath.endsWith(SLIDES_FILE_NAME)) {
+    return { isValid: false, reason: "Ungültige Foliendatei im Suchindex." };
+  }
+
+  const manifestPath = typeof files.manifest === "string" ? files.manifest.trim() : "";
+  if (!manifestPath || !manifestPath.endsWith("manifest.json")) {
+    return { isValid: false, reason: "Ungültiges oder fehlendes Manifest im Suchindex." };
+  }
+
+  try {
+    const slidesUrl = new URL(slidesPath, window.location.href).href;
+    const viewerUrl = new URL(VIEWER_BASE_URL);
+    viewerUrl.searchParams.set("url", slidesUrl);
+
+    return {
+      isValid: true,
+      viewerHref: viewerUrl.href,
+      slidesUrl,
+      manifestUrl: new URL(manifestPath, window.location.href).href,
+    };
+  } catch (_error) {
+    return { isValid: false, reason: "Ungültiger Dateipfad im Suchindex." };
+  }
+}
+
 function renderList(presentations, queryTokens) {
   if (!Array.isArray(presentations) || presentations.length === 0) {
     showStatus("Keine Treffer. Bitte passen Sie Ihre Suche an.");
@@ -118,14 +155,40 @@ function renderList(presentations, queryTokens) {
       const title = presentation.title || "Ohne Titel";
       const description = presentation.description || "Keine Kurzbeschreibung vorhanden.";
       const category = extractCategory(presentation.path);
-      const viewerPath = presentation.files?.viewer || "#";
+      const viewerContract = buildViewerContract(presentation);
+      const viewAction = viewerContract.isValid
+        ? `
+          <a
+            class="view-action"
+            href="${escapeHtml(viewerContract.viewerHref)}"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="${escapeHtml(title)} im Viewer ansehen"
+            data-slides-url="${escapeHtml(viewerContract.slidesUrl)}"
+            data-manifest-url="${escapeHtml(viewerContract.manifestUrl)}"
+          >
+            Ansehen
+          </a>
+        `
+        : `
+          <button class="view-action view-action--disabled" type="button" disabled aria-disabled="true">
+            Ansehen nicht verfügbar
+          </button>
+        `;
+      const viewError = viewerContract.isValid
+        ? ""
+        : `<p class="viewer-error" role="status">${escapeHtml(viewerContract.reason)}</p>`;
 
       return `
         <li class="presentation-card">
-          <h2><a class="viewer-link" href="${viewerPath}">${highlightMatches(title, queryTokens)}</a></h2>
+          <h2>${highlightMatches(title, queryTokens)}</h2>
           <p>${highlightMatches(description, queryTokens)}</p>
           <p class="presentation-meta">Bereich/Kategorie: <strong>${highlightMatches(category, queryTokens)}</strong></p>
           <div class="tags">${renderTags(presentation.tags, queryTokens)}</div>
+          <div class="presentation-actions">
+            ${viewAction}
+          </div>
+          ${viewError}
         </li>
       `;
     })
