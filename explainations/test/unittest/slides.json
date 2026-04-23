@@ -1,0 +1,20 @@
+{
+  "tags": [
+    "test",
+    "unitest"
+  ],
+  "slides": [
+    {
+      "content": "slide1.md",
+      "audio": "slide1.txt"
+    },
+    {
+      "content": "slide2.md",
+      "audio": "slide2.txt"
+    },
+    {
+      "content": "ende.md",
+      "audio": "ende.txt"
+    }
+  ]
+}

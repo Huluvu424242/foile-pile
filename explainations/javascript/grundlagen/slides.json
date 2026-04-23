@@ -1,0 +1,58 @@
+{
+  "tags": [
+    "javascript",
+    "begriffe",
+    "konzepte",
+    "grundlagen"
+  ],
+  "slides": [
+    {
+      "content": "slide1.md",
+      "audio": "slide1.txt"
+    },
+    {
+      "content": "begriffsverwirrung.md",
+      "audio": "begriffsverwirrung.txt"
+    },
+    {
+      "content": "primitivetypen.md",
+      "audio": "primitivetypen.txt"
+    },
+    {
+      "content": "komplexetypen.md",
+      "audio": "komplexetypen.txt"
+    },
+    {
+      "content": "dynamictyping.md",
+      "audio": "dynamictyping.txt"
+    },
+    {
+      "content": "coercion.md",
+      "audio": "coercion.txt"
+    },
+    {
+      "content": "coerciontricks.md",
+      "audio": "coerciontricks.txt"
+    },
+    {
+      "content": "statischebindung.md",
+      "audio": "statischebindung.txt"
+    },
+    {
+      "content": "hoisting.md",
+      "audio": "hoisting.txt"
+    },
+    {
+      "content": "es6scope.md",
+      "audio": "es6scope.txt"
+    },
+    {
+      "content": "protractor.md",
+      "audio": "protractor.txt"
+    },
+    {
+      "content": "slide3.md",
+      "audio": "slide3.txt"
+    }
+  ]
+}
