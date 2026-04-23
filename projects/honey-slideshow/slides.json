@@ -1,0 +1,22 @@
+{
+  "tags": [
+    "slideshow",
+    "slidecast",
+    "slides",
+    "audio"
+  ],
+  "slides": [
+    {
+      "content": "slide1.md",
+      "audio": "slide1.txt"
+    },
+    {
+      "content": "slide2.md",
+      "audio": "slide2.txt"
+    },
+    {
+      "content": "slide3.md",
+      "audio": "slide3.txt"
+    }
+  ]
+}

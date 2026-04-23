@@ -1,0 +1,194 @@
+{
+  "tags": [
+    "stenciljs",
+    "begriffe",
+    "konzepte",
+    "grundlagen"
+  ],
+  "slides": [
+    {
+      "content": "titel.md",
+      "audio": "titel.txt"
+    },
+    {
+      "content": "author.md",
+      "audio": "author.txt"
+    },
+    {
+      "content": "erwartungen.md",
+      "audio": "erwartungen.txt"
+    },
+    {
+      "content": "spezifikationen.md",
+      "audio": "spezifikationen.txt"
+    },
+    {
+      "content": "domintegration.md",
+      "audio": "domintegration.txt"
+    },
+    {
+      "content": "slots.md",
+      "audio": "slots.txt"
+    },
+    {
+      "content": "frontendintegration.md",
+      "audio": "frontendintegration.txt"
+    },
+    {
+      "content": "entkopplung.md",
+      "audio": "entkopplung.txt"
+    },
+    {
+      "content": "vanillaexample.md",
+      "audio": "vanillaexample.txt"
+    },
+    {
+      "content": "stencil.md",
+      "audio": "stencil.txt"
+    },
+    {
+      "content": "lifecycle.md",
+      "audio": "lifecycle.txt"
+    },
+    {
+      "content": "stencilfeatures.md",
+      "audio": "stencilfeatures.txt"
+    },
+    {
+      "content": "virtualdom.md",
+      "audio": "virtualdom.txt"
+    },
+    {
+      "content": "hydratedapp.md",
+      "audio": "hydratedapp.txt"
+    },
+    {
+      "content": "funktionalekomponenten.md",
+      "audio": "funktionalekomponenten.txt"
+    },
+    {
+      "content": "einheitlichesdesign.md",
+      "audio": "einheitlichesdesign.txt"
+    },
+    {
+      "content": "dpleinbinden.md",
+      "audio": "dpleinbinden.txt"
+    },
+    {
+      "content": "cssvars.md",
+      "audio": "cssvars.txt"
+    },
+    {
+      "content": "supportcssvars.md",
+      "audio": "supportcssvars.txt"
+    },
+    {
+      "content": "supportcssrules.md",
+      "audio": "supportcssrules.txt"
+    },
+    {
+      "content": "webworker.md",
+      "audio": "webworker.txt"
+    },
+    {
+      "content": "dedicatedsharedworker.md",
+      "audio": "dedicatedsharedworker.txt"
+    },
+    {
+      "content": "serviceworker.md",
+      "audio": "serviceworker.txt"
+    },
+    {
+      "content": "featureswebworker.md",
+      "audio": "featureswebworker.txt"
+    },
+    {
+      "content": "dev-example.md",
+      "audio": "dev-example.txt"
+    },
+    {
+      "content": "dev-project.md",
+      "audio": "dev-project.txt"
+    },
+    {
+      "content": "dev-sources.md",
+      "audio": "dev-sources.txt"
+    },
+    {
+      "content": "dev-komponente.md",
+      "audio": "dev-komponente.txt"
+    },
+    {
+      "content": "dev-state.md",
+      "audio": "dev-state.txt"
+    },
+    {
+      "content": "dev-render.md",
+      "audio": "dev-render.txt"
+    },
+    {
+      "content": "dev-connected.md",
+      "audio": "dev-connected.txt"
+    },
+    {
+      "content": "dev-disconnected.md",
+      "audio": "dev-disconnected.txt"
+    },
+    {
+      "content": "dev-watcher.md",
+      "audio": "dev-watcher.txt"
+    },
+    {
+      "content": "dev-willload.md",
+      "audio": "dev-willload.txt"
+    },
+    {
+      "content": "dev-fetcher.md",
+      "audio": "dev-fetcher.txt"
+    },
+    {
+      "content": "dev-periodicfetcher.md",
+      "audio": "dev-periodicfetcher.txt"
+    },
+    {
+      "content": "dev-setter.md",
+      "audio": "dev-setter.txt"
+    },
+    {
+      "content": "dev-einbetten.md",
+      "audio": "dev-einbetten.txt"
+    },
+    {
+      "content": "dev-dom.md",
+      "audio": "dev-dom.txt"
+    },
+    {
+      "content": "dev-quellen.md",
+      "audio": "dev-quellen.txt"
+    },
+    {
+      "content": "danke.md",
+      "audio": "danke.txt"
+    },
+    {
+      "content": "setup.md",
+      "audio": "setup.txt"
+    },
+    {
+      "content": "states.md",
+      "audio": "states.txt"
+    },
+    {
+      "content": "ref.md",
+      "audio": "ref.txt"
+    },
+    {
+      "content": "bi-binding.md",
+      "audio": "bi-binding.txt"
+    },
+    {
+      "content": "quellen.md",
+      "audio": "quellen.txt"
+    }
+  ]
+}

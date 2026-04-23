@@ -1,0 +1,38 @@
+{
+  "tags": [
+    "groupware",
+    "community",
+    "evaluation",
+    "tools"
+  ],
+  "slides": [
+    {
+      "content": "slide1.md",
+      "audio": "slide1.txt"
+    },
+    {
+      "content": "slide2.md",
+      "audio": "slide2.txt"
+    },
+    {
+      "content": "login.md",
+      "audio": "login.txt"
+    },
+    {
+      "content": "räume.md",
+      "audio": "räume.txt"
+    },
+    {
+      "content": "slide3.md",
+      "audio": "slide3.txt"
+    },
+    {
+      "content": "tools.md",
+      "audio": "tools.txt"
+    },
+    {
+      "content": "features.md",
+      "audio": "features.txt"
+    }
+  ]
+}
