@@ -34,6 +34,28 @@
         </label>
       </section>
 
+      <section class="filters" aria-label="Filter und Facetten">
+        <fieldset class="filter-group">
+          <legend>Tags</legend>
+          <div id="tag-filters" class="filter-options"></div>
+        </fieldset>
+
+        <fieldset class="filter-group">
+          <legend>Sprache</legend>
+          <div id="language-filters" class="filter-options"></div>
+        </fieldset>
+
+        <fieldset class="filter-group">
+          <legend>Bereich</legend>
+          <div id="category-filters" class="filter-options"></div>
+        </fieldset>
+      </section>
+
+      <section id="active-filters" class="active-filters" aria-label="Aktive Filter" hidden>
+        <p class="active-filters__title">Aktive Filter:</p>
+        <div id="active-filter-chips" class="active-filter-chips"></div>
+      </section>
+
       <p id="result-summary" class="result-summary" hidden></p>
       <p id="status-message" class="status-message" hidden></p>
 

@@ -67,6 +67,79 @@ body {
   color: var(--muted);
 }
 
+.filters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.filter-group {
+  margin: 0;
+  padding: 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 0.45rem;
+  background: #fff;
+}
+
+.filter-group legend {
+  padding: 0 0.2rem;
+  font-weight: 600;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-height: 9rem;
+  overflow: auto;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+.filter-empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.active-filters {
+  margin: 0 0 0.75rem;
+}
+
+.active-filters__title {
+  margin: 0 0 0.35rem;
+  color: var(--muted);
+}
+
+.active-filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.active-filter-chip {
+  border: 1px solid #99f6e4;
+  background: #ccfbf1;
+  color: #115e59;
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.active-filter-chip:hover {
+  background: #99f6e4;
+}
+
 .status-message {
   padding: 0.75rem;
   border: 1px solid var(--border);
@@ -146,5 +219,9 @@ body {
 
   .toolbar-field--sort {
     max-width: 260px;
+  }
+
+  .filters {
+    grid-template-columns: 1fr;
   }
 }
