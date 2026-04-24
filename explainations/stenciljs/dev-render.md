@@ -1,1 +1,1 @@
-![Render Method](img/Slide28-Render.svg)
+![Render Method](assets/Slide28-Render.svg)

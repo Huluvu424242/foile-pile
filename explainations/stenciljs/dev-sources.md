@@ -1,1 +1,1 @@
-![Source Folder](img/Slide25-SourceFolder.svg)
+![Source Folder](assets/Slide25-SourceFolder.svg)

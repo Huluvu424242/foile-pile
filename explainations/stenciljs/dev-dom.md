@@ -1,1 +1,1 @@
-![DOM](img/Slide37-DOM.svg)
+![DOM](assets/Slide37-DOM.svg)

@@ -1,1 +1,1 @@
-![Stencil ein Compiler](img/Slide8-StencilEinCompiler.svg)
+![Stencil ein Compiler](assets/Slide8-StencilEinCompiler.svg)

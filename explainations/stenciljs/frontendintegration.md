@@ -1,1 +1,1 @@
-![Frontendintegration](img/Slide5-Frontendintegration.svg)
+![Frontendintegration](assets/Slide5-Frontendintegration.svg)

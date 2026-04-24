@@ -1,1 +1,1 @@
-![Features Webworker](img/Slide22-FeaturesWebworker.svg)
+![Features Webworker](assets/Slide22-FeaturesWebworker.svg)

@@ -1,5 +1,5 @@
 {
-  "title": "Meshnetze",
+  "title": "Mesh Netze - Grundlagen und Vergleich",
   "language": "de",
   "tags": [
     "slideshow",
@@ -7,6 +7,6 @@
     "mesh",
     "grundlagen"
   ],
-  "description": "Präsentation im Bereich \"explainations\" zum Thema \"Meshnetze\".",
+  "description": "Präsentation im Bereich \"Explainations\" zum Thema \"Mesh\".",
   "path": "explainations/mesh/meshnetze"
 }

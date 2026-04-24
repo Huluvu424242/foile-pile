@@ -1,1 +1,1 @@
-![Vanilla Example](img/Slide7-VanillaExample.svg)
+![Vanilla Example](assets/Slide7-VanillaExample.svg)

@@ -1,1 +1,1 @@
-![Entkopplung](img/Slide6-Entkopplung.svg)
+![Entkopplung](assets/Slide6-Entkopplung.svg)

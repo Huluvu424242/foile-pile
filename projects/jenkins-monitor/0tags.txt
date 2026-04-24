@@ -1,1 +1,0 @@
-jenkins, monitor, java, jenkinsmonitor, devops

@@ -1,1 +1,1 @@
-![Quellen](img/Slide38-Quellen.svg)
+![Quellen](assets/Slide38-Quellen.svg)

@@ -1,1 +1,1 @@
-![DOMIntegration](img/Slide3-DOM_Integration.svg)
+![DOMIntegration](assets/Slide3-DOM_Integration.svg)

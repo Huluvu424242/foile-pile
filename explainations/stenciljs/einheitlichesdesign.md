@@ -1,1 +1,1 @@
-![Einheitliches Design](img/Slide14-EinheitlichesDesign.svg)
+![Einheitliches Design](assets/Slide14-EinheitlichesDesign.svg)

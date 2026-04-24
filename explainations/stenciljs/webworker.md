@@ -1,1 +1,1 @@
-![Webworker](img/Slide19-Webworker.svg)
+![Webworker](assets/Slide19-Webworker.svg)

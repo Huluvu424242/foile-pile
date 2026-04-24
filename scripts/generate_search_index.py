@@ -36,13 +36,23 @@ def discover_presentations(repo_root: Path) -> list[dict[str, object]]:
         rel_path = presentation_dir.relative_to(repo_root).as_posix()
         slide_entries = slides.get("slides", [])
         slide_count = len(slide_entries) if isinstance(slide_entries, list) else 0
+        export_files = sorted(
+            path.relative_to(repo_root).as_posix()
+            for path in presentation_dir.rglob("*")
+            if path.is_file() and ".extra" not in path.relative_to(presentation_dir).parts
+        )
+
+        tags = slides.get("tags", [])
+        if not isinstance(tags, list):
+            tags = []
+        tags = [tag for tag in tags if isinstance(tag, str) and tag.strip()]
 
         files = {
             "manifest": manifest_path.relative_to(repo_root).as_posix(),
             "slides": slides_path.relative_to(repo_root).as_posix(),
             "viewer": f"{rel_path}/index.html",
-            "tags": f"{rel_path}/0tags.txt",
-            "fulltext": f"{rel_path}/0index.txt",
+            "tags": tags,
+            "export": export_files,
         }
 
         search_text = " ".join(

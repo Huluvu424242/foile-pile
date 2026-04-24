@@ -1,1 +1,1 @@
-![CSS Variablen](img/Slide16-CSSVariablen.svg)
+![CSS Variablen](assets/Slide16-CSSVariablen.svg)

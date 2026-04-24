@@ -1,1 +1,1 @@
-![Setter](img/Slide35-Setter.svg)
+![Setter](assets/Slide35-Setter.svg)

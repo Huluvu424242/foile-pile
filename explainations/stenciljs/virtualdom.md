@@ -1,1 +1,1 @@
-![Virtual DOM](img/Slide11-VirtualDOM.svg)
+![Virtual DOM](assets/Slide11-VirtualDOM.svg)

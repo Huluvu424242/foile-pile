@@ -1,1 +1,1 @@
-![Lifecycle](img/Slide9-Lifecycle.svg)
+![Lifecycle](assets/Slide9-Lifecycle.svg)

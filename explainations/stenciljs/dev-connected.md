@@ -1,1 +1,1 @@
-![Connected Callback](img/Slide29-ConnectedCallback.svg)
+![Connected Callback](assets/Slide29-ConnectedCallback.svg)

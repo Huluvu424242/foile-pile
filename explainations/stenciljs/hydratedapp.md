@@ -1,1 +1,1 @@
-![Hydrated App](img/Slide12-HydratedApp.svg)
+![Hydrated App](assets/Slide12-HydratedApp.svg)
