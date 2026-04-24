@@ -269,6 +269,14 @@ function formatValidationIssues(title, issues) {
   return `${title}\n${issues.map((issue) => `- ${issue}`).join("\n")}`;
 }
 
+function resolveZipEntryPath(path, basePath) {
+  const prefix = `${basePath}/`;
+  if (typeof path !== "string" || !path.startsWith(prefix)) {
+    return path;
+  }
+  return path.slice(prefix.length);
+}
+
 function resolveChecksumEntries(manifest, basePath) {
   const source = manifest?.checksums || manifest?.integrity;
   if (!source || typeof source !== "object" || Array.isArray(source)) {
@@ -387,12 +395,13 @@ async function createPresentationZip(downloadContract, presentation) {
     }
   }
 
-  return createStoredZip(files);
+  return createStoredZip(files, basePath);
 }
 
-function createStoredZip(files) {
+function createStoredZip(files, basePath) {
   const fileRecords = files.map((file) => {
-    const nameBytes = new TextEncoder().encode(file.path);
+    const zipPath = resolveZipEntryPath(file.path, basePath);
+    const nameBytes = new TextEncoder().encode(zipPath);
     return { ...file, nameBytes, crc: crc32(file.data) };
   });
 
