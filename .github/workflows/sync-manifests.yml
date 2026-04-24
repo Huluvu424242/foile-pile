@@ -1,0 +1,51 @@
+name: Sync Manifests
+
+on:
+  workflow_dispatch:
+  pull_request:
+  schedule:
+    - cron: '0 2 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  sync-manifests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Generate or update all manifests
+        run: python scripts/sync_manifests.py
+
+      - name: Ensure manifests are up to date in pull requests
+        if: github.event_name == 'pull_request'
+        run: |
+          if ! git diff --quiet; then
+            echo "Die Manifest-Dateien sind nicht aktuell."
+            echo "Bitte lokal ausführen: python scripts/sync_manifests.py"
+            git diff
+            exit 1
+          fi
+
+      - name: Commit and push manifest updates
+        if: github.event_name != 'pull_request'
+        run: |
+          if git diff --quiet; then
+            echo "Keine Änderungen an manifest.json-Dateien gefunden."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "chore: sync generated manifests"
+          git push
