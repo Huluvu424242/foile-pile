@@ -1,1 +1,1 @@
-![Watcher](img/Slide31-Watcher.svg)
+![Watcher](assets/Slide31-Watcher.svg)

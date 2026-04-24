@@ -1,1 +1,1 @@
-![Periodic Fetcher](img/Slide34-PeriodicFetcher.svg)
+![Periodic Fetcher](assets/Slide34-PeriodicFetcher.svg)

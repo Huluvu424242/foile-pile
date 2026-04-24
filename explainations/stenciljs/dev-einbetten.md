@@ -1,1 +1,1 @@
-![Einbetten](img/Slide36-Einbetten.svg)
+![Einbetten](assets/Slide36-Einbetten.svg)

@@ -1,1 +1,1 @@
-![Support CSS Rules](img/Slide18-SupportCSSRules.svg)
+![Support CSS Rules](assets/Slide18-SupportCSSRules.svg)

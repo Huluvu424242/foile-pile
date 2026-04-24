@@ -1,1 +1,1 @@
-![Projektstruktur](img/Slide24-Projektstruktur.svg)
+![Projektstruktur](assets/Slide24-Projektstruktur.svg)

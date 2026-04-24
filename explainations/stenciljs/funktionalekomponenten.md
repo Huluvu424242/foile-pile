@@ -1,1 +1,1 @@
-![Funktionale Komponenten](img/Slide13-FunktionaleKomponenten.svg)
+![Funktionale Komponenten](assets/Slide13-FunktionaleKomponenten.svg)

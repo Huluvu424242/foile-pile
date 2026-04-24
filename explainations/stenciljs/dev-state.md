@@ -1,1 +1,1 @@
-![Definition - State](img/Slide27-State.svg)
+![Definition - State](assets/Slide27-State.svg)

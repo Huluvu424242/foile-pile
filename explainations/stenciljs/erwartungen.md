@@ -1,1 +1,1 @@
-![Erwartungen](img/Slide1-Erwartungen.svg)
+![Erwartungen](assets/Slide1-Erwartungen.svg)

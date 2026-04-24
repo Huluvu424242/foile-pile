@@ -1,1 +1,1 @@
-![Spezifikationen](img/Slide2-Spezifikationen.svg)
+![Spezifikationen](assets/Slide2-Spezifikationen.svg)

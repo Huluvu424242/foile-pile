@@ -1,1 +1,1 @@
-![Service Worker](img/Slide21-ServiceWorker.svg)
+![Service Worker](assets/Slide21-ServiceWorker.svg)

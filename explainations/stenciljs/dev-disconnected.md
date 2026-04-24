@@ -1,1 +1,1 @@
-![Disconnected Callback](img/Slide30-DisconnectedCallback.svg)
+![Disconnected Callback](assets/Slide30-DisconnectedCallback.svg)

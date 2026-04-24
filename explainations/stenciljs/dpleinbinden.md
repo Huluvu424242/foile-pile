@@ -1,1 +1,1 @@
-![DPL Einbinden](img/Slide15-DPLeinbinden.svg)
+![DPL Einbinden](assets/Slide15-DPLeinbinden.svg)

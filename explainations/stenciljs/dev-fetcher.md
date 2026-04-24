@@ -1,1 +1,1 @@
-![Fetcher](img/Slide33-Fetcher.svg)
+![Fetcher](assets/Slide33-Fetcher.svg)

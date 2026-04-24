@@ -1,1 +1,1 @@
-![Support CSS Variablen](img/Slide17-SupportCSSVars.svg)
+![Support CSS Variablen](assets/Slide17-SupportCSSVars.svg)

@@ -1,1 +1,1 @@
-![Definition - Komponente](img/Slide26-Komponente.svg)
+![Definition - Komponente](assets/Slide26-Komponente.svg)
