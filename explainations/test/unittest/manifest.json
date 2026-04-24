@@ -5,6 +5,6 @@
     "test",
     "unitest"
   ],
-  "description": "Präsentation im Bereich \"explainations\" zum Thema \"Unittest\".",
+  "description": "Präsentation im Bereich \"Explainations\" zum Thema \"Test\".",
   "path": "explainations/test/unittest"
 }
