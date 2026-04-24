@@ -201,7 +201,11 @@ function normalizeRelativePath(path, basePath) {
   }
 
   const cleaned = path.replace(/\\/g, "/").trim();
-  const absolute = cleaned.startsWith("/") ? cleaned.slice(1) : `${basePath}/${cleaned}`;
+  const absolute = cleaned.startsWith("/")
+    ? cleaned.slice(1)
+    : cleaned.startsWith(`${basePath}/`) || cleaned === basePath
+      ? cleaned
+      : `${basePath}/${cleaned}`;
   const normalizedSegments = [];
   absolute.split("/").forEach((segment) => {
     if (!segment || segment === ".") {
