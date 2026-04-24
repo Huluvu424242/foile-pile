@@ -305,20 +305,24 @@ async function createPresentationZip(downloadContract, presentation) {
   const slides = await fetchJson(downloadContract.slidesUrl, "Slides laden fehlgeschlagen");
   const basePath = downloadContract.basePath;
 
-  const fileSet = new Set([`${basePath}/${SLIDES_FILE_NAME}`]);
-
-  [presentation.files?.fulltext, presentation.files?.tags, presentation.files?.viewer].forEach((path) => {
+  const fileSet = new Set();
+  const exportList = Array.isArray(presentation.files?.export) ? presentation.files.export : [];
+  exportList.forEach((path) => {
     const normalized = normalizeRelativePath(path, basePath);
     if (normalized && !isPathExcludedFromExport(normalized, basePath)) {
       fileSet.add(normalized);
     }
   });
 
-  collectSlideReferences(slides, basePath).forEach((path) => {
-    if (!isPathExcludedFromExport(path, basePath)) {
-      fileSet.add(path);
-    }
-  });
+  if (fileSet.size === 0) {
+    fileSet.add(`${basePath}/${MANIFEST_FILE_NAME}`);
+    fileSet.add(`${basePath}/${SLIDES_FILE_NAME}`);
+    collectSlideReferences(slides, basePath).forEach((path) => {
+      if (!isPathExcludedFromExport(path, basePath)) {
+        fileSet.add(path);
+      }
+    });
+  }
 
   const files = [];
   const missingFiles = [];
