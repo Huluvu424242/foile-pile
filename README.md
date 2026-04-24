@@ -26,6 +26,7 @@ Als Nutzer möchte ich in einem Webportal Präsentationen finden, ansehen und al
 ## Repository-Konventionen
 - Standardisierte Präsentationsstruktur: `docs/presentation-structure.md`
 - Entwickler-Workflow ohne Node.js: `docs/developer-workflow.md`
+- Deployment-Anleitung für statisches Hosting: `docs/deployment-static-hosting.md`
 - Validierungsskript: `python scripts/validate_repository_structure.py`
 
 - Zentralen Suchindex erzeugen: `python scripts/generate_search_index.py`
