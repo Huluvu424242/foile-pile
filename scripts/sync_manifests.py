@@ -9,6 +9,8 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from generate_search_index import build_index, write_index
+
 DEFAULT_LANGUAGE = "de"
 
 
@@ -120,7 +122,13 @@ def main() -> int:
             print(f"Aktualisiert: {slides_path.parent.relative_to(repo_root).as_posix()}/manifest.json")
             changed += 1
 
+    index_path = repo_root / "index.json"
+    previous_index = index_path.read_text(encoding="utf-8") if index_path.exists() else None
+    write_index(build_index(repo_root), index_path)
+    index_changed = previous_index != index_path.read_text(encoding="utf-8")
+
     print(f"Fertig. Geänderte manifest.json: {changed}")
+    print(f"Index aktualisiert: {'ja' if index_changed else 'nein'}")
     return 0
 
 

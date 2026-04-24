@@ -23,10 +23,14 @@
           "evaluationen/community-tools/tools.md",
           "evaluationen/community-tools/tools.txt"
         ],
-        "fulltext": "evaluationen/community-tools/0index.txt",
         "manifest": "evaluationen/community-tools/manifest.json",
         "slides": "evaluationen/community-tools/slides.json",
-        "tags": "evaluationen/community-tools/0tags.txt",
+        "tags": [
+          "groupware",
+          "community",
+          "evaluation",
+          "tools"
+        ],
         "viewer": "evaluationen/community-tools/index.html"
       },
       "language": "de",
@@ -73,10 +77,14 @@
           "explainations/javascript/grundlagen/statischebindung.md",
           "explainations/javascript/grundlagen/statischebindung.txt"
         ],
-        "fulltext": "explainations/javascript/grundlagen/0index.txt",
         "manifest": "explainations/javascript/grundlagen/manifest.json",
         "slides": "explainations/javascript/grundlagen/slides.json",
-        "tags": "explainations/javascript/grundlagen/0tags.txt",
+        "tags": [
+          "javascript",
+          "begriffe",
+          "konzepte",
+          "grundlagen"
+        ],
         "viewer": "explainations/javascript/grundlagen/index.html"
       },
       "language": "de",
@@ -107,10 +115,13 @@
           "explainations/json/jsonschema/slide4.md",
           "explainations/json/jsonschema/slides.json"
         ],
-        "fulltext": "explainations/json/jsonschema/0index.txt",
         "manifest": "explainations/json/jsonschema/manifest.json",
         "slides": "explainations/json/jsonschema/slides.json",
-        "tags": "explainations/json/jsonschema/0tags.txt",
+        "tags": [
+          "json",
+          "schema",
+          "cdc"
+        ],
         "viewer": "explainations/json/jsonschema/index.html"
       },
       "language": "de",
@@ -146,10 +157,14 @@
           "explainations/mesh/meshnetze/manifest.json",
           "explainations/mesh/meshnetze/slides.json"
         ],
-        "fulltext": "explainations/mesh/meshnetze/0index.txt",
         "manifest": "explainations/mesh/meshnetze/manifest.json",
         "slides": "explainations/mesh/meshnetze/slides.json",
-        "tags": "explainations/mesh/meshnetze/0tags.txt",
+        "tags": [
+          "slideshow",
+          "mesh netze",
+          "mesh",
+          "grundlagen"
+        ],
         "viewer": "explainations/mesh/meshnetze/index.html"
       },
       "language": "de",
@@ -275,10 +290,14 @@
           "explainations/stenciljs/virtualdom.md",
           "explainations/stenciljs/webworker.md"
         ],
-        "fulltext": "explainations/stenciljs/0index.txt",
         "manifest": "explainations/stenciljs/manifest.json",
         "slides": "explainations/stenciljs/slides.json",
-        "tags": "explainations/stenciljs/0tags.txt",
+        "tags": [
+          "stenciljs",
+          "begriffe",
+          "konzepte",
+          "grundlagen"
+        ],
         "viewer": "explainations/stenciljs/index.html"
       },
       "language": "de",
@@ -307,10 +326,12 @@
           "explainations/test/unittest/slide2.txt",
           "explainations/test/unittest/slides.json"
         ],
-        "fulltext": "explainations/test/unittest/0index.txt",
         "manifest": "explainations/test/unittest/manifest.json",
         "slides": "explainations/test/unittest/slides.json",
-        "tags": "explainations/test/unittest/0tags.txt",
+        "tags": [
+          "test",
+          "unitest"
+        ],
         "viewer": "explainations/test/unittest/index.html"
       },
       "language": "de",
@@ -339,10 +360,15 @@
           "explainations/ux/designrules/slide3.txt",
           "explainations/ux/designrules/slides.json"
         ],
-        "fulltext": "explainations/ux/designrules/0index.txt",
         "manifest": "explainations/ux/designrules/manifest.json",
         "slides": "explainations/ux/designrules/slides.json",
-        "tags": "explainations/ux/designrules/0tags.txt",
+        "tags": [
+          "ux",
+          "design",
+          "entscheidungen",
+          "gui",
+          "regeln"
+        ],
         "viewer": "explainations/ux/designrules/index.html"
       },
       "language": "de",
@@ -381,10 +407,14 @@
           "guides/bddtesting/slide5.txt",
           "guides/bddtesting/slides.json"
         ],
-        "fulltext": "guides/bddtesting/0index.txt",
         "manifest": "guides/bddtesting/manifest.json",
         "slides": "guides/bddtesting/slides.json",
-        "tags": "guides/bddtesting/0tags.txt",
+        "tags": [
+          "bdd",
+          "cucumber",
+          "e2e",
+          "testing"
+        ],
         "viewer": "guides/bddtesting/index.html"
       },
       "language": "de",
@@ -419,10 +449,14 @@
           "guides/msys2-installation/update.md",
           "guides/msys2-installation/winpath.md"
         ],
-        "fulltext": "guides/msys2-installation/0index.txt",
         "manifest": "guides/msys2-installation/manifest.json",
         "slides": "guides/msys2-installation/slides.json",
-        "tags": "guides/msys2-installation/0tags.txt",
+        "tags": [
+          "msys2",
+          "howto",
+          "installation",
+          "configuration"
+        ],
         "viewer": "guides/msys2-installation/index.html"
       },
       "language": "de",
@@ -445,10 +479,12 @@
           "projects/foile-pile/manifest.json",
           "projects/foile-pile/slides.json"
         ],
-        "fulltext": "projects/foile-pile/0index.txt",
         "manifest": "projects/foile-pile/manifest.json",
         "slides": "projects/foile-pile/slides.json",
-        "tags": "projects/foile-pile/0tags.txt",
+        "tags": [
+          "foile",
+          "slides"
+        ],
         "viewer": "projects/foile-pile/index.html"
       },
       "language": "de",
@@ -469,10 +505,14 @@
           "projects/honey-slideshow/manifest.json",
           "projects/honey-slideshow/slides.json"
         ],
-        "fulltext": "projects/honey-slideshow/0index.txt",
         "manifest": "projects/honey-slideshow/manifest.json",
         "slides": "projects/honey-slideshow/slides.json",
-        "tags": "projects/honey-slideshow/0tags.txt",
+        "tags": [
+          "slideshow",
+          "slidecast",
+          "slides",
+          "audio"
+        ],
         "viewer": "projects/honey-slideshow/index.html"
       },
       "language": "de",
@@ -495,10 +535,15 @@
           "projects/jenkins-monitor/manifest.json",
           "projects/jenkins-monitor/slides.json"
         ],
-        "fulltext": "projects/jenkins-monitor/0index.txt",
         "manifest": "projects/jenkins-monitor/manifest.json",
         "slides": "projects/jenkins-monitor/slides.json",
-        "tags": "projects/jenkins-monitor/0tags.txt",
+        "tags": [
+          "jenkins",
+          "monitor",
+          "java",
+          "jenkinsmonitor",
+          "devops"
+        ],
         "viewer": "projects/jenkins-monitor/index.html"
       },
       "language": "de",
