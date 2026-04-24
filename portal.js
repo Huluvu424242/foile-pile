@@ -3,6 +3,7 @@ const SEARCH_DEBOUNCE_MS = 120;
 const SLIDES_FILE_NAME = "slides.json";
 const MANIFEST_FILE_NAME = "manifest.json";
 const VIEWER_BASE_URL = "https://huluvu424242.github.io/sld-slideshow-viewer/";
+const EXTRA_FOLDER_NAME = ".extra";
 
 const sortSelect = document.getElementById("sort-select");
 const searchInput = document.getElementById("search-input");
@@ -217,6 +218,16 @@ function normalizeRelativePath(path, basePath) {
   return normalized.startsWith(basePath) ? normalized : null;
 }
 
+function isPathExcludedFromExport(path, basePath) {
+  const prefix = `${basePath}/`;
+  if (typeof path !== "string" || !path.startsWith(prefix)) {
+    return false;
+  }
+
+  const relativePath = path.slice(prefix.length);
+  return relativePath.split("/").includes(EXTRA_FOLDER_NAME);
+}
+
 function collectSlideReferences(slidesData, basePath) {
   const refs = new Set();
   const slides = Array.isArray(slidesData?.slides) ? slidesData.slides : [];
@@ -294,19 +305,20 @@ async function createPresentationZip(downloadContract, presentation) {
   const slides = await fetchJson(downloadContract.slidesUrl, "Slides laden fehlgeschlagen");
   const basePath = downloadContract.basePath;
 
-  const fileSet = new Set([
-    `${basePath}/${MANIFEST_FILE_NAME}`,
-    `${basePath}/${SLIDES_FILE_NAME}`,
-  ]);
+  const fileSet = new Set([`${basePath}/${SLIDES_FILE_NAME}`]);
 
   [presentation.files?.fulltext, presentation.files?.tags, presentation.files?.viewer].forEach((path) => {
     const normalized = normalizeRelativePath(path, basePath);
-    if (normalized) {
+    if (normalized && !isPathExcludedFromExport(normalized, basePath)) {
       fileSet.add(normalized);
     }
   });
 
-  collectSlideReferences(slides, basePath).forEach((path) => fileSet.add(path));
+  collectSlideReferences(slides, basePath).forEach((path) => {
+    if (!isPathExcludedFromExport(path, basePath)) {
+      fileSet.add(path);
+    }
+  });
 
   const files = [];
   const missingFiles = [];
@@ -341,6 +353,10 @@ async function createPresentationZip(downloadContract, presentation) {
     const fileMap = new Map(files.map((file) => [file.path, file.data]));
     const checksumIssues = [];
     for (const [path, expected] of checksums.entries()) {
+      if (path === `${basePath}/${MANIFEST_FILE_NAME}` || isPathExcludedFromExport(path, basePath)) {
+        continue;
+      }
+
       const fileData = fileMap.get(path);
       if (!fileData) {
         checksumIssues.push(`${path} (Prüfsumme vorhanden, Datei fehlt)`);
