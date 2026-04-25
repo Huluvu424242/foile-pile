@@ -1,0 +1,16 @@
+<speak>
+    <p>Ein paar Beispiele zeigen den Nutzen.</p>
+    <p>Wenn ein Unternehmen sein Produkt ohnehin unter <lang xml:lang="en-US">GPL</lang> veröffentlicht, kann eine <lang
+            xml:lang="en-US">GPL</lang>-Bibliothek in dieses Konzept passen.
+    </p>
+    <p>Wenn dasselbe Unternehmen ein proprietäres Kundenprodukt vertreibt, kann dieselbe Bibliothek rot sein, weil sie
+        Pflichten auslöst, die nicht zur Vertriebsstrategie passen.
+    </p>
+    <p>Eine Behörde, die keine Lizenzangabe an ihren eigenen Programmen vornimmt, fällt regelmäßig in eine sehr
+        restriktive Ausgangslage. Für sie kann dieselbe Lizenz unpassend sein.
+    </p>
+    <p>Und trotzdem gibt es Ausnahmen: Ein <lang xml:lang="en-US">GPL</lang>-Server, der nur intern betrieben wird, kann
+        anders zu bewerten sein als eine <lang xml:lang="en-US">Angular</lang>-Anwendung, deren Code an Browser
+        ausgeliefert wird.
+    </p>
+</speak>

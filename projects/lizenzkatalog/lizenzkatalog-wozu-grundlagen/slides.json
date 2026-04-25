@@ -1,0 +1,159 @@
+{
+  "title": "Lizenzkatalog – Von Abhängigkeiten zu belastbaren Entscheidungen",
+  "version": "1.0",
+  "language": "de",
+  "author": "Huluvu424242 / erstellt mit ChatGPT",
+  "event": "vorbereitet für BITKOM Forum Open Source, Erfurt",
+  "slides": [
+    {
+      "id": "titel",
+      "title": "Lizenzkatalog für belastbare Open-Source-Entscheidungen",
+      "content": "slides/slide01.md",
+      "audio": {
+        "src": "audio/slide01.ssml",
+        "type": "ssml"
+      },
+      "showtime": 40
+    },
+    {
+      "id": "ausgangslage",
+      "title": "Ausgangslage: moderne Software ist zusammengesetzt",
+      "content": "slides/slide02.md",
+      "audio": {
+        "src": "audio/slide02.ssml",
+        "type": "ssml"
+      },
+      "showtime": 55
+    },
+    {
+      "id": "problem",
+      "title": "Das eigentliche Problem: Scanner finden, Menschen entscheiden",
+      "content": "slides/slide03.md",
+      "audio": {
+        "src": "audio/slide03.ssml",
+        "type": "ssml"
+      },
+      "showtime": 55
+    },
+    {
+      "id": "zielgruppen",
+      "title": "Drei Zielgruppen, drei Risikoprofile",
+      "content": "slides/slide04.md",
+      "audio": {
+        "src": "audio/slide04.ssml",
+        "type": "ssml"
+      },
+      "showtime": 60
+    },
+    {
+      "id": "mit-irrtum",
+      "title": "Warum „einfach MIT“ oder proprietär nicht reicht",
+      "content": "slides/slide05.md",
+      "audio": {
+        "src": "audio/slide05.ssml",
+        "type": "ssml"
+      },
+      "showtime": 65
+    },
+    {
+      "id": "nutzungskontext",
+      "title": "Die Bewertung hängt vom Nutzungskontext ab",
+      "content": "slides/slide06.md",
+      "audio": {
+        "src": "audio/slide06.ssml",
+        "type": "ssml"
+      },
+      "showtime": 65
+    },
+    {
+      "id": "kein-globaler-katalog",
+      "title": "Warum kein weltweit fertiger Bewertungskatalog genügt",
+      "content": "slides/slide07.md",
+      "audio": {
+        "src": "audio/slide07.ssml",
+        "type": "ssml"
+      },
+      "showtime": 70
+    },
+    {
+      "id": "lizenzkatalog-loesung",
+      "title": "Was der Lizenzkatalog leistet",
+      "content": "slides/slide08.md",
+      "audio": {
+        "src": "audio/slide08.ssml",
+        "type": "ssml"
+      },
+      "showtime": 60
+    },
+    {
+      "id": "annotation",
+      "title": "Annotationen: vom Text zur auswertbaren Bedeutung",
+      "content": "slides/slide09.md",
+      "audio": {
+        "src": "audio/slide09.ssml",
+        "type": "ssml"
+      },
+      "showtime": 65
+    },
+    {
+      "id": "policy-beispiele",
+      "title": "Beispiele: dieselbe Lizenz, andere Entscheidung",
+      "content": "slides/slide10.md",
+      "audio": {
+        "src": "audio/slide10.ssml",
+        "type": "ssml"
+      },
+      "showtime": 70
+    },
+    {
+      "id": "fertige-programme",
+      "title": "Bewertungsszenario 1: fertige Programme",
+      "content": "slides/slide11.md",
+      "audio": {
+        "src": "audio/slide11.ssml",
+        "type": "ssml"
+      },
+      "showtime": 55
+    },
+    {
+      "id": "bibliotheken",
+      "title": "Bewertungsszenario 2: Bibliotheken im eigenen Produkt",
+      "content": "slides/slide12.md",
+      "audio": {
+        "src": "audio/slide12.ssml",
+        "type": "ssml"
+      },
+      "showtime": 65
+    },
+    {
+      "id": "bilder-assets",
+      "title": "Bewertungsszenario 3: Bilder, Logos, Folien und Assets",
+      "content": "slides/slide13.md",
+      "audio": {
+        "src": "audio/slide13.ssml",
+        "type": "ssml"
+      },
+      "showtime": 60
+    },
+    {
+      "id": "best-practices",
+      "title": "Best Practices für den eigenen Lizenzkatalog",
+      "content": "slides/slide14.md",
+      "audio": {
+        "src": "audio/slide14.ssml",
+        "type": "ssml"
+      },
+      "showtime": 65
+    },
+    {
+      "id": "schluss",
+      "title": "Fazit: vom Lizenzfund zur Entscheidung",
+      "content": "slides/slide15.md",
+      "audio": {
+        "src": "audio/slide15.ssml",
+        "type": "ssml"
+      },
+      "showtime": 60
+    }
+  ]
+}

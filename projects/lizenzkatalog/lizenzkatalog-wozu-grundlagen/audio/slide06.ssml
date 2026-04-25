@@ -1,0 +1,11 @@
+<speak>
+    <p>Die wichtigste Einsicht ist: Die Lizenz allein entscheidet nicht. Der Nutzungskontext entscheidet mit.</p>
+    <p>Eine fertige Bürosoftware, die im Unternehmen installiert und genutzt wird, ist etwas anderes als eine
+        Bibliothek, die in das eigene Produkt gelinkt und an Kunden ausgeliefert wird. Ein Bild auf einer Folie ist
+        etwas anderes als ein Logo im Produkt.
+    </p>
+    <p>Auch interne Nutzung ist anders zu bewerten als öffentliche Verteilung. Und Serverbetrieb ist nicht dasselbe wie
+        Client-Code, der an Nutzer ausgeliefert wird.
+    </p>
+    <p>Deshalb sollte eine Bewertung immer nach Nutzungsart, Verteilungsart, Kopplung und Zielumgebung fragen.</p>
+</speak>
