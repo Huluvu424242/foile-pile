@@ -1,0 +1,13 @@
+<speak>
+    <p>Annotationen machen Lizenztexte praktisch nutzbar. Statt die gesamte Lizenz immer wieder neu zu lesen, werden
+        relevante Textstellen markiert und mit einer Bedeutung versehen.
+    </p>
+    <p>Ein Abschnitt kann etwa als Hinweis auf eine Namensnennungspflicht, eine Pflicht zur Beifügung des Lizenztexts
+        oder eine Quellcodepflicht markiert werden. Zusätzlich können Eigenschaften wie starkes oder schwaches <lang
+                xml:lang="en-US">Copyleft
+        </lang> erfasst werden.
+    </p>
+    <p>Wichtig ist: Die Annotation ersetzt nicht die juristische Bewertung. Sie macht die relevanten Stellen sichtbar,
+        zitierbar und wiederverwendbar.
+    </p>
+</speak>

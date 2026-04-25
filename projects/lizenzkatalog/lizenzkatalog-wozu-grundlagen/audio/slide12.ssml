@@ -1,0 +1,11 @@
+<speak>
+    <p>Das zweite Szenario ist für Entwickler meist am kritischsten: Bibliotheken im eigenen Produkt.</p>
+    <p>Hier muss genau betrachtet werden, ob die Bibliothek ausgeliefert wird, wie sie eingebunden ist, und ob durch
+        Verteilung Pflichten entstehen. Bei permissiven Lizenzen wie <lang xml:lang="en-US">MIT</lang> oder <lang
+                xml:lang="en-US">Apache
+        </lang> stehen häufig Hinweis- und Lizenztextpflichten im Vordergrund.
+    </p>
+    <p>Bei starkem <lang xml:lang="en-US">Copyleft</lang> geht es zusätzlich darum, ob das eigene Produkt unter
+        kompatiblen Bedingungen weitergegeben werden muss. Genau diese Fragen sollte der Lizenzkatalog sichtbar machen.
+    </p>
+</speak>

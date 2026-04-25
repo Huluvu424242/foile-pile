@@ -1,0 +1,11 @@
+<speak>
+    <p>Ein <lang xml:lang="en-US">Compliance Scanner</lang> ist wertvoll, aber er entscheidet nicht für die
+        Organisation. Er findet Dateien, Header, Paketmetadaten oder Lizenztexte. Das ist die technische Fundstelle.
+    </p>
+    <p>Die Compliance-Frage lautet anders: Dürfen wir diese Komponente in diesem Produkt, mit dieser Verteilung, für
+        diese Zielgruppe und unter unserer eigenen Unternehmensrichtlinie verwenden?
+    </p>
+    <p>Genau hier entsteht in der Praxis die Lücke zwischen Werkzeugausgabe und belastbarer Entscheidung. Der
+        Lizenzkatalog adressiert diese Lücke.
+    </p>
+</speak>

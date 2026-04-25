@@ -1,0 +1,13 @@
+<speak>
+    <p>Für die Praxis empfehle ich vier Regeln.</p>
+    <p>Erstens: klein annotieren. Markieren Sie nur die Textstelle, die wirklich die Pflicht oder das Recht trägt.</p>
+    <p>Zweitens: begründen Sie Bewertungen. Ein grünes, gelbes oder rotes Ergebnis ohne Begründung hilft im Audit
+        kaum.
+    </p>
+    <p>Drittens: trennen Sie Nutzungskontexte. Interne Nutzung, öffentliche Verteilung, Serverbetrieb und Client-Code
+        sind keine Synonyme.
+    </p>
+    <p>Viertens: versionieren Sie die Policy. Wenn sich eine Organisation weiterentwickelt, müssen alte Entscheidungen
+        weiterhin nachvollziehbar bleiben.
+    </p>
+</speak>

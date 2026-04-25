@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+    <style>
+      .line { fill:none; stroke:#a7f3d0; stroke-width:14; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { fill:none; stroke:#93c5fd; stroke-width:9; stroke-linecap:round; stroke-linejoin:round; opacity:.95; }
+      .fill1 { fill:#22c55e; } .fill2 { fill:#38bdf8; } .fill3 { fill:#fbbf24; } .fill4 { fill:#f87171; }
+      .card { fill:#f8fafc; opacity:.96; } .ghost { fill:#ffffff; opacity:.12; }
+      .muted { fill:#cbd5e1; opacity:.36; }
+    </style>
+  </defs>
+  <rect width="1200" height="520" rx="42" fill="url(#bg)"/>
+  <rect x="170" y="125" width="250" height="270" rx="36" class="card" filter="url(#soft)"/><rect x="475" y="125" width="250" height="270" rx="36" class="card" filter="url(#soft)"/><rect x="780" y="125" width="250" height="270" rx="36" class="card" filter="url(#soft)"/><path d="M240 310h110M545 310h110M850 310h110" class="thin"/><path d="M295 180v95M600 180v95M905 180v95" class="line"/><circle cx="295" cy="180" r="38" class="fill1"/><circle cx="600" cy="180" r="38" class="fill3"/><circle cx="905" cy="180" r="38" class="fill4"/>
+</svg>

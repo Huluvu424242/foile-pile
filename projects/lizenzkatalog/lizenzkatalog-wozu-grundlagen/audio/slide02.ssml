@@ -1,0 +1,12 @@
+<speak>
+    <p>Moderne Software ist zusammengesetzt. Selbst kleine Anwendungen nutzen Paketmanager, Build-Werkzeuge, Frameworks,
+        Icon-Sets oder Beispielcode.
+    </p>
+    <p>Damit ist jede Abhängigkeit mehr als nur Technik. Sie ist auch eine Erlaubnis, etwas unter bestimmten Bedingungen
+        zu tun. Wer diese Bedingungen nicht kennt, kann ein technisch gutes Produkt bauen und trotzdem später ein
+        rechtliches oder organisatorisches Problem bekommen.
+    </p>
+    <p>Der erste Schritt ist deshalb simpel: Die Abhängigkeit muss sichtbar werden. Der zweite Schritt ist
+        anspruchsvoller: Die Bedeutung für den eigenen Einsatz muss verstanden werden.
+    </p>
+</speak>

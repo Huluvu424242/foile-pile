@@ -1,0 +1,14 @@
+<speak>
+    <p>Unternehmen, Behörden und private Entwickler sehen dieselbe Lizenz oft aus völlig unterschiedlichen
+        Blickwinkeln.
+    </p>
+    <p>Ein Unternehmen fragt: Darf ich mein Produkt verkaufen, ausliefern und warten, ohne später Rechte nachlizenzieren
+        oder Quellcode offenlegen zu müssen?
+    </p>
+    <p>Eine Behörde fragt zusätzlich: Passt die Nutzung zur Beschaffung, zur digitalen Souveränität, zu internen
+        Freigabeprozessen und zur Frage, ob eigene Software überhaupt unter eine ausdrückliche Lizenz gestellt wird?
+    </p>
+    <p>Private Entwickler fragen meist: Darf ich mein Projekt auf <lang xml:lang="en-US">GitHub</lang> veröffentlichen,
+        darf ich Abhängigkeiten bundlen, und was muss ich dabei beilegen?
+    </p>
+</speak>
