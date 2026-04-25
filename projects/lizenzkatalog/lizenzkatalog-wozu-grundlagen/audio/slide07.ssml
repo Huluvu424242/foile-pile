@@ -1,0 +1,13 @@
+<speak>
+    <p>Es wäre bequem, einen weltweiten Lizenzkatalog bereitzustellen, in dem bei jeder Lizenz schon steht: grün, gelb
+        oder rot. Genau das wäre aber gefährlich.
+    </p>
+    <p>Ein Lizenztext kann weltweit bekannt sein. Die Bewertung ist es nicht. Sie hängt von der Rechtsordnung, von
+        Verträgen, von der Art der Verteilung, vom Geschäftsmodell und vom Risikoappetit der Organisation ab.
+    </p>
+    <p>Ein Unternehmen, das sein eigenes Produkt bewusst unter <lang xml:lang="en-US">GPL</lang> veröffentlicht,
+        kann <lang xml:lang="en-US">GPL</lang>-Bibliotheken völlig anders bewerten als eine Behörde, die keine
+        ausdrückliche Lizenz an ihren Programmen anbringt und faktisch alle Rechte vorbehalten lässt.
+    </p>
+    <p>Der Lizenzkatalog liefert deshalb Struktur und Nachvollziehbarkeit, aber keine zentral verordnete Wahrheit.</p>
+</speak>

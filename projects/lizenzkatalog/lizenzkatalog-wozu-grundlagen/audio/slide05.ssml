@@ -1,0 +1,13 @@
+<speak>
+    <p>Ein häufiger Irrtum lautet: Wir stellen unser Projekt einfach unter eine proprietäre Lizenz oder unter <lang
+            xml:lang="en-US">MIT</lang>, dann ist alles erledigt.
+    </p>
+    <p>Das stimmt nur für Bestandteile, an denen man selbst die notwendigen Rechte hat. Fremder Code bleibt fremder
+        Code. Wenn ein Scanner Dateien mit einem <lang xml:lang="en-US">GPL</lang>-Header oder einem anderen
+        Lizenzhinweis findet, ist das ein Warnsignal.
+    </p>
+    <p>Dann muss geklärt werden: Ist diese Datei wirklich Bestandteil des Produkts? Wurde sie nur als Testdatei
+        übernommen? Ist sie generiert? Wurde sie verändert? Und welche Pflichten löst genau diese Nutzung aus?
+    </p>
+    <p>Eine eigene Lizenz kann fremde Lizenzbedingungen nicht einfach überdecken.</p>
+</speak>
