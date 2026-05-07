@@ -1,0 +1,8 @@
+<speak>
+  <p>OpenSSL ist das wichtigste Werkzeug zur Analyse von Zertifikaten und Private Keys.</p>
+  <p>Mit openssl x 509 kann ein Zertifikat analysiert werden.</p>
+  <p>Mit openssl pkey lässt sich ein Private Key anzeigen.</p>
+  <p>PKCS 12 Container wie p zwölf oder p f x Dateien können mit openssl pkcs zwölf untersucht werden.</p>
+  <p>Besonders hilfreich ist der Vergleich der Public Keys aus Zertifikat und Private Key, um passende Paare zu erkennen.</p>
+  <p>OpenSSL vertraut dabei nicht auf Dateinamen, sondern analysiert den tatsächlichen Inhalt.</p>
+</speak>
