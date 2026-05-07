@@ -1,0 +1,18 @@
+= Server-Authentifikation mit HTTPS =
+
+Bei normalem HTTPS prüft der Client den Server.
+
+Der Server sendet:
+
+* sein Leaf-Zertifikat
+* meist die Intermediate-Zertifikate
+
+Der Client prüft:
+
+* passt die Domain?
+* ist die Signatur gültig?
+* ist die Chain vollständig?
+* endet die Chain bei einer vertrauten Root CA?
+* ist das Zertifikat noch gültig?
+
+Erst danach wird die Verbindung akzeptiert.

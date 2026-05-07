@@ -1,0 +1,6 @@
+<speak>
+  <p>Die Zertifikatskette wird Signatur für Signatur geprüft.</p>
+  <p>Das Leaf Zertifikat wird mit dem Public Key des Intermediate Zertifikats geprüft.</p>
+  <p>Das Intermediate wird mit dem Public Key der Root CA geprüft.</p>
+  <p>Vertrauen entsteht erst, wenn die Kette bei einem lokal vertrauten Root endet.</p>
+</speak>

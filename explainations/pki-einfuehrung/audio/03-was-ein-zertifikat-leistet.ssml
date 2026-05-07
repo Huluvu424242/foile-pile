@@ -1,0 +1,5 @@
+<speak>
+  <p>Ein Zertifikat ist im Kern eine bestätigte Zuordnung.</p>
+  <p>Es sagt: Dieser Public Key gehört zu dieser Identität.</p>
+  <p>Die Signatur einer vertrauenswürdigen Stelle macht diese Aussage überprüfbar.</p>
+</speak>

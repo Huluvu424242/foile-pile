@@ -1,0 +1,6 @@
+<speak>
+  <p>Bei der Fehlersuche hilft eine strikte Trennung.</p>
+  <p>Erstens: Kann der Browser dem vom Proxy erzeugten Server Zertifikat vertrauen?</p>
+  <p>Zweitens: Kann der Proxy dem vom Browser gesendeten Client Zertifikat vertrauen?</p>
+  <p>Diese beiden Richtungen haben unterschiedliche Trust Stores und unterschiedliche Fehlerursachen.</p>
+</speak>

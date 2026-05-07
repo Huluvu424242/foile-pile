@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" role="img" aria-label="Client prüft Zertifikatskette">
+  <rect width="960" height="360" fill="#ffffff"/>
+  <text x="40" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#202124">Chain-Prüfung im Browser</text>
+
+  <rect x="55" y="125" width="180" height="80" rx="14" fill="#E8F0FE" stroke="#1A73E8" stroke-width="3"/>
+  <text x="95" y="174" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#174EA6">Browser</text>
+
+  <rect x="350" y="85" width="245" height="60" rx="12" fill="#E6F4EA" stroke="#188038" stroke-width="3"/>
+  <text x="395" y="123" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#0D652D">www.beispiel.de</text>
+
+  <rect x="350" y="165" width="245" height="60" rx="12" fill="#E8F0FE" stroke="#1A73E8" stroke-width="3"/>
+  <text x="393" y="203" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#174EA6">Intermediate</text>
+
+  <rect x="350" y="245" width="245" height="60" rx="12" fill="#FEF7E0" stroke="#F9AB00" stroke-width="3"/>
+  <text x="425" y="283" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#7A4B00">Root CA</text>
+
+  <line x1="235" y1="165" x2="350" y2="115" stroke="#5F6368" stroke-width="4"/>
+  <line x1="472" y1="145" x2="472" y2="165" stroke="#5F6368" stroke-width="4"/>
+  <line x1="472" y1="225" x2="472" y2="245" stroke="#5F6368" stroke-width="4"/>
+
+  <text x="650" y="119" font-family="Arial, sans-serif" font-size="19" fill="#5F6368">Domain passt?</text>
+  <text x="650" y="199" font-family="Arial, sans-serif" font-size="19" fill="#5F6368">Signatur gültig?</text>
+  <text x="650" y="279" font-family="Arial, sans-serif" font-size="19" fill="#5F6368">Root bekannt?</text>
+</svg>

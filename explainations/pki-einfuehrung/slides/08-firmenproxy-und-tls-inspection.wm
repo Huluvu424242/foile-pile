@@ -1,0 +1,5 @@
+= Firmenproxy mit TLS-Inspection
+
+
+Der Browser spricht nicht direkt mit der Webseite.  
+Der Proxy beendet eine TLS-Verbindung und baut eine zweite TLS-Verbindung auf.

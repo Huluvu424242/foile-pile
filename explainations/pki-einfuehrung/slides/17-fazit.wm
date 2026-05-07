@@ -1,0 +1,18 @@
+= Fazit =
+
+Zertifikate lösen vor allem das Vertrauensproblem.
+
+Sie beantworten die Frage:
+
+'''Gehört dieser Public Key wirklich zu dieser Identität?'''
+
+Server-Zertifikate schützen den Client vor falschen Servern.
+
+Client-Zertifikate beweisen die Identität des Clients.
+
+Firmenproxies machen daraus zwei TLS-Welten:
+
+* Browser ↔ Proxy
+* Proxy ↔ Webseite
+
+Deshalb muss man die Zertifikatsketten immer richtungsbezogen prüfen.

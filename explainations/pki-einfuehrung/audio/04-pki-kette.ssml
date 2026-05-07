@@ -1,0 +1,5 @@
+<speak>
+  <p>Eine PKI ist hierarchisch aufgebaut.</p>
+  <p>Ganz oben steht die Root Certificate Authority als Vertrauensanker.</p>
+  <p>Darunter stehen Intermediate Authorities, die konkrete Leaf Zertifikate ausstellen.</p>
+</speak>

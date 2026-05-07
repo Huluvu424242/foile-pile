@@ -1,0 +1,18 @@
+= Typische Fehlerbilder =
+
+Häufige Meldungen:
+
+* self signed certificate
+* unknown issuer
+* unable to verify first certificate
+* certificate chain incomplete
+
+Typische Ursachen:
+
+* Firmen Root fehlt im Container
+* Intermediate-Zertifikate fehlen im Client Zertifikat
+* Browser nutzt nicht den erwarteten Trust Store
+* P12 enthält nur Leaf und Private Key, aber keine Chain
+* Proxy sendet seine eigene Chain unvollständig
+
+Gerade Docker-Images sind oft zu minimal vorbereitet.

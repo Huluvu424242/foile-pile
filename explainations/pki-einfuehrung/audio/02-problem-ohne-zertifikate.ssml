@@ -1,0 +1,5 @@
+<speak>
+  <p>Ohne Zertifikate fehlt der Identitätsnachweis.</p>
+  <p>Ein Angreifer könnte seinen eigenen Public Key anbieten und die Verbindung unbemerkt weiterleiten.</p>
+  <p>Die Verbindung wäre technisch verschlüsselt, aber mit der falschen Gegenstelle.</p>
+</speak>

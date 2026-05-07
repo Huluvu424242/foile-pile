@@ -1,0 +1,6 @@
+<speak>
+  <p>Das wichtigste Fazit lautet: Zertifikate lösen nicht nur Verschlüsselung, sondern vor allem Vertrauen.</p>
+  <p>Server Zertifikate helfen dem Client, die Gegenseite zu prüfen.</p>
+  <p>Client Zertifikate helfen dem Server oder Proxy, den Client zu prüfen.</p>
+  <p>Bei einem Firmenproxy entstehen zwei getrennte TLS Welten, die man auch getrennt debuggen muss.</p>
+</speak>

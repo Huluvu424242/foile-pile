@@ -1,0 +1,16 @@
+= Praxisbeispiel: Selenium auf Kubernetes =
+
+Ein automatisierter Test läuft so:
+
+* Selenium steuert Chrome Headless
+* Chrome läuft in einem Docker Container
+* der Container läuft auf Kubernetes
+* der Zugriff ins Internet erfolgt über den Firmenproxy
+* die Anwendung prüft Webseiten, zum Beispiel auf Barrierefreiheit
+
+Für die PKI ist der fachliche Zweck egal.
+
+Wichtig ist:
+
+* der Browser muss dem Proxy vertrauen
+* der Proxy muss den Browser als Firmenclient erkennen

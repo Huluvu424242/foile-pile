@@ -1,0 +1,6 @@
+<speak>
+  <p>In Unternehmensnetzen existieren oft zwei Zertifikatsketten gleichzeitig.</p>
+  <p>Der Browser prüft das vom Proxy präsentierte Server Zertifikat.</p>
+  <p>Der Proxy prüft das vom Browser präsentierte Client Zertifikat.</p>
+  <p>Fehlt eine der beiden Ketten, entsteht ein Zertifikatsfehler.</p>
+</speak>

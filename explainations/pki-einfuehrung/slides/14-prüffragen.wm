@@ -1,0 +1,16 @@
+= Praktische Prüffragen =
+
+Wenn es scheitert, prüfe getrennt:
+
+== A: Browser vertraut Proxy? ==
+
+* Ist das Firmen Root im Container installiert?
+* nutzt Chrome den richtigen Trust Store?
+* sendet der Proxy seine Intermediate Chain?
+
+== B: Proxy vertraut Client? ==
+
+* enthält das Client-Zertifikat die Intermediate Chain?
+* passt der Private Key zum Zertifikat?
+* ist die Client CA beim Proxy vertraut?
+* ist das Zertifikat noch gültig?
