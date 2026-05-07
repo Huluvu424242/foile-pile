@@ -174,7 +174,7 @@
     },
     {
       "id": "slide-15",
-      "title": "Prüffragen",
+      "title": "OpenSSL Befehle",
       "content": "slides/16-praktische-openssl-befehle.md",
       "format": "md",
       "audio": {
@@ -185,13 +185,13 @@
       "showtime": 50
     },
     {
-      "id": "slide-16",
+      "id": "slide-17",
       "title": "Fazit",
-      "content": "slides/15-fazit.wm",
+      "content": "slides/17-fazit.wm",
       "format": "wm",
       "audio": {
         "type": "ssml",
-        "src": "audio/15-fazit.ssml",
+        "src": "audio/17-fazit.ssml",
         "lang": "de-DE"
       },
       "showtime": 45
