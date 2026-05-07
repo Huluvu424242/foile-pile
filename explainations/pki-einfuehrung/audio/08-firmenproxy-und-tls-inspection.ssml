@@ -1,0 +1,5 @@
+<speak>
+  <p>Bei TLS Inspection spricht der Browser nicht direkt Ende zu Ende mit der Webseite.</p>
+  <p>Der Firmenproxy terminiert die Verbindung vom Browser und baut selbst eine zweite TLS Verbindung zur Zielwebseite auf.</p>
+  <p>Technisch ist das ein kontrollierter Man in the Middle, der durch das Firmen Root Zertifikat legitimiert wird.</p>
+</speak>

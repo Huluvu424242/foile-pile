@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-label="PKI Vertrauenskette Root Intermediate Leaf">
+  <rect width="960" height="420" fill="#ffffff"/>
+  <text x="40" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#202124">PKI: Vertrauen wird weitergegeben</text>
+
+  <rect x="350" y="85" width="260" height="70" rx="14" fill="#FEF7E0" stroke="#F9AB00" stroke-width="3"/>
+  <text x="413" y="130" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#7A4B00">Root CA</text>
+  <text x="640" y="128" font-family="Arial, sans-serif" font-size="18" fill="#5F6368">Trust Anchor</text>
+
+  <line x1="480" y1="155" x2="480" y2="210" stroke="#5F6368" stroke-width="5"/>
+  <polygon points="480,210 468,190 492,190" fill="#5F6368"/>
+
+  <rect x="300" y="210" width="360" height="70" rx="14" fill="#E8F0FE" stroke="#1A73E8" stroke-width="3"/>
+  <text x="372" y="255" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#174EA6">Intermediate CA</text>
+
+  <line x1="480" y1="280" x2="480" y2="335" stroke="#5F6368" stroke-width="5"/>
+  <polygon points="480,335 468,315 492,315" fill="#5F6368"/>
+
+  <rect x="330" y="335" width="300" height="60" rx="14" fill="#E6F4EA" stroke="#188038" stroke-width="3"/>
+  <text x="382" y="373" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#0D652D">Leaf Zertifikat</text>
+</svg>

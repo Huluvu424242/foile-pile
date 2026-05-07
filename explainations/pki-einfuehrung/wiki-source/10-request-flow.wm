@@ -1,0 +1,5 @@
+= Verbindungsaufnahme über den Proxy
+
+
+Wichtig: Die Zertifikate der echten Webseite sieht der Browser bei TLS-Inspection nicht direkt.  
+Er sieht ein vom Proxy erzeugtes Zertifikat für die Ziel-Domain.

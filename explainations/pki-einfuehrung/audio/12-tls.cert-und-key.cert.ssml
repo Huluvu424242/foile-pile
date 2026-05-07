@@ -1,0 +1,6 @@
+<speak>
+  <p>Dateinamen wie tls.cert und key.cert sind nicht standardisiert.</p>
+  <p>Häufig enthält tls.cert das Client Zertifikat und die Intermediate Chain.</p>
+  <p>Die Datei key.cert könnte trotz des Namens den Private Key enthalten.</p>
+  <p>Wenn das stimmt, darf diese Datei niemals weitergegeben werden.</p>
+</speak>

@@ -1,0 +1,188 @@
+{
+  "title": "Einführung in Unternehmens-PKI",
+  "version": "1.0",
+  "language": "de-DE",
+  "description": "Zertifikate, Server-Authentifikation, Client-Authentifikation, mTLS und Firmenproxy am Beispiel Selenium in Docker/Kubernetes.",
+  "slides": [
+    {
+      "id": "slide-01",
+      "title": "Titel",
+      "content": "slides/01-titel.wm",
+      "format": "wm",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/01-titel.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 20
+    },
+    {
+      "id": "slide-02",
+      "title": "Problem ohne Zertifikate",
+      "content": "slides/02-problem-ohne-zertifikate.md",
+      "format": "md",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/02-problem-ohne-zertifikate.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 35
+    },
+    {
+      "id": "slide-03",
+      "title": "Was ein Zertifikat leistet",
+      "content": "slides/03-was-ein-zertifikat-leistet.wm",
+      "format": "wm",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/03-was-ein-zertifikat-leistet.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 35
+    },
+    {
+      "id": "slide-04",
+      "title": "PKI Kette",
+      "content": "slides/04-pki-kette.md",
+      "format": "md",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/04-pki-kette.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 35
+    },
+    {
+      "id": "slide-05",
+      "title": "Server Authentifikation",
+      "content": "slides/05-server-authentifikation.wm",
+      "format": "wm",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/05-server-authentifikation.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 45
+    },
+    {
+      "id": "slide-06",
+      "title": "Chain Prüfung",
+      "content": "slides/06-chain-prüfung.md",
+      "format": "md",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/06-chain-prüfung.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 45
+    },
+    {
+      "id": "slide-07",
+      "title": "Client Authentifikation",
+      "content": "slides/07-client-authentifikation.wm",
+      "format": "wm",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/07-client-authentifikation.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 50
+    },
+    {
+      "id": "slide-08",
+      "title": "Firmenproxy und TLS Inspection",
+      "content": "slides/08-firmenproxy-und-tls-inspection.md",
+      "format": "md",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/08-firmenproxy-und-tls-inspection.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 45
+    },
+    {
+      "id": "slide-09",
+      "title": "Praxisbeispiel Selenium",
+      "content": "slides/09-praxisbeispiel-selenium.wm",
+      "format": "wm",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/09-praxisbeispiel-selenium.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 45
+    },
+    {
+      "id": "slide-10",
+      "title": "Request Flow",
+      "content": "slides/10-request-flow.md",
+      "format": "md",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/10-request-flow.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 55
+    },
+    {
+      "id": "slide-11",
+      "title": "Zwei Zertifikatsketten",
+      "content": "slides/11-zwei-zertifikatsketten.md",
+      "format": "md",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/11-zwei-zertifikatsketten.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 45
+    },
+    {
+      "id": "slide-12",
+      "title": "tls.cert und key.cert",
+      "content": "slides/12-tls.cert-und-key.cert.md",
+      "format": "md",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/12-tls.cert-und-key.cert.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 40
+    },
+    {
+      "id": "slide-13",
+      "title": "Typische Fehler",
+      "content": "slides/13-typische-fehler.wm",
+      "format": "wm",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/13-typische-fehler.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 45
+    },
+    {
+      "id": "slide-14",
+      "title": "Prüffragen",
+      "content": "slides/14-prüffragen.wm",
+      "format": "wm",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/14-prüffragen.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 50
+    },
+    {
+      "id": "slide-15",
+      "title": "Fazit",
+      "content": "slides/15-fazit.wm",
+      "format": "wm",
+      "audio": {
+        "type": "ssml",
+        "src": "audio/15-fazit.ssml",
+        "lang": "de-DE"
+      },
+      "showtime": 45
+    }
+  ]
+}

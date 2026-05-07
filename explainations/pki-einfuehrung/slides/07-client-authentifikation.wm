@@ -1,0 +1,19 @@
+= Client-Authentifikation mit mTLS =
+
+Bei Mutual TLS authentifizieren sich beide Seiten.
+
+Der Client besitzt:
+
+* Client Leaf-Zertifikat
+* Private Key
+* Intermediate-Zertifikate
+
+Der Server oder Proxy fordert per '''CertificateRequest''' ein Client-Zertifikat an.
+
+Der Client sendet normalerweise:
+
+* Client Leaf
+* Intermediate Chain
+* nicht die Root CA
+
+Den Besitz des Private Keys beweist der Client kryptographisch im TLS Handshake.
