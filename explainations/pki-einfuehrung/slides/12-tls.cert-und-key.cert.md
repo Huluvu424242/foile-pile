@@ -4,7 +4,7 @@
 
 Typische Vermutung:
 
-* `tls.cert`: Client-Zertifikat plus Intermediate Chain
-* `key.cert`: passender Private Key
+* `tls.crt`: Client-Zertifikat plus Intermediate Chain
+* `tls.key`: passender Private Key
 
 Der Private Key ist der sensible Teil.
