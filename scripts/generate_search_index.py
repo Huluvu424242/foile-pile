@@ -9,16 +9,30 @@ import sys
 from pathlib import Path
 
 SCHEMA_VERSION = "1.0.0"
+PRESENTATIONS_DIR_NAME = "foiles"
+SITE_DIR_NAME = "site"
 
 
 def load_json(path: Path) -> object:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def get_presentations_root(repo_root: Path) -> Path:
+    return repo_root / PRESENTATIONS_DIR_NAME
+
+
+def get_default_index_path(repo_root: Path) -> Path:
+    return repo_root / SITE_DIR_NAME / "index.json"
+
+
 def discover_presentations(repo_root: Path) -> list[dict[str, object]]:
     presentations: list[dict[str, object]] = []
+    presentations_root = get_presentations_root(repo_root)
 
-    for slides_path in sorted(repo_root.glob("**/slides.json")):
+    if not presentations_root.exists():
+        return presentations
+
+    for slides_path in sorted(presentations_root.glob("**/slides.json")):
         presentation_dir = slides_path.parent
         manifest_path = presentation_dir / "manifest.json"
 
@@ -91,6 +105,7 @@ def build_index(repo_root: Path) -> dict[str, object]:
 
 
 def write_index(index_data: dict[str, object], target: Path) -> None:
+    target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(
         json.dumps(index_data, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
@@ -109,7 +124,7 @@ def parse_args() -> argparse.Namespace:
         "--output",
         type=Path,
         default=None,
-        help="Ausgabedatei (Standard: <repo-root>/index.json).",
+        help="Ausgabedatei (Standard: <repo-root>/site/index.json).",
     )
     return parser.parse_args()
 
@@ -117,7 +132,7 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     repo_root = args.repo_root.resolve()
-    output = args.output.resolve() if args.output else repo_root / "index.json"
+    output = args.output.resolve() if args.output else get_default_index_path(repo_root)
 
     index_data = build_index(repo_root)
     write_index(index_data, output)

@@ -7,6 +7,8 @@ import json
 import sys
 from pathlib import Path
 
+PRESENTATIONS_DIR_NAME = "foiles"
+
 REQUIRED_FIELDS = {
     "title": str,
     "language": str,
@@ -66,7 +68,8 @@ def validate_manifest(manifest_path: Path, repo_root: Path) -> list[str]:
 
 def main() -> int:
     repo_root = Path(__file__).resolve().parent.parent
-    slide_files = sorted(repo_root.glob("**/slides.json"))
+    presentations_root = repo_root / PRESENTATIONS_DIR_NAME
+    slide_files = sorted(presentations_root.glob("**/slides.json")) if presentations_root.exists() else []
 
     errors: list[str] = []
 

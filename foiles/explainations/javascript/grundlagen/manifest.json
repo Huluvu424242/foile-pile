@@ -1,0 +1,12 @@
+{
+  "title": "Grundlagen",
+  "language": "de",
+  "tags": [
+    "javascript",
+    "begriffe",
+    "konzepte",
+    "grundlagen"
+  ],
+  "description": "Präsentation im Bereich \"Explainations\" zum Thema \"Javascript\".",
+  "path": "foiles/explainations/javascript/grundlagen"
+}

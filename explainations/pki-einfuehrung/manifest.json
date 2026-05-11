@@ -1,7 +1,0 @@
-{
-  "title": "Einführung in Unternehmens-PKI",
-  "language": "de-DE",
-  "tags": [],
-  "description": "Zertifikate, Server-Authentifikation, Client-Authentifikation, mTLS und Firmenproxy am Beispiel Selenium in Docker/Kubernetes.",
-  "path": "explainations/pki-einfuehrung"
-}
