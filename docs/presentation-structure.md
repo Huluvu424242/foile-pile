@@ -1,21 +1,21 @@
 # Repository-Struktur für Präsentationen
 
-Dieses Repository verwendet ein einheitliches Schema, damit Suche, Viewer und Download automatisiert arbeiten können.
+Dieses Repository trennt die Portal-Webseite von den Präsentationsquellen, damit Suche, Viewer und Download automatisiert arbeiten können.
 
 ## Verzeichnis-Schema
 
-Alle Präsentationen liegen nach folgendem Muster:
+Alle Präsentationen liegen unter `foiles/` nach folgendem Muster:
 
-`/<bereich>/<thema>/<praesentation>/`
+`/foiles/<bereich>/<thema>/<praesentation>/`
 
 Im aktuellen Bestand werden dafür folgende Bereichsordner verwendet:
 
-- `guides/`
-- `explainations/`
-- `evaluationen/`
-- `projects/`
+- `foiles/guides/`
+- `foiles/explainations/`
+- `foiles/evaluationen/`
+- `foiles/projects/`
 
-Eine Präsentation wird technisch darüber erkannt, dass im Präsentationsordner eine `slides.json` vorhanden ist.
+Eine Präsentation wird technisch darüber erkannt, dass im Präsentationsordner eine `slides.json` vorhanden ist. Die Portalquellen liegen separat unter `site/`.
 
 ## Pflichtdateien pro Präsentation
 
@@ -42,7 +42,7 @@ Beispiel:
   "language": "de",
   "tags": ["javascript", "types"],
   "description": "Einführung in JavaScript-Grundlagen.",
-  "path": "explainations/javascript/grundlagen"
+  "path": "foiles/explainations/javascript/grundlagen"
 }
 ```
 
@@ -73,12 +73,11 @@ python scripts/validate_repository_structure.py
 
 Bei Verstößen gibt das Skript verständliche Fehler inkl. Dateipfad aus und beendet sich mit Exit-Code `1`.
 
+## Zentraler Suchindex (`site/index.json`)
 
-## Zentraler Suchindex (`index.json`)
+Unter `site/index.json` wird ein zentraler Suchindex mit versioniertem Schema gepflegt:
 
-Im Repository-Root wird ein zentraler Suchindex mit versioniertem Schema gepflegt:
-
-- Datei: `index.json`
+- Datei: `site/index.json`
 - Feld `schemaVersion`: aktuelle Schema-Version des Indexformats
 - Feld `presentations`: Liste aller Präsentationen inkl. Suchfelder und Dateireferenzen
 
@@ -87,7 +86,7 @@ Pro Eintrag werden u. a. diese Informationen bereitgestellt:
 - `title`, `description`, `language`, `tags`, `path`
 - `searchText` (voraggregierter Suchtext für clientseitige Suche)
 - `slideCount`
-- `files` mit Referenzen auf `manifest.json`, `slides.json`, `index.html`, `0tags.txt`, `0index.txt`
+- `files` mit Referenzen auf `manifest.json`, `slides.json`, Viewer-Pfad, Tags und Exportdateien
 
 Erzeugung (reproduzierbar, ohne Node.js):
 

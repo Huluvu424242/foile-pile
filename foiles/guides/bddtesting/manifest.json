@@ -1,0 +1,12 @@
+{
+  "title": "Bddtesting",
+  "language": "de",
+  "tags": [
+    "bdd",
+    "cucumber",
+    "e2e",
+    "testing"
+  ],
+  "description": "Präsentation im Bereich \"Guides\" zum Thema \"Bddtesting\".",
+  "path": "foiles/guides/bddtesting"
+}
