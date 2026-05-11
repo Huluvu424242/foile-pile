@@ -1,0 +1,6 @@
+<speak>
+  <p>Bei mTLS reicht es nicht, dass der Client ein Zertifikat sendet.</p>
+  <p>Er muss auch beweisen, dass er den passenden Private Key besitzt.</p>
+  <p>Darum gehören Client Zertifikat und Private Key immer zusammen.</p>
+  <p>Die Intermediate Zertifikate werden meist mitgesendet, die Root CA normalerweise nicht.</p>
+</speak>

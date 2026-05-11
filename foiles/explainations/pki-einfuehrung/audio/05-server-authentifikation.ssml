@@ -1,0 +1,5 @@
+<speak>
+  <p>Bei HTTPS authentifiziert sich meistens der Server gegenüber dem Client.</p>
+  <p>Der Browser prüft, ob das Zertifikat zur Domain passt und ob die Signaturkette gültig ist.</p>
+  <p>Das Root Zertifikat wird normalerweise nicht vom Server gesendet, sondern liegt bereits im Trust Store des Clients.</p>
+</speak>

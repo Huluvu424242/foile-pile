@@ -1,0 +1,6 @@
+= Unternehmens-PKI verstehen =
+
+'''Zertifikate, HTTPS, mTLS und Firmenproxy'''
+
+Eine Einführung anhand eines Selenium-Clients
+im Docker-Container auf Kubernetes.

@@ -1,0 +1,6 @@
+= Typische PKI-Kette
+
+
+Die Root CA ist der Vertrauensanker.  
+Intermediate CAs erledigen die tägliche Ausstellung.  
+Leaf-Zertifikate gehören zu Servern, Clients oder Diensten.

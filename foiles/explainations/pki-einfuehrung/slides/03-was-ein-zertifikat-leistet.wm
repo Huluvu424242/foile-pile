@@ -1,0 +1,14 @@
+= Was ein Zertifikat leistet =
+
+Ein Zertifikat verbindet drei Dinge:
+
+* eine Identität
+* einen Public Key
+* eine Signatur eines Ausstellers
+
+Merksatz:
+
+'''Ein Zertifikat sagt: Dieser Public Key gehört zu dieser Identität.'''
+
+Die Verschlüsselung ist wichtig.
+Das Vertrauen in den richtigen Schlüssel ist aber der schwierigere Teil.

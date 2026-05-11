@@ -8,15 +8,15 @@ import sys
 import tempfile
 from pathlib import Path
 
-from generate_search_index import build_index, write_index
+from generate_search_index import build_index, get_default_index_path, write_index
 
 
 def main() -> int:
     repo_root = Path(__file__).resolve().parent.parent
-    committed_index = repo_root / "index.json"
+    committed_index = get_default_index_path(repo_root)
 
     if not committed_index.exists():
-        print("FEHLER: index.json fehlt. Bitte zuerst generieren.")
+        print(f"FEHLER: {committed_index.relative_to(repo_root).as_posix()} fehlt. Bitte zuerst generieren.")
         return 1
 
     expected_data = build_index(repo_root)
@@ -33,7 +33,7 @@ def main() -> int:
         print("Bitte ausführen: python scripts/generate_search_index.py")
         return 1
 
-    print("OK: index.json ist aktuell.")
+    print(f"OK: {committed_index.relative_to(repo_root).as_posix()} ist aktuell.")
     return 0
 
 

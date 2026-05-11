@@ -1,0 +1,5 @@
+<speak>
+  <p>In unserem Beispiel läuft ein Selenium Browser in einem Docker Container auf Kubernetes.</p>
+  <p>Er ruft Webseiten über einen Firmenproxy auf, zum Beispiel um Barrierefreiheitsprüfungen auszuführen.</p>
+  <p>PKI technisch sind zwei Fragen wichtig: Vertraut der Browser dem Proxy, und erkennt der Proxy den Browser als berechtigten Client?</p>
+</speak>

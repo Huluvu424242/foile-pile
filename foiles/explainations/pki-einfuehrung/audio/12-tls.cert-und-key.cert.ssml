@@ -1,0 +1,6 @@
+<speak>
+  <p>Dateinamen wie tls.crt und tls.key sind nicht standardisiert.</p>
+  <p>Häufig enthält tls.crt das Client Zertifikat und die Intermediate Chain.</p>
+  <p>Die Datei tls.key könnte trotz des Namens den Private Key enthalten.</p>
+  <p>Wenn das stimmt, darf diese Datei niemals weitergegeben werden.</p>
+</speak>

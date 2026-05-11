@@ -1,0 +1,6 @@
+<speak>
+  <p>Der Browser beginnt mit einer CONNECT Anfrage an den Proxy.</p>
+  <p>Der Proxy fordert das Client Zertifikat an.</p>
+  <p>Der Browser sendet sein Client Leaf und die Intermediate Zertifikate.</p>
+  <p>Danach baut der Proxy selbst die TLS Verbindung zur echten Webseite auf und präsentiert dem Browser ein eigenes dynamisch erzeugtes Server Zertifikat.</p>
+</speak>

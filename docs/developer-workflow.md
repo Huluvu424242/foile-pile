@@ -16,7 +16,11 @@ cd foile-pile
 python3 scripts/validate_repository_structure.py
 python3 scripts/generate_search_index.py
 python3 scripts/check_search_index.py
-python3 -m http.server 8080
+rm -rf _site
+mkdir -p _site
+cp -a site/. _site/
+cp -a foiles _site/foiles
+python3 -m http.server 8080 --directory _site
 ```
 
 Danach ist das Portal lokal verfügbar unter:
@@ -25,17 +29,17 @@ Danach ist das Portal lokal verfügbar unter:
 
 ## Lokale Entwicklung
 
-1. Änderungen an Präsentationen, Metadaten oder Portal-Dateien durchführen.
+1. Änderungen an Präsentationen (`foiles/`), Metadaten oder Portal-Dateien (`site/`) durchführen.
 2. Struktur validieren:
 
    ```bash
    python3 scripts/validate_repository_structure.py
    ```
 
-3. Suchindex neu erzeugen:
+3. Manifeste und Suchindex neu erzeugen:
 
    ```bash
-   python3 scripts/generate_search_index.py
+   python3 scripts/sync_manifests.py
    ```
 
 4. Konsistenz prüfen:
@@ -44,16 +48,26 @@ Danach ist das Portal lokal verfügbar unter:
    python3 scripts/check_search_index.py
    ```
 
-5. Änderungen committen:
+5. Optional lokales Deployment-Artefakt bauen und starten:
+
+   ```bash
+   rm -rf _site
+   mkdir -p _site
+   cp -a site/. _site/
+   cp -a foiles _site/foiles
+   python3 -m http.server 8080 --directory _site
+   ```
+
+6. Änderungen committen:
 
    ```bash
    git add .
    git commit -m "Beschreibe die Änderung"
    ```
 
-## Release-Workflow (statische Auslieferung)
+## Release-Workflow
 
-Der Release benötigt nur Git + Python und erzeugt ein statisch auslieferbares Repository.
+Der Release läuft über GitHub Actions. Nach einem Push auf `main` baut der Workflow `.github/workflows/pages.yml` ein Pages-Artefakt aus `site/` und `foiles/` und veröffentlicht es über GitHub Pages.
 
 ```bash
 # 1) Arbeitsstand aktualisieren
@@ -62,12 +76,12 @@ git pull --ff-only
 
 # 2) Qualitätschecks
 python3 scripts/validate_repository_structure.py
-python3 scripts/generate_search_index.py
+python3 scripts/sync_manifests.py
 python3 scripts/check_search_index.py
 
-# 3) Release committen (falls index.json aktualisiert wurde)
-git add index.json
-git commit -m "chore: update search index"
+# 3) Release committen (falls manifest.json oder site/index.json aktualisiert wurden)
+git add foiles site/index.json
+git commit -m "chore: update generated manifests and site index"
 
 # 4) Veröffentlichen
 git push origin main
@@ -79,4 +93,4 @@ git push origin main
   -> Python 3 installieren und erneut ausführen.
 
 - `FEHLER: index.json ist nicht aktuell.`  
-  -> `python3 scripts/generate_search_index.py` ausführen und Änderungen committen.
+  -> `python3 scripts/sync_manifests.py` oder `python3 scripts/generate_search_index.py` ausführen und Änderungen committen.

@@ -1,0 +1,5 @@
+<speak>
+  <p>Willkommen zu dieser Einführung in Unternehmens-PKI.</p>
+  <p>Wir betrachten Zertifikate, Server-Authentifikation, Client-Authentifikation und den Sonderfall Firmenproxy.</p>
+  <p>Als Praxisbeispiel dient ein Selenium Browser in einem Docker Container auf Kubernetes.</p>
+</speak>

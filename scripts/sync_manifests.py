@@ -9,7 +9,12 @@ import sys
 from pathlib import Path
 from typing import Any
 
-from generate_search_index import build_index, write_index
+from generate_search_index import (
+    build_index,
+    get_default_index_path,
+    get_presentations_root,
+    write_index,
+)
 
 DEFAULT_LANGUAGE = "de"
 
@@ -34,14 +39,21 @@ def derive_title(slides_data: dict[str, Any], rel_parts: tuple[str, ...]) -> str
     return prettify_segment(rel_parts[-1])
 
 
+def get_content_rel_parts(rel_parts: tuple[str, ...]) -> tuple[str, ...]:
+    if rel_parts and rel_parts[0] == "foiles":
+        return rel_parts[1:]
+    return rel_parts
+
+
 def derive_description(slides_data: dict[str, Any], rel_parts: tuple[str, ...], title: str) -> str:
     description = slides_data.get("description")
     if isinstance(description, str) and description.strip():
         return description.strip()
 
-    area = prettify_segment(rel_parts[0]) if len(rel_parts) >= 1 else "Unbekannt"
-    topic_source = rel_parts[-2] if len(rel_parts) >= 3 else rel_parts[-1]
-    topic = prettify_segment(topic_source) if rel_parts else title
+    content_parts = get_content_rel_parts(rel_parts)
+    area = prettify_segment(content_parts[0]) if len(content_parts) >= 1 else "Unbekannt"
+    topic_source = content_parts[-2] if len(content_parts) >= 3 else content_parts[-1] if content_parts else title
+    topic = prettify_segment(topic_source) if content_parts else title
     return f'Präsentation im Bereich "{area}" zum Thema "{topic}".'
 
 
@@ -117,12 +129,14 @@ def main() -> int:
     repo_root = Path(__file__).resolve().parent.parent
     changed = 0
 
-    for slides_path in sorted(repo_root.glob("**/slides.json")):
+    presentations_root = get_presentations_root(repo_root)
+
+    for slides_path in sorted(presentations_root.glob("**/slides.json")):
         if sync_manifest_for_slides(slides_path, repo_root):
             print(f"Aktualisiert: {slides_path.parent.relative_to(repo_root).as_posix()}/manifest.json")
             changed += 1
 
-    index_path = repo_root / "index.json"
+    index_path = get_default_index_path(repo_root)
     previous_index = index_path.read_text(encoding="utf-8") if index_path.exists() else None
     write_index(build_index(repo_root), index_path)
     index_changed = previous_index != index_path.read_text(encoding="utf-8")

@@ -1,0 +1,5 @@
+<speak>
+  <p>In Docker und CI Umgebungen fehlen häufig Unternehmenszertifikate.</p>
+  <p>Der lokale Browser funktioniert dann, aber der Headless Browser im Container scheitert.</p>
+  <p>Oft fehlen Firmen Root Zertifikate im Trust Store oder Intermediate Zertifikate in der Client Identität.</p>
+</speak>

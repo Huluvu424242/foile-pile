@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500" role="img" aria-label="Request Flow über Firmenproxy mit mTLS">
+  <rect width="1000" height="500" fill="#ffffff"/>
+  <text x="40" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#202124">Verbindungsaufnahme über den Proxy</text>
+
+  <text x="80" y="95" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#174EA6">Selenium</text>
+  <text x="440" y="95" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#7A4B00">Proxy</text>
+  <text x="790" y="95" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#0D652D">Webseite</text>
+
+  <line x1="130" y1="110" x2="130" y2="460" stroke="#DADCE0" stroke-width="4"/>
+  <line x1="480" y1="110" x2="480" y2="460" stroke="#DADCE0" stroke-width="4"/>
+  <line x1="830" y1="110" x2="830" y2="460" stroke="#DADCE0" stroke-width="4"/>
+
+  <line x1="130" y1="145" x2="480" y2="145" stroke="#5F6368" stroke-width="4"/>
+  <polygon points="480,145 462,135 462,155" fill="#5F6368"/>
+  <text x="190" y="135" font-family="Arial, sans-serif" font-size="18" fill="#202124">1 CONNECT ziel.de:443</text>
+
+  <line x1="480" y1="190" x2="130" y2="190" stroke="#5F6368" stroke-width="4"/>
+  <polygon points="130,190 148,180 148,200" fill="#5F6368"/>
+  <text x="200" y="180" font-family="Arial, sans-serif" font-size="18" fill="#202124">2 CertificateRequest</text>
+
+  <line x1="130" y1="235" x2="480" y2="235" stroke="#5F6368" stroke-width="4"/>
+  <polygon points="480,235 462,225 462,245" fill="#5F6368"/>
+  <text x="160" y="225" font-family="Arial, sans-serif" font-size="18" fill="#202124">3 Client Leaf + Intermediate</text>
+
+  <line x1="480" y1="285" x2="830" y2="285" stroke="#5F6368" stroke-width="4"/>
+  <polygon points="830,285 812,275 812,295" fill="#5F6368"/>
+  <text x="560" y="275" font-family="Arial, sans-serif" font-size="18" fill="#202124">4 TLS zur Webseite</text>
+
+  <line x1="830" y1="330" x2="480" y2="330" stroke="#5F6368" stroke-width="4"/>
+  <polygon points="480,330 498,320 498,340" fill="#5F6368"/>
+  <text x="545" y="320" font-family="Arial, sans-serif" font-size="18" fill="#202124">5 Server-Zertifikate</text>
+
+  <line x1="480" y1="385" x2="130" y2="385" stroke="#5F6368" stroke-width="4"/>
+  <polygon points="130,385 148,375 148,395" fill="#5F6368"/>
+  <text x="175" y="375" font-family="Arial, sans-serif" font-size="18" fill="#202124">6 Proxy-Zertifikat für ziel.de</text>
+</svg>

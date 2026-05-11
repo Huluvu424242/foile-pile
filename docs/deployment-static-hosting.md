@@ -4,24 +4,24 @@ Diese Anleitung beschreibt den Betrieb des Portals **ohne Node.js** auf einem st
 
 ## Ziel
 
-Die Anwendung wird ausschließlich als statische Dateien ausgeliefert:
+Die Anwendung wird ausschließlich als statische Dateien ausgeliefert. Im Repository sind Quellen und Deployment-Artefakt getrennt:
 
-- `index.html`
-- `portal.css`
-- `portal.js`
-- `index.json`
-- Präsentationsordner unter `guides/`, `explainations/`, `evaluationen/`, `projects/`
+- Portalquellen: `site/index.html`, `site/portal.css`, `site/portal.js`, `site/index.json`
+- Präsentationsquellen: `foiles/`
+- Hilfsskripte: `scripts/`
 
-Es ist **kein Build-System** notwendig. Der veröffentlichte Git-Stand ist direkt das Deployment-Artefakt.
+Das veröffentlichte Artefakt enthält den Inhalt von `site/` im Webroot und die Präsentationen als `foiles/` daneben.
 
-## Beispiel-Zielsystem: GitHub Pages
+## GitHub Pages
+
+GitHub Pages wird über GitHub Actions veröffentlicht, nicht mehr über `Deploy from a branch`.
 
 1. Repository auf `main` aktuell halten.
 2. Vor Veröffentlichung lokale Checks ausführen:
 
    ```bash
    python3 scripts/validate_repository_structure.py
-   python3 scripts/generate_search_index.py
+   python3 scripts/sync_manifests.py
    python3 scripts/check_search_index.py
    ```
 
@@ -33,9 +33,23 @@ Es ist **kein Build-System** notwendig. Der veröffentlichte Git-Stand ist direk
    git push origin main
    ```
 
-4. In GitHub unter **Settings → Pages** als Source `Deploy from a branch` wählen und Branch `main` / Folder `/ (root)` konfigurieren.
+4. In GitHub unter **Settings → Pages** als Source **GitHub Actions** auswählen.
 
-Danach wird das Portal als statische Seite ausgeliefert.
+Der Workflow `.github/workflows/pages.yml` erzeugt das Pages-Artefakt aus `site/` und `foiles/` und deployt es anschließend.
+
+## Manuelles Artefakt für andere statische Hosts
+
+Für andere Hosts kann das gleiche Artefakt lokal erzeugt werden:
+
+```bash
+python3 scripts/sync_manifests.py
+rm -rf _site
+mkdir -p _site
+cp -a site/. _site/
+cp -a foiles _site/foiles
+```
+
+Anschließend wird der Inhalt von `_site/` auf den statischen Host kopiert.
 
 ## Cache-Strategie
 
@@ -68,7 +82,7 @@ Wirkung:
 
 Bei geänderten Assets sollte ein Versionsparameter oder Dateinamenswechsel verwendet werden, damit Clients neue Dateien laden.
 
-Beispiel in `index.html`:
+Beispiel in `site/index.html`:
 
 ```html
 <link rel="stylesheet" href="portal.css?v=2026-04-23">
