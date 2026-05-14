@@ -1,4 +1,4 @@
-# Was steckt in `tls.cert` und `key.cert`?
+# Was steckt in `tls.cert` und `tls.key`?
 
 ![Zertifikat und Key](assets/07-files.svg)
 
