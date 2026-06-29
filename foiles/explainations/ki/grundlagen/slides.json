@@ -1,1 +1,53 @@
-ddd
+{
+  "title": "Mesh Netze - Grundlagen und Vergleich",
+  "tags": ["slideshow","mesh netze","mesh","grundlagen"],
+  "slides": [
+     {
+      "id": "Willkommen",
+      "content": "01-welcome.md",
+      "audio": "01-welcome.txt"
+    },
+    {
+      "id": "Historie",
+      "content": "02-historie.md",
+      "audio": "02-historie.txt"
+    },
+    {
+      "id": "Definitionen",
+      "content": "03-definitionen.md",
+      "audio": "03-definitionen.txt"
+    },
+    {
+      "content": "05-ki-ml-.md",
+      "audio": "05-wifi_mesh.ssml"
+    },
+    {
+      "content": "06-thread_mesh.md",
+      "showtime": 10
+    },
+    {
+      "content": "07-zigbee_mesh.md",
+      "showtime": 10
+    },
+    {
+      "content": "08-bluetooth_mesh.md",
+      "showtime": 10
+    },
+    {
+      "content": "09-lora_mesh.md",
+      "showtime": 10
+    },
+    {
+      "content": "10-ham_mesh.md",
+      "showtime": 10
+    },
+    {
+      "content": "11-pager_networks.md",
+      "showtime": 10
+    },
+    {
+      "content": "12-special_mesh.md",
+      "showtime": 10
+    }
+  ]
+}
