@@ -136,6 +136,35 @@
       "title": "Jsonschema"
     },
     {
+      "description": "Präsentation im Bereich \"Explainations\" zum Thema \"Ki\".",
+      "files": {
+        "export": [
+          "foiles/explainations/ki/grundlagen/manifest.json",
+          "foiles/explainations/ki/grundlagen/slides.json"
+        ],
+        "manifest": "foiles/explainations/ki/grundlagen/manifest.json",
+        "slides": "foiles/explainations/ki/grundlagen/slides.json",
+        "tags": [
+          "slideshow",
+          "mesh netze",
+          "mesh",
+          "grundlagen"
+        ],
+        "viewer": "foiles/explainations/ki/grundlagen/index.html"
+      },
+      "language": "de",
+      "path": "foiles/explainations/ki/grundlagen",
+      "searchText": "Mesh Netze - Grundlagen und Vergleich Präsentation im Bereich \"Explainations\" zum Thema \"Ki\". slideshow mesh netze mesh grundlagen de",
+      "slideCount": 11,
+      "tags": [
+        "slideshow",
+        "mesh netze",
+        "mesh",
+        "grundlagen"
+      ],
+      "title": "Mesh Netze - Grundlagen und Vergleich"
+    },
+    {
       "description": "Präsentation im Bereich \"Explainations\" zum Thema \"Mesh\".",
       "files": {
         "export": [
