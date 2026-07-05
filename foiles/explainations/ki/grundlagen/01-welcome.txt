@@ -1,0 +1,20 @@
+Willkommen
+
+Ich darf Sie herzlich zu meinem Vortrag über die Grundlagen der Künstlichen Intelligenz,
+kurz auch als KI bezeichnet, begrüßen.
+
+Neben einigen Begriffen werde ich auch auf die Historie eingehen
+und die wichtigsten Meilensteine hervorheben.
+
+Im Anschluß erläutere ich die neuen Fähigkeiten um welche die KI unsere Technologien bereichert.
+
+Anschließend möchte ich erklären welche Technologien, Konzepte und Methoden es gibt um KI bereitzustellen
+und wie diese funktionieren.
+
+Im Ausblick gebe ich Ihnen noch ein paar Fragestellungen mit auf den Weg,
+welche entweder noch nicht gelöst sind oder welche die Menschheit noch beantworten sollte
+um einen Konsens beim Einsatz der KI zu erzielen.
+
+Ganz zum Schluss gibt es eine Liste der Quellen, welche ich zur Erstellung der SlideShow genutzt habe.
+
+Doch nun viel Freude beim Vortrag über die Grundlagen der KI.
