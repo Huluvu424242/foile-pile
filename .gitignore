@@ -1,4 +1,6 @@
 /.idea
 /_site/
+/.venv/
+/.run
 __pycache__/
 *.py[cod]
