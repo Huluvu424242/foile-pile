@@ -1,0 +1,11 @@
+Definitionen
+
+Was ist Künstliche Intelligenz?
+
+Die Standfort University bezieht sich bei der Festlegung von KI in ihrem Reeport 2016 auf eine Definition von Nils Nilsson:
+„Künstliche Intelligenz ist die Tätigkeit, die darauf abzielt, Maschinen intelligent zu machen, und Intelligenz ist die Eigenschaft, die es einem Organismus ermöglicht, in seiner Umgebung angemessen und vorausschauend zu agieren.“
+(Quelle: Stanford University – AI100 Report aus 2016)
+
+Das EU Parlament erklärt dazu:
+"Künstliche Intelligenz ist die Fähigkeit einer Maschine, menschliche Fähigkeiten wie logisches Denken, Lernen, Planen und Kreativität zu imitieren."
+(Quelle: Europäisches Parlament – HLEG-Definition)

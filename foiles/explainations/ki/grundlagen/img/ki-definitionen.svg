@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1159.34"
+        height="777.92"
+        viewBox="0 0 1159.34 777.92"
+        role="img"
+        aria-labelledby="title desc">
+
+    <title id="title">Einordnung zentraler KI-Begriffe</title>
+    <desc id="desc">
+        Vereinfachte, menschenlesbare SVG-Grafik zu künstlicher Intelligenz,
+        maschinellem Lernen, künstlichen neuronalen Netzen, Deep Learning,
+        natürlicher Sprachverarbeitung, großen Sprachmodellen und generativer KI.
+    </desc>
+
+    <defs>
+        <style>
+            .label {
+            font-family: "Segoe UI", Arial, sans-serif;
+            font-size: 20px;
+            fill: #1e1e1e;
+            }
+
+            .footer {
+            font-family: "Segoe UI", Arial, sans-serif;
+            font-size: 20px;
+            fill: #1e1e1e;
+            }
+
+            .footer-link text {
+            fill: #1971c2;
+            text-decoration: underline;
+            }
+
+            .outer-box {
+            fill: #ffec99;
+            stroke: #ffffff;
+            stroke-width: 1;
+            }
+
+            .ml-box {
+            fill: #b2f2bb;
+            stroke: #1e1e1e;
+            stroke-width: 1;
+            }
+
+            .knn-box {
+            fill: #a5d8ff;
+            stroke: #1e1e1e;
+            stroke-width: 1;
+            }
+
+            .deep-learning-box {
+            fill: #ffc9c9;
+            stroke: #1e1e1e;
+            stroke-width: 1;
+            }
+
+            .llm-box {
+            fill: #ffec99;
+            stroke: #1e1e1e;
+            stroke-width: 1;
+            }
+
+            .gen-ai-outline {
+            fill: none;
+            stroke: #1971c2;
+            stroke-width: 2;
+            }
+
+            .nlp-outline {
+            fill: none;
+            stroke: #2f9e44;
+            stroke-width: 2;
+            }
+
+            .gen-ai-label {
+            font-family: "Segoe UI", Arial, sans-serif;
+            font-size: 20px;
+            fill: #1971c2;
+            }
+
+            .nlp-label {
+            font-family: "Segoe UI", Arial, sans-serif;
+            font-size: 20px;
+            fill: #2f9e44;
+            }
+        </style>
+    </defs>
+
+    <rect width="1159.34" height="777.92" fill="#ffffff" />
+
+    <!-- Künstliche Intelligenz -->
+    <rect
+            class="outer-box"
+            x="10"
+            y="10"
+            width="1098.5"
+            height="697.3"
+            rx="32"
+            ry="32" />
+
+    <text class="label" x="37.03" y="59.86">Künstliche Intelligenz (KI)</text>
+
+    <!-- Maschinelles Lernen -->
+    <rect
+            class="ml-box"
+            x="68.26"
+            y="140.63"
+            width="987.99"
+            height="460.06"
+            rx="32"
+            ry="32" />
+
+    <text class="label" x="90.48" y="184.79">Maschinelles Lernen (ML)</text>
+
+    <!-- Künstliche Neuronale Netze -->
+    <rect
+            class="knn-box"
+            x="173.36"
+            y="244.53"
+            width="832.43"
+            height="315.92"
+            rx="32"
+            ry="32" />
+
+    <text class="label" x="194.99" y="284.19">Künstliche Neuronale Netze (KNN)</text>
+
+    <!-- Deep Learning -->
+    <rect
+            class="deep-learning-box"
+            x="435.23"
+            y="319.91"
+            width="529.13"
+            height="193.39"
+            rx="32"
+            ry="32" />
+
+    <text class="label" x="455.65" y="356.86">Deep Learning</text>
+
+    <!-- Große Sprachmodelle -->
+    <rect
+            class="llm-box"
+            x="633.42"
+            y="418.41"
+            width="299.70"
+            height="74.47"
+            rx="18.62"
+            ry="18.62" />
+
+    <text class="label" x="646.04" y="445.45">Große Sprachmodelle (LLMs)</text>
+
+    <!-- Generative KI -->
+    <ellipse
+            class="gen-ai-outline"
+            cx="731.32"
+            cy="528.92"
+            rx="287.69"
+            ry="163.66" />
+
+    <text class="gen-ai-label" x="603.99" y="624.73">Generative KI (GenAI)</text>
+
+    <!-- Natürliche Sprachverarbeitung -->
+    <rect
+            class="nlp-outline"
+            x="616.61"
+            y="64.35"
+            width="532.73"
+            height="484.08"
+            rx="32"
+            ry="32" />
+
+    <text class="nlp-label" x="649.04" y="95.90">Natürliche Sprachverarbeitung (NLP)</text>
+
+    <!-- Quelle -->
+    <a class="footer-link"
+       href="https://moodle.ki-campus.org/mod/h5pactivity/view.php?id=21419"
+       target="_blank">
+       <text class="footer" x="17.81" y="735.54">
+           Nach Quelle: KIÖV - KI in öffentlichen Verwaltungen: 2. Begriffe klären: eine gemeinsame Sprache finden | KI-Campus
+       </text>
+       <text class="footer" x="17.81" y="760.54">
+           https://moodle.ki-campus.org/mod/h5pactivity/view.php?id=21419
+       </text>
+    </a>
+</svg>
