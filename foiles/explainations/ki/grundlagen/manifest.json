@@ -1,11 +1,11 @@
 {
-  "title": "Mesh Netze - Grundlagen und Vergleich",
+  "title": "KI - Grundlagen und Begriffe",
   "language": "de",
   "tags": [
     "slideshow",
-    "mesh netze",
-    "mesh",
-    "grundlagen"
+    "ki",
+    "llms",
+    "genAI"
   ],
   "description": "Präsentation im Bereich \"Explainations\" zum Thema \"Ki\".",
   "path": "foiles/explainations/ki/grundlagen"

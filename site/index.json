@@ -139,6 +139,15 @@
       "description": "Präsentation im Bereich \"Explainations\" zum Thema \"Ki\".",
       "files": {
         "export": [
+          "foiles/explainations/ki/grundlagen/01-welcome.md",
+          "foiles/explainations/ki/grundlagen/01-welcome.txt",
+          "foiles/explainations/ki/grundlagen/02-historie.md",
+          "foiles/explainations/ki/grundlagen/03-definitionen.md",
+          "foiles/explainations/ki/grundlagen/12-quellen.md",
+          "foiles/explainations/ki/grundlagen/img/ATTRIBUTION",
+          "foiles/explainations/ki/grundlagen/img/PoweredByKI.png",
+          "foiles/explainations/ki/grundlagen/img/PoweredByKI.svg",
+          "foiles/explainations/ki/grundlagen/img/ki-definitionen.svg",
           "foiles/explainations/ki/grundlagen/manifest.json",
           "foiles/explainations/ki/grundlagen/slides.json"
         ],
@@ -146,23 +155,23 @@
         "slides": "foiles/explainations/ki/grundlagen/slides.json",
         "tags": [
           "slideshow",
-          "mesh netze",
-          "mesh",
-          "grundlagen"
+          "ki",
+          "llms",
+          "genAI"
         ],
         "viewer": "foiles/explainations/ki/grundlagen/index.html"
       },
       "language": "de",
       "path": "foiles/explainations/ki/grundlagen",
-      "searchText": "Mesh Netze - Grundlagen und Vergleich Präsentation im Bereich \"Explainations\" zum Thema \"Ki\". slideshow mesh netze mesh grundlagen de",
+      "searchText": "KI - Grundlagen und Begriffe Präsentation im Bereich \"Explainations\" zum Thema \"Ki\". slideshow ki llms genAI de",
       "slideCount": 11,
       "tags": [
         "slideshow",
-        "mesh netze",
-        "mesh",
-        "grundlagen"
+        "ki",
+        "llms",
+        "genAI"
       ],
-      "title": "Mesh Netze - Grundlagen und Vergleich"
+      "title": "KI - Grundlagen und Begriffe"
     },
     {
       "description": "Präsentation im Bereich \"Explainations\" zum Thema \"Mesh\".",
